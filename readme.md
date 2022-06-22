@@ -1,14 +1,14 @@
-#final year projet
+# final year projet
 
 
-#Members
+# Members
 
-#NA Khumalo
+# NA Khumalo
 
-#T Sibeko
+# T Sibeko
 
-#NS Mzobe
+# NS Mzobe
 
-#ML Phiri
+# ML Phiri
 
-#BN Hlophe
+# BN Hlophe
