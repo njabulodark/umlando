@@ -1,6 +1,6 @@
 #final year projet
 
-*Members
+#Members
 #NA Khumalo
 #T Sibeko
 #NS Mzobe
