@@ -31,11 +31,6 @@
         </nav>
     </section>
 
-    <section>
-        <p>Let's go bicth</p>
-        <p>this is a brench</p>
-    </section>
-
 <script>
 
 var navLinks = document.getElementById("navLinks");
