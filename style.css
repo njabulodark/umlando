@@ -8,7 +8,7 @@
 body{
     color: white;
     -webkit-font-smoothing: antialiased;
-
+    background: linear-gradient(rgb(255, 255, 255),rgb(222, 224, 233));
 }
 
 nav{
@@ -125,14 +125,15 @@ nav .fa{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/photo_2022-01-03_17-30-25.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 300px;
+
 }
 
 .text-box{  
     width: 90%; 
     color: white;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate( -50%,-50%);
     text-align: center;
@@ -175,11 +176,89 @@ nav .fa{
 }
 
 @media(max-width: 925px) {
-    .header{
-        min-height: 80vh;
-    }
 
     .text-box{
        top: 40%;
     }
+
+    .header{
+        min-height: 500px;
+    }
 }
+
+@media(max-width: 925px) {
+
+    .text-box{
+       top: 270px;
+    }
+
+    .header{
+        min-height: 500px;
+    }
+}
+
+
+/*---------------- universities--------*/
+.universities{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://assets.weforum.org/article/image/responsive_big_webp__sNw0oZO6IQV_vLpSbxFnx44SN_obtJrNdbSk0_yFFk.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+}
+.university{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.university h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: left;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+
+    flex-basis: 31%;
+    background: #d1c2c2;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.courser{
+    padding-bottom: 150px;
+}
+
+@media(max-width: 800px){
+    .row{
+        flex-direction: column;
+    }
+
+    .courser{
+        background-size: auto;
+    }
+}
+
