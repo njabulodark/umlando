@@ -119,4 +119,67 @@ nav .fa{
 
 }
 
+/*--------------- header -----------*/
 
+.header{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/photo_2022-01-03_17-30-25.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.text-box{  
+    width: 90%; 
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+    color: rgb(171, 65, 8);
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;
+}
+
+.hero-btn{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border: 1px solid #ffff;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 12px 34px;
+    position: relative;
+    background: transparent;
+    transition: 0.5s;
+
+}
+
+.hero-btn:hover{
+    background-color: red;
+    border: 1px solid red;
+}
+
+@media(max-width: 1000px){
+    .text-box h1{
+        font-size: 45px;
+    }
+}
+
+@media(max-width: 925px) {
+    .header{
+        min-height: 80vh;
+    }
+
+    .text-box{
+       top: 40%;
+    }
+}

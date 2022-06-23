@@ -14,7 +14,7 @@
         <nav>
             <div class="logo" id="logo">
                 <h1>
-                    <a href="a.php">University Guardian</a>
+                    <a href="index.php">University Guardian</a>
                 </h1>
             </div>
             <div class="nave-links" id="navLinks">
@@ -31,9 +31,14 @@
         </nav>
     </section>
 
-    <section>
-        <p>Let's go bicth</p>
-        <p>this is a brench</p>
+    <section class="header">
+        <div class="text-box">
+            <h1>All South African highest institution of learning</h1>
+            <p>Download prospectus, do online applications,
+                visit their websites and also find all useful information that
+                 you need about every public highest institution of learning in South Africa.</p>
+        </div>
+        
     </section>
 
 <script>
