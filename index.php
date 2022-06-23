@@ -49,39 +49,81 @@
         <div class="row">
             <div class="course-col">
                 <h3>Cape Peninsula University of Technology (CPUT)</h3>
-                <p>Website: <a href="https://www.cput.ac.za/" target="_blank">cput.ac.za</a></p>
-                <p>Online application: <a href="https://enroll.cut.ac.za/pls/prodi41/w99pkg.mi_login" target="_blank">click here</a></p>
-				<p>Application Fee: R100</p>
-				<p style="color:#00d500">Applications: OPEN</p>
-				<p>Open/Closing Date: 31 August 2022</p>
-				<p>Contact: 021 959 6767</p>
-				<p>Email: <a href="mailto:info@cput.ac.za">info@cput.ac.za</a></p>
-				<p>Location: Western Cape, Cape Town</p>
+                <p><b>Website:</b> <a href="https://www.cput.ac.za/" target="_blank">cput.ac.za</a></p>
+                <p><b>Online application:</b> <a href="https://enroll.cut.ac.za/pls/prodi41/w99pkg.mi_login" target="_blank">click here</a></p>
+				<p><b>Application Fee:</b> R100</p>
+				<p style="color:green"><b>Applications: OPEN</b></p>
+				<p><b>Open/Closing Date:</b> 31 August 2022</p>
+				<p><b>Contact:</b> 021 959 6767</p>
+				<p><b>Email:</b> <a href="mailto:info@cput.ac.za">info@cput.ac.za</a></p>
+				<p><b>Location:</b> Western Cape, Cape Town</p>
             </div>
             <div class="course-col">
             <h3>Durban University of Technology (DUT)</h3>
-				<p>Application form NOT available</p>
-				<p>Website: <a href="more-info/durban-university-of-technology.html" target="_blank"> dut.ac.za</a></p>
-				<p>Online application: <a href="https://mercury.dut.ac.za/pls/prodi41/w03pkg.call_dyn_val" target="_blank">click here</a></p>
-				<p>Application Fee: R220</p>
-				<p style="color:#00d500">Applications: OPEN</p>
-				<p>Open/Closing Date: September 2022</p>
-				<p>Contact: 031 373 2000</p>
-				<p>Email: <a href="mailto:info@dut.ac.za">info@dut.ac.za</a></p>
-				<p>Location: KwaZulu Natal, Durban &amp; Pietermaritzburg</p>
+				<p><b>Website:</b> <a href="more-info/durban-university-of-technology.html" target="_blank"> dut.ac.za</a></p>
+				<p><b>Online application:</b> <a href="https://mercury.dut.ac.za/pls/prodi41/w03pkg.call_dyn_val" target="_blank">click here</a></p>
+				<p><b>Application Fee:</b> R220</p>
+				<p style="color:green"><b>Applications: OPEN</b></p>
+				<p><b>Open/Closing Date:</b> September 2022</p>
+				<p><b>Contact:</b> 031 373 2000</p>
+				<p><b>Email:</b> <a href="mailto:info@dut.ac.za">info@dut.ac.za</a></p>
+				<p><b>Location:</b> KwaZulu Natal, Durban &amp; Pietermaritzburg</p>
             </div>
             <div class="course-col">
             <h3>University of Johannesburg (UJ)</h3>
-				<p><a href="forms/UJ-2022-Application-Form.pdf" target="_blank">Click here to download 2021/22 Application form</a></p>
-				<p>Website: <a href="https://www.uj.ac.za" target="_blank">uj.ac.za</a></p>
-				<p>Online application: <a href="https://apply.online.uj.ac.za/Start-Now/Apply-Now" target="_blank">click here</a></p>
-				<p>Application Fee: R200, Online: Free</p>
-				<p style="color:#00d500">Applications: OPEN</p>
-				<p>Open/Closing Date: 30 September 2022</p>
-				<p>Contact: 011 559 3129</p>
-				<p>Email: <a href="mailto:mylife@uj.ac.za">mylife@uj.ac.za</a></p>
-				<p>Location: Gauteng, Johannesburg</p>
+				<p><b>Website:</b> <a href="https://www.uj.ac.za" target="_blank">uj.ac.za</a></p>
+				<p><b>Online application:</b> <a href="https://apply.online.uj.ac.za/Start-Now/Apply-Now" target="_blank">click here</a></p>
+				<p><b>Application Fee:</b> R200, <b>Online:</b> Free</p>
+				<p style="color:green"><b>Applications: OPEN</b></p>
+				<p><b>Open/Closing Date:</b> 30 September 2022</p>
+				<p><b>Contact:</b> 011 559 3129</p>
+				<p><b>Email:</b> <a href="mailto:mylife@uj.ac.za">mylife@uj.ac.za</a></p>
+				<p><b>Location:</b> Gauteng, Johannesburg</p>
             </div>
+        </div>
+        <a href="" class="hero-btn">Click here for more</a>
+        <h1 class="space"></h1>
+    </div>
+</section>
+
+<section class="colleges">
+    <div class="college">
+
+        <h1>College</h1>
+        <div class="row">
+            <div class="course-col">
+            <h3>Lephalale TVET College</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://leptvetcol.edu.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> National Certificates, Diplomas</p>
+				<p><b>Fields of Interest:</b> Engineering Studies, Hospitality, Information Technology, Office Administration, Business Studies, Multi-Disciplinary Drawing Office Practice</p>
+				<p><b>Contact:</b> 014 763 2252</p>
+				<p><b>Location:</b> Limpopo, </p>
+				<p><b>Address:</b> </p>
+			</div>
+            <div class="course-col">
+            <h3>Belgium Campus</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.belgiumcampus.co.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> Diplomas, Degrees</p>
+				<p><b>Fiels of Interest:</b> IT</p>
+				<p><b>Contact:</b> 010 593 5368</p>
+				<p><b>Location:</b> Gauteng, </p>
+				<p><b>Address:</b> </p>
+			</div>
+            <div class="course-col">
+            <h3>Ehlanzeni TVET College</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.ehlanzenicollege.co.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> National Certificates, Diplomas</p>
+				<p><b>Fields of Interest:</b> Civil Engineering and Construction, Electrica Infrastructure Construction, Engineering and Related Design, Hospitality, Management, Human Resource Management, Management Assistant, Business Management, Marketing Management, Public Management, Educare</p>
+				<p><b>Contact:</b> 013 590 0016</p>
+				<p><b>Location:</b> Mpumalanga, Nelspruit</p>
+				<p><b>Address:</b> </p>
+			</div>
         </div>
         <a href="" class="hero-btn">Click here for more</a>
         <h1 class="space"></h1>
