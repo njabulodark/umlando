@@ -24,7 +24,7 @@
                     <li><a href="">Collage</a></li>
                     <li><a href="">Pic to PDF</a></li>
                     <li><a href="">Edit PDF</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
