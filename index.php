@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="nav">
@@ -130,6 +132,63 @@
     </div>
 </section>
 
+
+<section class="footers">
+    <div id="pic"></div>
+    <footer>
+        <div class="list">
+            <p id="founder">Contact details of the creators</p>
+            <ul>
+                <li id="names"><b>NA KHUMALO</b></li>
+                <li>
+                    <div class="social">
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li id="names"><b>NS MZOBE</b></li>
+                <li>
+                    <div class="social">
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                    </div>
+                </li>
+            </ul><ul>
+                <li id="names"><b>T SIBEKO</b></li>
+                <li>
+                    <div class="social">
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                    </div>
+                </li>
+            </ul><ul>
+                <li id="names"><b>BN HLOPHE</b></li>
+                <li>
+                    <div class="social">
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                    </div>
+                </li>
+            </ul><ul>
+                <li id="names"><b>MI PHIRI  <b>    </b></b></li>
+                <li>
+                    <div class="social">
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+</section>
 <script>
 
 var navLinks = document.getElementById("navLinks");

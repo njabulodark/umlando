@@ -327,3 +327,60 @@ h3{
     font-size: 36px;
     font-weight: 600;
 }
+
+/*-----------------------------footer--------------------------------------------------------------------*/
+.footers{
+    padding-top: 20px;
+}
+#pic{
+    background-image: url(https://www.digitalocean.com/_next/static/media/ctaWave.6a631f6e.svg);
+    display: flex;
+    height: 64px;
+    overflow: hidden;
+    width: 100%;
+}
+.footers p{
+    text-align: center;
+    font-size: 51px;
+    font-family: 'League Gothic', sans-serif;
+    text-shadow: 5px 2px 8px black;
+    color: white;
+    padding-bottom: 40px;
+}
+footer{
+    background-color: rgb(123, 222, 255);
+
+}
+
+footer ul{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    color: black;
+    text-align: center;
+}
+
+.social a{
+    font-size: 24px;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.list{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+#names{
+    padding-bottom: 20px;
+}
