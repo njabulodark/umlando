@@ -20,7 +20,7 @@
             <div class="nave-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="">HOME</a></li>
+                    <li id="active"><a href="index.php">HOME</a></li>
                     <li><a href="">University</a></li>
                     <li><a href="">Collage</a></li>
                     <li><a href="">Pic to PDF</a></li>

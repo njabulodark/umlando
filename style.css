@@ -117,6 +117,8 @@ nav .fa{
     }
 
 }
+
+/*---------------------------------------Contact------------------------------------------------------------*/
 #form-body{
     margin: 0px;
     padding: 0px;
@@ -162,7 +164,7 @@ nav .fa{
   }
 
 
-/*--------------- header -----------*/
+/*---------------------------------- header ------------------------------------------------------*/
 
 .header{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://www.groundup.org.za/media/uploads/images/photographers/Musa%20Binda/UniZulu-Kimberly%20Mutandiro-20190916police%201.jpg);
@@ -241,7 +243,7 @@ nav .fa{
 }
 
 
-/*---------------- universities--------*/
+/*------------------------------------------- universities-----------------------------------------------------*/
 .universities{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://assets.weforum.org/article/image/responsive_big_webp__sNw0oZO6IQV_vLpSbxFnx44SN_obtJrNdbSk0_yFFk.webp);
     background-size: cover;
@@ -307,6 +309,7 @@ h3{
 }
 
 
+/*------------------------------------College--------------------------------------------------------*/
 .colleges{
     background-image: linear-gradient(rgba(31, 35, 48, 0.3),rgba(31, 35, 48, 0.3)), url(http://www.unizulu.ac.za/wp-content/uploads/2018/01/Campus-ADMIN-AERIAL.jpg);
     background-size: cover;
