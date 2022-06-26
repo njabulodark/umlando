@@ -384,3 +384,9 @@ footer ul{
 #names{
     padding-bottom: 20px;
 }
+
+@media(max-width: 800px){
+    .footers p{
+        font-size: 30px;
+    }
+}
