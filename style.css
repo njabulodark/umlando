@@ -401,3 +401,15 @@ footer ul{
         font-size: 30px;
     }
 }
+
+/*-------------------------University page-----------------------------*/
+
+@media(max-width: 800px){
+    .footers p{
+        font-size: 30px;
+    }
+
+    #universities_page{
+        padding-top: 50px;
+    }
+}
