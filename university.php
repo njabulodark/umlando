@@ -84,7 +84,6 @@
 				<p><b>Website:</b> <a href="https://www.cut.ac.za" target="_blank"> cut.ac.za</a></p>
 				<p><b>Online application:</b> <a href="https://enroll.cut.ac.za/pls/prodi41/gen.gw1pkg.gw1view" target="_blank">click here</a></p>
 				<p><b>Check application status:</b> <a href="https://enroll.cut.ac.za/pls/prodi41/w99pkg.mi_login" target="_blank">click here</a></p>
-				<p><b>Courses you qualify for:</b> <a href="uni/cut/aps/index.html" target="_blank">click here</a></p>
 				<p><b>Application Fee:</b> Free</p>
 				<p style="color:RED"><b>Applications:</b> CLOSED</p>
 				<p><b>Open/Closing Date:</b> May/June 2022</p>
