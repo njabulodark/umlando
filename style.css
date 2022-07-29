@@ -178,7 +178,7 @@ i.bi {
 /*---------------------------------- header ------------------------------------------------------*/
 
 .header{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://www.groundup.org.za/media/uploads/images/photographers/Musa%20Binda/UniZulu-Kimberly%20Mutandiro-20190916police%201.jpg);
+    background-image: linear-gradient(rgba(50, 52, 58, 0.7),rgba(50, 52, 58, 0.7)) ;
     background-position: center;
     background-size: cover;
     min-height: 80vh;
