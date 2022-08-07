@@ -24,7 +24,7 @@
                 <ul>
                     <li id="active"><a href="index.php">HOME</a></li>
                     <li><a href="university.php">University</a></li>
-                    <li><a href="">Collage</a></li>
+                    <li><a href="college.php">Collage</a></li>
                     <li><a href="">Pic to PDF</a></li>
                     <li><a href="">Edit PDF</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
@@ -83,7 +83,7 @@
 				<p><b>Location:</b> Gauteng, Johannesburg</p>
             </div>
         </div>
-        <a href="" class="hero-btn">Click here for more</a>
+        <a href="university.php" class="hero-btn">Click here for more</a>
         <h1 class="space"></h1>
     </div>
 </section>
@@ -127,7 +127,7 @@
 				<p><b>Address:</b> </p>
 			</div>
         </div>
-        <a href="" class="hero-btn">Click here for more</a>
+        <a href="college.php" class="hero-btn">Click here for more</a>
         <h1 class="space"></h1>
     </div>
 </section>

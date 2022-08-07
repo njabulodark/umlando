@@ -412,4 +412,9 @@ footer ul{
     #universities_page{
         padding-top: 50px;
     }
+
+    #colleges_page{
+        padding-top: 50px;
+        background-position: fixed;
+    }
 }
