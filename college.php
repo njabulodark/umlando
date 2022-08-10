@@ -479,6 +479,222 @@
 				<p><b>Address:</b> </p>
 			</div>
         </div>
+
+
+
+		<div class="row">
+            <div class="course-col">
+            <h3>Ehlanzeni TVET College</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.ehlanzenicollege.co.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> National Certificates, Diplomas</p>
+				<p><b>Fields of Interest:</b> Civil Engineering and Construction, Electrica Infrastructure Construction, Engineering and Related Design, Hospitality, Management, Human Resource Management, Management Assistant, Business Management, Marketing Management, Public Management, Educare</p>
+				<p><b>Contact:</b> 013 590 0016</p>
+				<p><b>Location:</b> Mpumalanga, Nelspruit</p>
+				<p><b>Address:</b> </p>
+			</div>
+            <div class="course-col">
+            <h3>Gert Sibande TVET College</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.gscollege.co.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> National Certificates, Diplomas</p>
+				<p><b>Fields of Interest:</b> Office Administration, Electrical Infrastructure Construction, Civil Engineering Construction, Engineering 7 Related Design, Marketing, Finance, Economics &amp; Accounting, Generic Management, Technology &amp; Computer Science, Hospitality, Business Studies</p>
+				<p><b>Contact:</b> 017 712 9040</p>
+				<p><b>Location:</b> Mpumalanga, </p>
+				<p><b>Address:</b> </p>
+			</div>
+            <div class="course-col">
+            <h3>Nkangala TVET College</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.ntc.edu.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> National Certificates, Diplomas</p>
+				<p><b>Fields of Interest:</b> Engineering Studies, Tourism, Office Administration, Information Technology and Computer Science, Hospitality, Financem Economics and Accounting, Business Management</p>
+				<p><b>Contact:</b> 013 658 4700</p>
+				<p><b>Location:</b> Mpumalanga, Nelspruit</p>
+				<p><b>Address:</b> </p>
+			</div>
+        </div>
+
+
+
+		<div class="row">
+            <div class="course-col">
+            <h3>Orbit College</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.orbitcollege.co.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> National Certificates</p>
+				<p><b>Fields of Interest:</b> Engineering Studies, Business Studies, Hospitality and Tourism</p>
+				<p><b>Contact:</b> 014 597 5502</p>
+				<p><b>Location:</b> North West, </p>
+				<p><b>Address:</b> </p>
+			</div>
+            <div class="course-col">
+            <h3>Potchefstroom Academy </h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.potchacademy.co.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> Advanced Diplomas, Higher Diploma, Diplomas, Higher Certificate, Advanced Certificate, Short Course</p>
+				<p><b>Fields of Interest:</b> Beauty Therapy, Therapeutic Reflexology, Therapeutic Aromatherapy, Therapeutic Massage, Interior Design &amp; Decorating, Photography, Nail Technology, Massage, Makeup Artistry, Hairdressing, Public Speaking, Trade Test</p>
+				<p><b>Contact:</b> 018 294 9037/ 018 294 5581</p>
+				<p><b>Location:</b> North West, </p>
+				<p><b>Address:</b> </p>
+			</div>
+            <div class="course-col">
+            <h3>Taletso TVET College</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://taletso.edu.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> National Certificates, Diplomas</p>
+				<p><b>Fields of Interest:</b> Agriculture, Economic Management, Engineering Studies, Hospitality and Tourism, Information Technology, Office Administration, Social Sciences</p>
+				<p><b>Contact:</b> 018 384 2346 / 50</p>
+				<p><b>Location:</b> North West, </p>
+				<p><b>Address:</b> </p>
+			</div>
+        </div>
+
+
+
+		<div class="row">
+            <div class="course-col">
+            <h3>Vuselela TVET College</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.vuselelacollege.co.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> National Certificates, Diplomas</p>
+				<p><b>Fields of Interest:</b> Finance, Economics &amp; Accounting, Electrical Infrastructure Construction, IT &amp; Computer Science, Engineering &amp; Related Design, Civil Engineering &amp; Building Construction, Hospitality, Office Administration, Primary Agriculture, Business Management, Human Resource Management, Marketing Management, Tourism, Public Management</p>
+				<p><b>Contact:</b> 018 406 7800</p>
+				<p><b>Location:</b> North West, </p>
+				<p><b>Address:</b> </p>
+			</div>
+            <div class="course-col">
+            <h3>Orbit College</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.orbitcollege.co.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> National Certificates</p>
+				<p><b>Fields of Interest:</b> Engineering Studies, Business Studies, Hospitality and Tourism</p>
+				<p><b>Contact:</b> 014 597 5502</p>
+				<p><b>Location:</b> North West, </p>
+				<p><b>Address:</b> </p>
+			</div>
+            <div class="course-col">
+            <h3>Vuselela TVET College</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.vuselelacollege.co.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> National Certificates, Diplomas</p>
+				<p><b>Fields of Interest:</b> Finance, Economics &amp; Accounting, Electrical Infrastructure Construction, IT &amp; Computer Science, Engineering &amp; Related Design, Civil Engineering &amp; Building Construction, Hospitality, Office Administration, Primary Agriculture, Business Management, Human Resource Management, Marketing Management, Tourism, Public Management</p>
+				<p><b>Contact:</b> 018 406 7800</p>
+				<p><b>Location:</b> North West, </p>
+				<p><b>Address:</b> </p>
+			</div>
+        </div>
+
+
+
+		<div class="row">
+            <div class="course-col">
+            <h3>ACT Cape Town</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.actcapetown.co.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> Higher Certificate, Advanced Certificate, Short Course Certificates</p>
+				<p><b>Fields of Interest:</b> Acting for Film, Auditioning for Camera, Standard American Accent, Standard English Accent, Professional Programme, Acting for Film Programme, Voice &amp; Speech Training</p>
+				<p><b>Contact:</b> 021 419 7007</p>
+				<p><b>Location:</b> Western Cape, </p>
+				<p><b>Address:</b> </p>
+			</div>
+            <div class="course-col">
+            <h3>Boland College</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.bolandcollege.com" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> National Certificates, National Diplomas</p>
+				<p><b>Fields of Interest:</b> Civil Engineering &amp; Building Contruction, Economic Management Sciences, Engineering Studies, Engineering &amp; Related Design, Hospitality &amp; Tourism, Information Technology &amp; Agriculture, Office Management Sciences, Safety and Security, Social Sciences</p>
+				<p><b>Contact:</b> 021 886 7111 / 021 886 7112</p>
+				<p><b>Location:</b> Western Cape, </p>
+				<p><b>Address:</b> </p>0
+			</div>
+            <div class="course-col">
+            <h3>College of Cape Town (TVET)</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.cct.edu.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> Certificates, Diplomas, Degrees</p>
+				<p><b>Fields of Interest:</b> Art &amp; Design, Beauty Therapy, Building &amp; Civil Engineering, Business Studies, Education and Training, Electrical Engineering, Haircare, Hospitality, Information Technology &amp; Communication Technology, Mechanical Engineering, Travel &amp; Tourism</p>
+				<p><b>Contact:</b> 021 404 6700 / 086 010 3682</p>
+				<p><b>Location:</b> Western Cape, </p>
+				<p><b>Address:</b> </p>
+			</div>
+        </div>
+
+
+		<div class="row">
+            <div class="course-col">
+            <h3>College SA</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="https://www.collegesa.edu.za/" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> Short Course Certificates, Proficiency Certificates, Skills Certificates, National Certificates, FET</p>
+				<p><b>Fields of Interest:</b> Accounting and Bookkeeping, Business Management &amp; Office Administration, Beauty Therapy, Computer, Child Day Care, Events Management, Graphic Design, Web Design, Photography, Tourism, Human Resource Management, Marketing, Occupational Health and Safety, Project Management, Secretarial &amp; Personal Assistant, Supply Chain, Engineering, Workplace Skills</p>
+				<p><b>Contact:</b> 0861 663 663</p>
+				<p><b>Location:</b> Western Cape, </p>
+				<p><b>Address:</b> </p>
+			</div>
+            <div class="course-col">
+            <h3>Concept Interactive</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://conceptinteractive.co.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> Certificates, Diplomas, Short Courses</p>
+				<p><b>Fields of Interest:</b> Interactive Graphics, Business Management, Entrepreneurship and New Technologies , Digital Marketing, Social Media and Design, Professional, Executive and Personal Assistants</p>
+				<p><b>Contact:</b> 021 202 7890</p>
+				<p><b>Location:</b> Western Cape, </p>
+				<p><b>Address:</b> </p>
+			</div>
+            <div class="course-col">
+            <h3>False Bay TVET College</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.falsebaycollege.co.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> Certificates, National Certificates, National Diplomas</p>
+				<p><b>Fields of Interest:</b> Business Studies, Engineering Studies, Hospitality &amp; Tourism, Information Technology, Education Studies, Yacht and Boat Building, 2D Animation, Safety &amp; Security</p>
+				<p><b>Contact:</b> 021 788 8373</p>
+				<p><b>Location:</b> Western Cape, </p>
+				<p><b>Address:</b> </p>
+			</div>
+        </div>
+
+
+		<div class="row">
+            <div class="course-col">
+            <h3>FEDISA</h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.fedisa.co.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> Diplomas, BA Degrees, Honours' Degrees</p>
+				<p><b>Fields of Interest:</b> Fashion, Merchandising, Marketing and Media, Fashion</p>
+				<p><b>Contact:</b> 021 424 0975</p>
+				<p><b>Location:</b> Western Cape, </p>
+				<p><b>Address:</b> </p>
+			</div>
+            <div class="course-col">
+            <h3>George Whitefield College </h3>
+				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><b>Website:</b> <a href="http://www.gwc.ac.za" target="_blank">visit here</a></p>
+				<p><b>DHET Registered:</b> Yes</p>
+				<p><b>Level of Reward:</b> Higher Certificates, Bachelors</p>
+				<p><b>Fields of Interest:</b> Theology</p>
+				<p><b>Contact:</b>  021 788 1652</p>
+				<p><b>Location:</b> Western Cape, </p>
+				<p><b>Address:</b> </p>
+			</div>
+
+        </div>
     </div>
 </section>
 
