@@ -178,10 +178,10 @@ i.bi {
 /*---------------------------------- header ------------------------------------------------------*/
 
 .header{
-    background-image: linear-gradient(rgba(50, 52, 58, 0.7),rgba(50, 52, 58, 0.7)) ;
+    background-image: linear-gradient(rgba(50, 52, 58, 0.7),rgba(50, 52, 58, 0.7)), url(img_cover.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 80vh;
+    min-height: 88vh;
 
 }
 
@@ -197,7 +197,7 @@ i.bi {
 
 .text-box h1{
     font-size: 62px;
-    color: rgb(69, 40, 25);
+    color: rgb(16, 78, 132);
 }
 
 .text-box p{
@@ -412,4 +412,10 @@ footer ul{
     #universities_page{
         padding-top: 50px;
     }
+}
+
+/*-------------------image2pdf------------------------*/
+
+.image2pdf{
+    color: black;
 }

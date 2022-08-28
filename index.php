@@ -24,7 +24,7 @@
                 <ul>
                     <li id="active"><a href="index.php">HOME</a></li>
                     <li><a href="university.php">University</a></li>
-                    <li><a href="">Collage</a></li>
+                    <li><a href="college.php">College</a></li>
                     <li><a href="">Pic to PDF</a></li>
                     <li><a href="">Edit PDF</a></li>
                     <li><a href="contact.html">CONTACT</a></li>

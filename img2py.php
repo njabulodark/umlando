@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 <section class="nav">
@@ -39,14 +40,18 @@
         <div class="tool_header">
             <h1>Convert Image To PDF</h1>
             <p>The best I can do with our current skills, not really im just lazy</p>
+
+
             <p><?PHP
-                echo shell_exec("python test.py 'hello'");
+                echo shell_exec("python pdf.py ");
             ?></p>
 
-            <form action="upload.php" method="post" enctype="multipart/form-data">
-              Select image to upload:
-              <input type="file" name="fileToUpload" id="fileToUpload">
-              <input type="submit" value="Upload Image" name="submit">
+            
+            <iframe name="votar" style="display:none;"></iframe>
+            <form action="upload.php" method="post" enctype="multipart/form-data" target="votar">
+                Select image to upload:
+                <input type="file" name="image" />
+                <input type="submit"/>
             </form>
         </div>
     </div>
