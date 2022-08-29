@@ -28,6 +28,7 @@
                     <li><a href="">Pic to PDF</a></li>
                     <li><a href="">Edit PDF</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="majordesc.html">guidance</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
