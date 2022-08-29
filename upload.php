@@ -39,10 +39,10 @@
 
    function waitfile(){
       set_time_limit(0);
-      echo "Script began: " . date("d-m-Y h:i:s") . "<br>";
+      //echo "Script began: " . date("d-m-Y h:i:s") . "<br>";
       do {
           if (file_exists("pdf/name.pdf")) {
-              echo "The file was found: " . date("d-m-Y h:i:s") . "<br>";
+              //echo "The file was found: " . date("d-m-Y h:i:s") . "<br>";
               echo "<a href='pdf/name.pdf'>Download</a>";
               break;
           }
@@ -78,8 +78,8 @@
             <ul>
                 <li id="active"><a href="index.php">HOME</a></li>
                 <li><a href="university.php">University</a></li>
-                <li><a href="">Collage</a></li>
-                <li><a href="">Pic to PDF</a></li>
+                <li><a href="college.php">College</a></li>
+               <li><a href="img2py.php">Pic to PDF</a></li>
                 <li><a href="">Edit PDF</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
@@ -92,7 +92,7 @@
     <div class="tool">
         <div class="tool_header">
             <h1>Convert Image To PDF</h1>
-            <p>The best I can do with our current skills, not really im just lazy</p>
+            <p>your file has been converted to PDF</p>
             <p><?php
             waitfile();
             ?></p>
