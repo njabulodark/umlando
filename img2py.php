@@ -42,17 +42,13 @@
             <p>The best I can do with our current skills, not really im just lazy</p>
 
 
-            <p><?PHP
-                echo shell_exec("python pdf.py ");
-            ?></p>
-
-            
-            <iframe name="votar" style="display:none;"></iframe>
+            <iframe name="votarr" style="display:none;"></iframe>
             <form action="upload.php" method="post" enctype="multipart/form-data" target="votar">
                 Select image to upload:
                 <input type="file" name="image" />
                 <input type="submit"/>
             </form>
+
         </div>
     </div>
 </section>
@@ -109,6 +105,16 @@
                     </div>
                 </li>
             </ul>
+            </ul><ul>
+                <li id="names"><b>T Mashaba</b></li>
+                <li>
+                    <div class="social">
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-envelope"></i></a>
+                    </div>
+                </li>
+            </ul><ul>
         </div>
     </footer>
     
