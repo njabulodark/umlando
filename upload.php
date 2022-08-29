@@ -1,54 +1,8 @@
 <?php
+include "main.php";
 
-   function image(){
-      if(isset($_FILES['image'])){
-         $errors= array();
-      
-      $file_name = $_FILES['image']['name'];
-      $file_size =$_FILES['image']['size'];
-      $file_tmp =$_FILES['image']['tmp_name'];
-      $file_type=$_FILES['image']['type'];
-      $file_ext = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
-      
-      $extensions= array("jpeg","jpg","png");
-      
-      if(in_array($file_ext,$extensions)=== false){
-         $errors[]="extension not allowed, please choose a JPEG or PNG file.";
-      }
-      
-      if($file_size > 2097152){
-         $errors[]='File size must be excately 2 MB';
-      }
-      
-      if(empty($errors)==true){
-         move_uploaded_file($file_tmp,"temp/"."name.jpg");
-         echo "Success";
-      }else{
-         print_r($errors);
-      }
-   }
-   }
-
-   image();
-
-   function convert(){
-      echo shell_exec("python pdf.py ");
-   }
-
-   convert();
-
-   function waitfile(){
-      set_time_limit(0);
-      //echo "Script began: " . date("d-m-Y h:i:s") . "<br>";
-      do {
-          if (file_exists("pdf/name.pdf")) {
-              //echo "The file was found: " . date("d-m-Y h:i:s") . "<br>";
-              echo "<a href='pdf/name.pdf'>Download</a>";
-              break;
-          }
-      } while(true);
-   }
-
+$object = Singleton::getInstance();
+$object->generate();
 ?>
 
 <!DOCTYPE html>
@@ -76,12 +30,12 @@
         <div class="nave-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li id="active"><a href="index.php">HOME</a></li>
-                <li><a href="university.php">University</a></li>
-                <li><a href="college.php">College</a></li>
+               <li id="active"><a href="index.php">HOME</a></li>
+               <li><a href="university.php">University</a></li>
+               <li><a href="college.php">College</a></li>
                <li><a href="img2py.php">Pic to PDF</a></li>
-                <li><a href="">Edit PDF</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+               <li><a href="">Grade 12 past papers</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -91,10 +45,21 @@
 <section class="image2pdf">
     <div class="tool">
         <div class="tool_header">
-            <h1>Convert Image To PDF</h1>
-            <p>your file has been converted to PDF</p>
+            
             <p><?php
-            waitfile();
+            $htm = "<h1>Convert Image To PDF</h1><h2>your file has been converted to PDF</h2>";
+            //waitfile();
+            if (is_string($object->image())){
+               echo "<h1>".$object->image()."</h1>";
+               echo "<div id='submit'><a href='img2py.php'>Try again</a></div>";
+            }
+            else{
+               echo $htm;
+               $object->image();
+               $object->convert();
+               $object->waitfile();
+            }
+
             ?></p>
 
 
