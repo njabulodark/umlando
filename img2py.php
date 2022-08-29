@@ -1,3 +1,7 @@
+<?php
+echo shell_exec("python deletefiles.py")
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,12 +27,12 @@
         <div class="nave-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li id="active"><a href="index.php">HOME</a></li>
-                <li><a href="university.php">University</a></li>
-                <li><a href="">Collage</a></li>
-                <li><a href="">Pic to PDF</a></li>
-                <li><a href="">Edit PDF</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+               <li id="active"><a href="index.php">HOME</a></li>
+               <li><a href="university.php">University</a></li>
+               <li><a href="college.php">College</a></li>
+               <li><a href="img2py.php">Pic to PDF</a></li>
+               <li><a href="">Grade 12 past papers</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -39,14 +43,16 @@
     <div class="tool">
         <div class="tool_header">
             <h1>Convert Image To PDF</h1>
-            <p>The best I can do with our current skills, not really im just lazy</p>
+            <p>Convert images to PDF in seconds</p>
 
-
-            <iframe name="votarr" style="display:none;"></iframe>
             <form action="upload.php" method="post" enctype="multipart/form-data" target="votar">
-                Select image to upload:
+                <div>Select image to upload:</div>
+                <br/>
                 <input type="file" name="image" />
+                <p>
+                <br/>
                 <input type="submit"/>
+                </p>
             </form>
 
         </div>
