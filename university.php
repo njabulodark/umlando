@@ -24,7 +24,7 @@
                 <ul>
                     <li id="active"><a href="index.php">HOME</a></li>
                     <li><a href="university.php">University</a></li>
-                    <li><a href="college.php">Collage</a></li>
+                    <li><a href="">Collage</a></li>
                     <li><a href="">Pic to PDF</a></li>
                     <li><a href="">Edit PDF</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
@@ -403,6 +403,7 @@
     </div>
 </section>
 
+
 <section class="footers">
     <div id="pic"></div>
     <footer>
@@ -455,6 +456,16 @@
                     </div>
                 </li>
             </ul>
+            </ul><ul>
+                <li id="names"><b>T Mashaba</b></li>
+                <li>
+                    <div class="social">
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-envelope"></i></a>
+                    </div>
+                </li>
+            </ul><ul>
         </div>
     </footer>
     

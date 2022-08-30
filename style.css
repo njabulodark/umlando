@@ -6,7 +6,6 @@
 
 
 body{
-    color: white;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -94,7 +93,7 @@ nav .fa{
 
     .nave-links{
         position: fixed;
-        background: red;
+        background: rgb(0, 0, 0);
         height: 100vh;
         width: 200px;
         top: 0;
@@ -126,6 +125,7 @@ nav .fa{
     background-position: center;
     font-family: sans-serif;
   background-color: aquamarine;
+  text-shadow: 5px 2px 8px black;
   }
   
   /*  inputs with type="text", "email", select elements and textareas */
@@ -178,10 +178,10 @@ i.bi {
 /*---------------------------------- header ------------------------------------------------------*/
 
 .header{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://www.groundup.org.za/media/uploads/images/photographers/Musa%20Binda/UniZulu-Kimberly%20Mutandiro-20190916police%201.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(background/img_cover.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 80vh;
+    min-height: 88vh;
 
 }
 
@@ -196,8 +196,12 @@ i.bi {
 }
 
 .text-box h1{
+    text-align: center;
     font-size: 62px;
-    color: rgb(69, 40, 25);
+    font-family: 'League Gothic', sans-serif;
+    text-shadow: 5px 2px 8px black;
+    color: white;
+    padding-bottom: 40px;
 }
 
 .text-box p{
@@ -256,7 +260,7 @@ i.bi {
 
 /*------------------------------------------- universities-----------------------------------------------------*/
 .universities{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://assets.weforum.org/article/image/responsive_big_webp__sNw0oZO6IQV_vLpSbxFnx44SN_obtJrNdbSk0_yFFk.webp);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(background/uni_cover.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: repeat-y;
@@ -272,6 +276,7 @@ i.bi {
 .university h1{
     font-size: 36px;
     font-weight: 600;
+    color: azure;
 }
 
 p{
@@ -322,9 +327,10 @@ h3{
 
 /*------------------------------------College--------------------------------------------------------*/
 .colleges{
-    background-image: linear-gradient(rgba(31, 35, 48, 0.3),rgba(31, 35, 48, 0.3)), url(http://www.unizulu.ac.za/wp-content/uploads/2018/01/Campus-ADMIN-AERIAL.jpg);
+    background-image: linear-gradient(rgba(31, 35, 48, 0.3),rgba(31, 35, 48, 0.3)), url(background/img_college.jpg);
     background-size: cover;
     background-repeat: repeat-y;
+    background-attachment: fixed;
 }
 .college{
     width: 80%;
@@ -337,6 +343,7 @@ h3{
 .college h1{
     font-size: 36px;
     font-weight: 600;
+    color: azure;
 }
 
 /*-----------------------------footer--------------------------------------------------------------------*/
@@ -344,7 +351,7 @@ h3{
     padding-top: 20px;
 }
 #pic{
-    background-image: url(https://www.digitalocean.com/_next/static/media/ctaWave.6a631f6e.svg);
+    background-image: url(background/img_footer.svg);
     display: flex;
     height: 64px;
     overflow: hidden;
@@ -385,7 +392,7 @@ footer ul{
 }
 
 .list{
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
     padding-top: 30px;
@@ -412,6 +419,7 @@ footer ul{
     #universities_page{
         padding-top: 50px;
     }
+<<<<<<< HEAD
 
     #colleges_page{
         padding-top: 50px;
@@ -422,3 +430,48 @@ footer ul{
     background-image: linear-gradient(rgba(31, 35, 48, 0.3),rgba(31, 35, 48, 0.3)), url(http://www.unizulu.ac.za/wp-content/uploads/2018/01/Campus-ADMIN-AERIAL.jpg);
     background-attachment: fixed;
 }
+=======
+}
+
+/*-------------------image2pdf------------------------*/
+
+.image2pdf{
+    color: black;
+}
+
+.tool{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+
+.tool p{
+    text-align: center;
+    font-size: large;
+}
+
+.tool h1{
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.tool h2{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#submit{
+    padding: 15px 20px;
+}
+#submit a{
+    background-color: #04ff6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+>>>>>>> origin/home
