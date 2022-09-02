@@ -32,6 +32,7 @@ echo shell_exec("python deletefiles.py")
                 <li><a href="college.php">College</a></li>
                 <li><a href="majordesc.html">Career Guidance</a></li>
                 <li><a href="img2py.php">Pic to PDF</a></li>
+				<li><a href="">G12 Exam Papers</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
