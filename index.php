@@ -12,27 +12,28 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="nav">
-        <nav>
-            <div class="logo" id="logo">
-                <h1>
-                    <a href="index.php">University Guardian</a>
-                </h1>
-            </div>
-            <div class="nave-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-               <li id="active"><a href="index.php">HOME</a></li>
-               <li><a href="university.php">University</a></li>
-               <li><a href="college.php">College</a></li>
-               <li><a href="img2py.php">Pic to PDF</a></li>
-               <li><a href="">Grade 12 past papers</a></li>
-               <li><a href="contact.html">CONTACT</a></li>
+<section class="nav">
+    <nav>
+        <div class="logo" id="logo">
+            <h1>
+                <a href="index.php">University Guardian</a>
+            </h1>
+        </div>
+        <div class="nave-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li id="active"><a href="index.php">HOME</a></li>
+                <li><a href="university.php">University</a></li>
+                <li><a href="college.php">College</a></li>
+                <li><a href="majordesc.html">Career Guidance</a></li>
+                <li><a href="img2py.php">Pic to PDF</a></li>
+				<li><a href="">G12 Exam Papers</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-    </section>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+</section>
 
     <section class="header">
         <div class="text-box">
@@ -83,7 +84,7 @@
 				<p><b>Location:</b> Gauteng, Johannesburg</p>
             </div>
         </div>
-        <a href="" class="hero-btn">Click here for more</a>
+        <a href="university.php" class="hero-btn">Click here for more</a>
         <h1 class="space"></h1>
     </div>
 </section>
@@ -127,7 +128,7 @@
 				<p><b>Address:</b> </p>
 			</div>
         </div>
-        <a href="" class="hero-btn">Click here for more</a>
+        <a href="college.php" class="hero-btn">Click here for more</a>
         <h1 class="space"></h1>
     </div>
 </section>

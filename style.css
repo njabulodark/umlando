@@ -419,6 +419,18 @@ footer ul{
     #universities_page{
         padding-top: 50px;
     }
+<<<<<<< HEAD
+
+    #colleges_page{
+        padding-top: 50px;
+    }
+}
+
+#colleges_page{
+    background-image: linear-gradient(rgba(31, 35, 48, 0.3),rgba(31, 35, 48, 0.3)), url(http://www.unizulu.ac.za/wp-content/uploads/2018/01/Campus-ADMIN-AERIAL.jpg);
+    background-attachment: fixed;
+}
+=======
 }
 
 /*-------------------image2pdf------------------------*/
@@ -462,3 +474,4 @@ footer ul{
     cursor: pointer;
     text-decoration: none;
   }
+>>>>>>> origin/home

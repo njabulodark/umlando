@@ -12,27 +12,28 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="nav">
-        <nav>
-            <div class="logo" id="logo">
-                <h1>
-                    <a href="index.php">University Guardian</a>
-                </h1>
-            </div>
-            <div class="nave-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-               		<li id="active"><a href="index.php">HOME</a></li>
-               		<li><a href="university.php">University</a></li>
-               		<li><a href="college.php">College</a></li>
-               		<li><a href="img2py.php">Pic to PDF</a></li>
-               		<li><a href="">Grade 12 past papers</a></li>
-               		<li><a href="contact.html">CONTACT</a></li>
+<section class="nav">
+    <nav>
+        <div class="logo" id="logo">
+            <h1>
+                <a href="index.php">University Guardian</a>
+            </h1>
+        </div>
+        <div class="nave-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li id="active"><a href="index.php">HOME</a></li>
+                <li><a href="university.php">University</a></li>
+                <li><a href="college.php">College</a></li>
+                <li><a href="majordesc.html">Career Guidance</a></li>
+                <li><a href="img2py.php">Pic to PDF</a></li>
+				<li><a href="">G12 Exam Papers</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-    </section>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+</section>
 
 <section class="universities" id="universities_page">
     <div class="university">
@@ -377,7 +378,6 @@
             <div class="course-col">
             <h3>Walter Sisulu University (WSU)</h3>
 				<p><a href="prospectus/WSU-general-prospectus-updated.pdf" target="_blank">Click here to download 2021/22 Prospectus</a></p>
-				<p><a href="forms/WSU-APPLICATION-FORM-ACADEMICS.pdf" target="_blank">Click here to download 2021/22 Application form</a></p>
 				<p>Website: <a href="more-info/walter-sisulu-university.html" target="_blank">wsu.ac.za</a></p>
 				<p>Online application: <a href="https://ieweb.wsu.ac.za/pls/prodi41/gen.gw1pkg.gw1startup?x_processcode=ITS_OAP" target="_blank">click here</a></p>
 				<p>Application Fee: Free</p>
