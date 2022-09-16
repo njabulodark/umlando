@@ -29,10 +29,17 @@ echo shell_exec("python deletefiles.py")
             <ul>
                 <li id="active"><a href="index.php">HOME</a></li>
                 <li><a href="university.php">University</a></li>
+<<<<<<< HEAD
                 <li><a href="college.php">College</a></li>
                 <li><a href="majordesc.html">Career Guidance</a></li>
                 <li><a href="img2py.php">Pic to PDF</a></li>
 				<li><a href="">G12 Exam Papers</a></li>
+=======
+               <li><a href="college.php">College</a></li>
+               <li><a href="img2py.php">Pic to PDF</a></li>
+               <li><a href="">Grade 12 past papers</a></li>
+               <li><a href="majordesc.html">Guidance</a></li>
+>>>>>>> abfb57197b30ab825abb3c0fd4e413f15e5c87fe
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
