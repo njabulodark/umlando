@@ -8,14 +8,35 @@ try {
   //echo "something is wrong with your database";
 }
 
-$name_tag = $name_title = $describe = "";
+$name_tag = $name_title = $describe = $message = "";
 $conn = $object->startDB("career");
+$error= 0;
 
 if(isset($_POST["submit"])) {
-    $name_tag = $_POST["name_tag"];
-    $name_title =  ($_POST["name_title"]);
-    $describe =  ($_POST["Description"]);
-    $object->insertIntoTableCareer($conn, "{$name_tag}", "{$name_title}", "{$describe}");
+    if(empty($_POST["name_tag"])) {
+        echo "name_tag is required";
+        $error = 1;
+    } else {
+        $name_tag = $_POST["name_tag"];
+    }
+    if(empty($_POST["name_title"])) {
+        echo "name_title is required";
+        $error = 1;
+    } else {
+        $name_title = $_POST["name_title"];
+    }
+    if(empty($_POST["Description"])) {
+        echo "describe is required";
+        $error = 1;
+    } else {
+        $describe = $_POST["Description"];
+    }
+    
+    if(!$error =1){
+        $object->insertIntoTableCareer($conn, "{$name_tag}", "{$name_title}", "{$describe}");
+        $message = "data inserted successfully";
+
+    }
 }
 
 
@@ -38,7 +59,7 @@ if(isset($_POST["submit"])) {
 <html>
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:/xampp/htdocs/umlando/css/career.css">
+    <link rel="stylesheet" href="css/career.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
@@ -68,7 +89,7 @@ if(isset($_POST["submit"])) {
                 <li id="active"><a href="index.php">HOME</a></li>
                 <li><a href="university.php">University</a></li>
                 <li><a href="college.php">College</a></li>
-                <li><a href="majordesc.html">Career Guidance</a></li>
+                <li><a href="career.php">Career Guidance</a></li>
                 <li><a href="img2py.php">Pic to PDF</a></li>
 				<li><a href="">G12 Exam Papers</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
@@ -85,5 +106,90 @@ Description: <input type="text" name="Description"><br>
 <input type="submit" name="submit">
 </form>
 
+<?php
+echo $message;
+?>
+
 </section>
 
+
+<section class="footers">
+    <div id="pic"></div>
+    <footer>
+        <div class="list">
+            <p id="founder">Contact details of the creators</p>
+            <ul>
+                <li id="names"><b>NA KHUMALO</b></li>
+                <li>
+                    <div class="social">
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-envelope"></i></a>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li id="names"><b>NS MZOBE</b></li>
+                <li>
+                    <div class="social">
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-envelope"></i></a>
+                    </div>
+                </li>
+            </ul><ul>
+                <li id="names"><b>T SIBEKO</b></li>
+                <li>
+                    <div class="social">
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-envelope"></i></a>
+                    </div>
+                </li>
+            </ul><ul>
+                <li id="names"><b>BN HLOPHE</b></li>
+                <li>
+                    <div class="social">
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-envelope"></i></a>
+                    </div>
+                </li>
+            </ul><ul>
+                <li id="names"><b>MI PHIRI  <b>    </b></b></li>
+                <li>
+                    <div class="social">
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-envelope"></i></a>
+                    </div>
+                </li>
+            </ul>
+            </ul><ul>
+                <li id="names"><b>T Mashaba</b></li>
+                <li>
+                    <div class="social">
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-envelope"></i></a>
+                    </div>
+                </li>
+            </ul><ul>
+        </div>
+    </footer>
+    
+</section>
+<script>
+
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+    navLinks.style.right = "0";
+}
+
+function hideMenu(){
+    navLinks.style.right = "-300px";
+}
+</script>
+</body>
+</html>
