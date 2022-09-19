@@ -99,7 +99,7 @@
                 </li>
             </ul>
             </ul><ul>
-                <li id="names"><b>T Mashaba</b></li>
+                <li id="names"><b>T MASHABA</b></li>
                 <li>
                     <div class="social">
                         <a href=""><i class="fa fa-github"></i></a>
