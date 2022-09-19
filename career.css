@@ -262,3 +262,9 @@ a:visited {
     background-color: red;
     border: 1px solid red;
 }
+
+.add{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 5%;
+}

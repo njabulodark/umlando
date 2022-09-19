@@ -129,7 +129,9 @@ class Singleton {
           echo "Error deleting record: " . $conn->error;
         }
     }
+
 }
+
 
 
 ?>

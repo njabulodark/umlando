@@ -13,32 +13,11 @@ $conn = $object->startDB("career");
 $error= 0;
 
 if(isset($_POST["submit"])) {
-    if(empty($_POST["name_tag"])) {
-        echo "name_tag is required";
-        $error = 1;
-    } else {
-        $name_tag = $_POST["name_tag"];
-    }
-    if(empty($_POST["name_title"])) {
-        echo "name_title is required";
-        $error = 1;
-    } else {
-        $name_title = $_POST["name_title"];
-    }
-    if(empty($_POST["Description"])) {
-        echo "describe is required";
-        $error = 1;
-    } else {
-        $describe = $_POST["Description"];
-    }
-    
-    if(!$error =1){
-        $object->insertIntoTableCareer($conn, "{$name_tag}", "{$name_title}", "{$describe}");
-        $message = "data inserted successfully";
-
-    }
+    $name_tag = $_POST["name_tag"];
+    $name_title =  ($_POST["name_title"]);
+    $describe =  ($_POST["Description"]);
+    $object->insertIntoTableCareer($conn, "{$name_tag}", "{$name_title}", "{$describe}");
 }
-
 
 
 
@@ -59,7 +38,7 @@ if(isset($_POST["submit"])) {
 <html>
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/career.css">
+    <link rel="stylesheet" href="career.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
@@ -98,14 +77,15 @@ if(isset($_POST["submit"])) {
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
 </section>
-
-<form action="" method="post">
-name_tag: <input type="text" name="name_tag"><br>
-name_title: <input type="text" name="name_title"><br>
-Description: <input type="text" name="Description"><br>
-<input type="submit" name="submit">
-</form>
-
+<section class="add">
+    <form action="" method="post">
+        name_tag: <input type="text" name="name_tag"><br>
+        name_title: <input type="text" name="name_title"><br>
+        Description: <input type="text" name="Description"><br>
+        <input type="submit" name="submit">
+    </form>
+</section>
+    
 <?php
 echo $message;
 ?>
