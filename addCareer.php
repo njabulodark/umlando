@@ -77,13 +77,17 @@ if(isset($_POST["submit"])) {
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
 </section>
-<section class="add">
-    <form action="" method="post">
-        name_tag: <input type="text" name="name_tag"><br>
-        name_title: <input type="text" name="name_title"><br>
-        Description: <input type="text" name="Description"><br>
-        <input type="submit" name="submit">
-    </form>
+<section class="addcareer">
+    <div class="add">
+        <h1>Add Career</h1>
+        <form action="" method="post">
+            <input type="text" name="name_tag" placeholder="Name Tag" required><br>
+            <input type="text" name="name_title" placeholder="Name Title" required><br>
+            <textarea name="Description" placeholder="Description" required></textarea><br>
+            <input type="submit" name="submit" value="Add">
+        </form>
+    </div>
+
 </section>
     
 <?php
