@@ -268,3 +268,15 @@ a:visited {
     padding-bottom: 20px;
     margin: 5%;
 }
+
+.add{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 70px;
+}
+
+.add h1{
+    padding-top: 250px;
+}

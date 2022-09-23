@@ -471,3 +471,10 @@ footer ul{
     cursor: pointer;
     text-decoration: none;
 }
+
+.add{
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+    
+}

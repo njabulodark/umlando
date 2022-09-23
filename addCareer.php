@@ -81,9 +81,9 @@ if(isset($_POST["submit"])) {
     <div class="add">
         <h1>Add Career</h1>
         <form action="" method="post">
-            <input type="text" name="name_tag" placeholder="Name Tag" required><br>
-            <input type="text" name="name_title" placeholder="Name Title" required><br>
-            <textarea name="Description" placeholder="Description" required></textarea><br>
+            <input type="text" name="name_tag" placeholder="Name Tag" style='width:20em' required><br>
+            <input type="text" name="name_title" placeholder="Name Title" size="50" style='width:20em' required><br>
+            <textarea name="Description" placeholder="Description" style='width:20em' required></textarea><br>
             <input type="submit" name="submit" value="Add">
         </form>
     </div>
