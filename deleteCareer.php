@@ -13,10 +13,8 @@ $conn = $object->startDB("career");
 $error= 0;
 
 if(isset($_POST["submit"])) {
-    $name_tag = $_POST["name_tag"];
     $name_title =  ($_POST["name_title"]);
-    $describe =  ($_POST["Description"]);
-    $object->insertIntoTableCareer($conn, "{$name_tag}", "{$name_title}", "{$describe}");
+    $object->deleteFromTableCareer($conn, "{$name_title}");
 }
 
 
@@ -79,13 +77,13 @@ if(isset($_POST["submit"])) {
 </section>
 <section class="addcareer">
     <div class="add">
-        <h1>Add Career</h1>
+        <h1>Delete Career</h1>
+        <p>Type the career name of the career you want to delete</p>
         <form action="" method="post">
-            <input type="text" name="name_tag" placeholder="Name Tag" style='width:20em' required><br>
             <input type="text" name="name_title" placeholder="Name Title" size="50" style='width:20em' required><br>
-            <textarea name="Description" placeholder="Description" style='width:20em' required></textarea><br>
-            <input type="submit" name="submit" value="Add">
+            <input type="submit" name="submit" value="delete">
         </form>
+        <br><br><br>
     </div>
 
 </section>

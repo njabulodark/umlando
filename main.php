@@ -120,8 +120,8 @@ class Singleton {
         }
     }
 
-    function deleteFromTableCareer($conn, $name_tag){
-        $sql = "DELETE FROM Career WHERE name_tag='{$name_tag}'";
+    function deleteFromTableCareer($conn, $name_title){
+        $sql = "DELETE FROM Career WHERE name_title='{$name_title}'";
 
         if ($conn->query($sql) === TRUE) {
           echo "Record deleted successfully";
