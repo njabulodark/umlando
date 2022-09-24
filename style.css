@@ -472,9 +472,24 @@ footer ul{
     text-decoration: none;
 }
 
+/*-------------------add career------------------------*/
 .add{
     padding-top: 100px;
     width: 80%;
     margin: auto;
     
 }
+
+@media(max-width: 797px){
+    .admindiv{
+        padding-top: 55px;
+    }
+}
+
+
+@media(max-width: 800px){
+    .admindiv{
+        padding-top: 55px;
+    }
+}
+

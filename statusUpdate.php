@@ -14,20 +14,10 @@ $error= 0;
 
 if(isset($_POST["submit"])) {
     $name_title =  ($_POST["name_title"]);
-    $object->deleteFromTableCareer($conn, "{$name_title}");
+    $date = $_POST["name_date"];
+    $object->updateTableStat($conn, "{$name_title}", "{$date}");
 }
 
-
-
-
-
-//$object = Singleton::getInstance();
-//$object->insertIntoTableCareer($conn, "accounting", "accounting", "<p>s prepare students for careers in public, industrial, or governmental accounting and also provides an appropriate background for those planning to enter law school or graduate school. Public accounting is carried on by independent practitioners, most of whom are certified public accountants. <strong>[BUSINESS]</strong></p>");
-//$object->insertIntoTableCareer($conn, "accounting", "accounting", "<p>s prepare students for careers in public, industrial, or governmental accounting and also provides an appropriate background for those planning to enter law school or graduate school. Public accounting is carried on by independent practitioners, most of whom are certified public accountants. <strong>[BUSINESS]</strong></p>");
-//$object->insertIntoTableCareer($conn, "accounting", "accounting", "<p>s prepare students for careers in public, industrial, or governmental accounting and also provides an appropriate background for those planning to enter law school or graduate school. Public accounting is carried on by independent practitioners, most of whom are certified public accountants. <strong>[BUSINESS]</strong></p>");
-
-//$object->selectFromTableCareer($conn);
-//$object->deleteFromTableCareer($conn, "accounting");
 
 ?>
 
@@ -52,30 +42,27 @@ if(isset($_POST["submit"])) {
     <script language="JavaScript" type="text/javascript" src="../javascript/googlytics.js"></script>
 </head>
 <body>
-
 <?php
 include_once "template/nav.php"
 ?>
-
 <section class="adminnav">
     <div class="admindiv"></div>
     <?php
     include_once "template/adminnav.php";
     ?>
 </section>
-
 <section class="addcareer">
     <div class="add">
-        <h1>Delete Career</h1>
-        <p>Type the career name of the career you want to delete</p>
+        <h1>Add New Closing Date</h1>
         <form action="" method="post">
-            <input type="text" name="name_title" placeholder="Name Title" size="50" style='width:20em' required><br>
-            <input type="submit" name="submit" value="delete">
+            <input type="text" name="name_title" placeholder="University Name" size="50" style='width:25em' required><br>
+            <input type="text" name="name_date" placeholder="closing date" style='width:25em' required><br>
+            <input type="submit" name="submit" value="Add">
         </form>
-        <br><br><br>
     </div>
 
 </section>
+
     
 <?php
 //footer

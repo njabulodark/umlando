@@ -1,3 +1,10 @@
+<?php
+
+include_once "main.php";
+$object = Singleton::getInstance();
+$conn = $object->startDB("career");
+$object->compareTime($conn);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,28 +19,9 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
-<section class="nav">
-    <nav>
-        <div class="logo" id="logo">
-            <h1>
-                <a href="index.php">University Guardian</a>
-            </h1>
-        </div>
-        <div class="nave-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-                <li id="active"><a href="index.php">HOME</a></li>
-                <li><a href="university.php">University</a></li>
-                <li><a href="college.php">College</a></li>
-                <li><a href="majordesc.html">Career Guidance</a></li>
-                <li><a href="img2py.php">Pic to PDF</a></li>
-				<li><a href="">G12 Exam Papers</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-    </nav>
-</section>
+<?php
+include_once "template/nav.php"
+?>
 
     <section class="header">
         <div class="text-box">
@@ -52,10 +40,13 @@
         <div class="row">
             <div class="course-col">
                 <h3>Cape Peninsula University of Technology (CPUT)</h3>
+                <p><a href="prospectus/CPUT-Prospectus-2023.pdf" target="_blank">Click here to download 2022/23 Prospectus</a></p>
                 <p><b>Website:</b> <a href="https://www.cput.ac.za/" target="_blank">cput.ac.za</a></p>
                 <p><b>Online application:</b> <a href="https://enroll.cut.ac.za/pls/prodi41/w99pkg.mi_login" target="_blank">click here</a></p>
 				<p><b>Application Fee:</b> R100</p>
-				<p style="color:green"><b>Applications: OPEN</b></p>
+				<?php
+				$object->getState();
+				?>
 				<p><b>Open/Closing Date:</b> 31 August 2022</p>
 				<p><b>Contact:</b> 021 959 6767</p>
 				<p><b>Email:</b> <a href="mailto:info@cput.ac.za">info@cput.ac.za</a></p>
@@ -63,10 +54,13 @@
             </div>
             <div class="course-col">
             <h3>Durban University of Technology (DUT)</h3>
+                <p><a href="prospectus/DUT-Prospectus-2022.pdf" target="_blank">Click here to download 2022/23 Prospectus</a></p>
 				<p><b>Website:</b> <a href="more-info/durban-university-of-technology.html" target="_blank"> dut.ac.za</a></p>
 				<p><b>Online application:</b> <a href="https://mercury.dut.ac.za/pls/prodi41/w03pkg.call_dyn_val" target="_blank">click here</a></p>
 				<p><b>Application Fee:</b> R220</p>
-				<p style="color:green"><b>Applications: OPEN</b></p>
+				<?php
+				$object->getState();
+				?>
 				<p><b>Open/Closing Date:</b> September 2022</p>
 				<p><b>Contact:</b> 031 373 2000</p>
 				<p><b>Email:</b> <a href="mailto:info@dut.ac.za">info@dut.ac.za</a></p>
@@ -74,10 +68,13 @@
             </div>
             <div class="course-col">
             <h3>University of Johannesburg (UJ)</h3>
+                <p><a href="prospectus/UJ_undergrad_prospectus2023_pages_for_digital_book.pdf" target="_blank">Click here to download 2021/22 Prospectus</a></p>
 				<p><b>Website:</b> <a href="https://www.uj.ac.za" target="_blank">uj.ac.za</a></p>
 				<p><b>Online application:</b> <a href="https://apply.online.uj.ac.za/Start-Now/Apply-Now" target="_blank">click here</a></p>
 				<p><b>Application Fee:</b> R200, <b>Online:</b> Free</p>
-				<p style="color:green"><b>Applications: OPEN</b></p>
+				<?php
+				$object->getState();
+				?>
 				<p><b>Open/Closing Date:</b> 30 September 2022</p>
 				<p><b>Contact:</b> 011 559 3129</p>
 				<p><b>Email:</b> <a href="mailto:mylife@uj.ac.za">mylife@uj.ac.za</a></p>
@@ -85,8 +82,7 @@
             </div>
         </div>
         <a href="university.php" class="hero-btn">Click here for more</a>
-        <h1 class="space"></h1>
-    </div>
+    <h1 class="space"></h1>
 </section>
 
 <section class="colleges">
@@ -134,72 +130,11 @@
 </section>
 
 
-<section class="footers">
-    <div id="pic"></div>
-    <footer>
-        <div class="list">
-            <p id="founder">Contact details of the creators</p>
-            <ul>
-                <li id="names"><b>NA KHUMALO</b></li>
-                <li>
-                    <div class="social">
-                        <a href=""><i class="fa fa-github"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-envelope"></i></a>
-                    </div>
-                </li>
-            </ul>
-            <ul>
-                <li id="names"><b>NS MZOBE</b></li>
-                <li>
-                    <div class="social">
-                        <a href=""><i class="fa fa-github"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-envelope"></i></a>
-                    </div>
-                </li>
-            </ul><ul>
-                <li id="names"><b>T SIBEKO</b></li>
-                <li>
-                    <div class="social">
-                        <a href=""><i class="fa fa-github"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-envelope"></i></a>
-                    </div>
-                </li>
-            </ul><ul>
-                <li id="names"><b>BN HLOPHE</b></li>
-                <li>
-                    <div class="social">
-                        <a href=""><i class="fa fa-github"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-envelope"></i></a>
-                    </div>
-                </li>
-            </ul><ul>
-                <li id="names"><b>MI PHIRI  <b>    </b></b></li>
-                <li>
-                    <div class="social">
-                        <a href=""><i class="fa fa-github"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-envelope"></i></a>
-                    </div>
-                </li>
-            </ul>
-            </ul><ul>
-                <li id="names"><b>T Mashaba</b></li>
-                <li>
-                    <div class="social">
-                        <a href=""><i class="fa fa-github"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-envelope"></i></a>
-                    </div>
-                </li>
-            </ul><ul>
-        </div>
-    </footer>
-    
-</section>
+<?php
+//footer
+include_once "template/footer.php";
+?>
+
 <script>
 
 var navLinks = document.getElementById("navLinks");

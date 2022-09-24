@@ -68,7 +68,7 @@ class Singleton {
     }
     
 
-/****************data base*********************/
+    /****************data base*********************/
 
     function startDB($database){
         $this->conn = mysqli_connect("localhost", "root", "", "{$database}");
@@ -78,10 +78,10 @@ class Singleton {
         return $this->conn;
     }
 
-/***************Career part**************************/
+    /***************Career part**************************/
     function createTableCareer($conn){
         // sql to create table
-        $sql = "CREATE TABLE Career (
+        $sql = "CREATE TABLE Career1 (
             id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
             name_tag VARCHAR(100) NOT NULL,
             name_title VARCHAR(100) NOT NULL,
@@ -97,8 +97,25 @@ class Singleton {
 
     }
 
+    function createTableStat($conn){
+        // sql to create table
+        $sql = "CREATE TABLE stat (
+            id INT(3) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            name_title VARCHAR(100) NOT NULL,
+            name_date VARCHAR(100) NOT NULL,
+            reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+            )";
+
+        if ($conn->query($sql) === TRUE) {
+          echo "Table Career created successfully";
+        } else {
+          echo "Error creating table: " . $conn->error;
+        }
+
+    }
+
     function insertIntoTableCareer($conn, $name_tag, $name_title, $para){
-        
+
         $sql = "INSERT INTO Career (name_tag, name_title, para)
         VALUES ('{$name_tag}', '{$name_title}', '{$para}')";
 
@@ -108,6 +125,32 @@ class Singleton {
           echo "Error: " . $sql . "<br>" . $conn->error;
         }
     }
+
+    function insertIntoTableStat($conn, $name, $date){
+
+        $sql = "INSERT INTO stat (name_title, name_date)
+        VALUES ('{$name}', '{$date}')";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "New record created successfully";
+        } else {
+          echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+    }
+
+    //update stat database table
+    //UPDATE `stat` SET `name_date` = ' 30 August 2022' WHERE `stat`.`id` = 30;
+    function updateTableStat($conn, $name, $date){
+        $sql = "UPDATE stat SET name_date = '{$date}' WHERE name_title = '{$name}'";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "Record updated successfully";
+        } else {
+            echo "Error updating record: " . $conn->error;
+        }
+    }
+
+
 
     function selectFromTableCareer($conn){
         $query = "select * from Career";
@@ -120,8 +163,18 @@ class Singleton {
         }
     }
 
-    function deleteFromTableCareer($conn, $name_title){
-        $sql = "DELETE FROM Career WHERE name_title='{$name_title}'";
+    function selectFromTableStat($conn){
+        $query = "select * from stat";
+        $result = mysqli_query($conn, $query);
+
+        while($row = mysqli_fetch_assoc($result)){
+            echo "<h1>{$row['name_title']}</h1>";
+            echo "<h1>{$row['name_date']}</h1>";
+        }
+    }
+
+    function deleteFromTableCareer($conn, $name_tag){
+        $sql = "DELETE FROM Career WHERE name_tag='{$name_tag}'";
 
         if ($conn->query($sql) === TRUE) {
           echo "Record deleted successfully";
@@ -130,8 +183,42 @@ class Singleton {
         }
     }
 
+    private $state = array();
+    //get time from stat database and compare it with current time
+    function compareTime($conn){
+        $query = "select * from stat";
+        $result = mysqli_query($conn, $query);
+
+        while($row = mysqli_fetch_assoc($result)){
+            $date = $row['name_date'];
+            if(is_numeric(substr($date, 1,1)) == 1){
+                //
+            }
+            else{
+                $date = strtotime("2 jan 2020");
+            }
+            //echo is_numeric(substr($date, 1,1));
+            $name = $row['name_title'];
+            $date = strtotime($date);
+            $current = strtotime(date("d-M-Y"));
+            //echo $date.":".$current."<br>";
+            $left = $date - $current;
+            if($left < 0){
+                array_push($this->state, "<p style='color:red'>Applications: CLOSED</p>");
+            }
+            else{
+                array_push($this->state, "<p style='color:green'>Applications: OPEN</p>");
+            }
+        }
+    }
+
+    //get state first index and delete it
+    function getState(){
+        $state = $this->state[0];
+        array_shift($this->state);
+        echo $state;
+    }
+
+
 }
-
-
-
 ?>

@@ -26,28 +26,9 @@ $conn = $object->startDB("career");
 </head>
 <body>
 
-<section class="nav">
-    <nav>
-        <div class="logo" id="logo">
-            <h1>
-                <a href="index.php">University Guardian</a>
-            </h1>
-        </div>
-        <div class="nave-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-                <li id="active"><a href="index.php">HOME</a></li>
-                <li><a href="university.php">University</a></li>
-                <li><a href="college.php">College</a></li>
-                <li><a href="majordesc.html">Career Guidance</a></li>
-                <li><a href="img2py.php">Pic to PDF</a></li>
-				<li><a href="">G12 Exam Papers</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-    </nav>
-</section>
+<?php
+include_once "template/nav.php"
+?>
 
 
 <section class="career">
@@ -89,79 +70,11 @@ $conn = $object->startDB("career");
 
 
 
+<?php
+//footer
+include_once "template/footer.php";
+?>
 
-
-
-
-
-
-
-<section class="footers">
-    <div id="pic"></div>
-    <footer>
-        <div class="list">
-            <p id="founder">Contact details of the creators</p>
-            <ul>
-                <li id="names"><b>NA KHUMALO</b></li>
-                <li>
-                    <div class="social">
-                        <a href=""><i class="fa fa-github"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-envelope"></i></a>
-                    </div>
-                </li>
-            </ul>
-            <ul>
-                <li id="names"><b>NS MZOBE</b></li>
-                <li>
-                    <div class="social">
-                        <a href=""><i class="fa fa-github"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-envelope"></i></a>
-                    </div>
-                </li>
-            </ul><ul>
-                <li id="names"><b>T SIBEKO</b></li>
-                <li>
-                    <div class="social">
-                        <a href=""><i class="fa fa-github"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-envelope"></i></a>
-                    </div>
-                </li>
-            </ul><ul>
-                <li id="names"><b>BN HLOPHE</b></li>
-                <li>
-                    <div class="social">
-                        <a href=""><i class="fa fa-github"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-envelope"></i></a>
-                    </div>
-                </li>
-            </ul><ul>
-                <li id="names"><b>MI PHIRI  <b>    </b></b></li>
-                <li>
-                    <div class="social">
-                        <a href=""><i class="fa fa-github"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-envelope"></i></a>
-                    </div>
-                </li>
-            </ul>
-            </ul><ul>
-                <li id="names"><b>T Mashaba</b></li>
-                <li>
-                    <div class="social">
-                        <a href=""><i class="fa fa-github"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-envelope"></i></a>
-                    </div>
-                </li>
-            </ul><ul>
-        </div>
-    </footer>
-    
-</section>
 <script>
 
 var navLinks = document.getElementById("navLinks");
