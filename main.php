@@ -70,6 +70,20 @@ class Singleton {
 
     /****************data base*********************/
 
+    function createDbt($database){
+        $this->conn = mysqli_connect("localhost", "root", "");
+        if(!$this->conn){
+            die(" Not Connected");
+        }
+        $sql = "CREATE DATABASE IF NOT EXISTS {$database}";
+        if ($this->conn->query($sql) === TRUE) {
+            return "Database created successfully";
+        } else {
+            return "Error creating database: " . $this->conn->error;
+        }
+
+    }
+
     function startDB($database){
         $this->conn = mysqli_connect("localhost", "root", "", "{$database}");
         if(!$this->conn){
@@ -81,7 +95,7 @@ class Singleton {
     /***************Career part**************************/
     function createTableCareer($conn){
         // sql to create table
-        $sql = "CREATE TABLE Career1 (
+        $sql = "CREATE TABLE IF NOT EXISTS Career (
             id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
             name_tag VARCHAR(100) NOT NULL,
             name_title VARCHAR(100) NOT NULL,
@@ -90,16 +104,16 @@ class Singleton {
             )";
 
         if ($conn->query($sql) === TRUE) {
-          echo "Table Career created successfully";
+            return "Table Career created successfully";
         } else {
-          echo "Error creating table: " . $conn->error;
+            return "Error creating table: " . $conn->error;
         }
 
     }
 
     function createTableStat($conn){
         // sql to create table
-        $sql = "CREATE TABLE stat (
+        $sql = "CREATE TABLE IF NOT EXISTS stat (
             id INT(3) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
             name_title VARCHAR(100) NOT NULL,
             name_date VARCHAR(100) NOT NULL,
@@ -107,12 +121,33 @@ class Singleton {
             )";
 
         if ($conn->query($sql) === TRUE) {
-          echo "Table Career created successfully";
+            return "Table Career created successfully";
         } else {
-          echo "Error creating table: " . $conn->error;
+            return "Error creating table: " . $conn->error;
         }
 
     }
+
+    //create table userregistration
+    function createTableUserRegistration($conn){
+        // sql to create table
+        $sql = "CREATE TABLE IF NOT EXISTS userregistration (
+            id INT(3) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            username VARCHAR(255) NOT NULL,
+            p_assword VARCHAR(255) NOT NULL,
+            user_email VARCHAR(255) NOT NULL,
+            reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+            )";
+
+        if ($conn->query($sql) === TRUE) {
+            return "Table Career created successfully";
+        } else {
+            return "Error creating table: " . $conn->error;
+        }
+
+    }
+
+
 
     function insertIntoTableCareer($conn, $name_tag, $name_title, $para){
 

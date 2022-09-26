@@ -75,7 +75,7 @@ class Singleton {
         if(!$this->conn){
             die(" Not Connected");
         }
-        $sql = "CREATE DATABASE {$database}";
+        $sql = "CREATE DATABASE IF NOT EXISTS {$database}";
         if ($this->conn->query($sql) === TRUE) {
             return "Database created successfully";
         } else {
@@ -95,7 +95,7 @@ class Singleton {
     /***************Career part**************************/
     function createTableCareer($conn){
         // sql to create table
-        $sql = "CREATE TABLE Career1 (
+        $sql = "CREATE TABLE IF NOT EXISTS Career (
             id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
             name_tag VARCHAR(100) NOT NULL,
             name_title VARCHAR(100) NOT NULL,
@@ -113,7 +113,7 @@ class Singleton {
 
     function createTableStat($conn){
         // sql to create table
-        $sql = "CREATE TABLE stat (
+        $sql = "CREATE TABLE IF NOT EXISTS stat (
             id INT(3) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
             name_title VARCHAR(100) NOT NULL,
             name_date VARCHAR(100) NOT NULL,
@@ -127,6 +127,27 @@ class Singleton {
         }
 
     }
+
+    //create table userregistration
+    function createTableUserRegistration($conn){
+        // sql to create table
+        $sql = "CREATE TABLE IF NOT EXISTS userregistration (
+            id INT(3) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            username VARCHAR(255) NOT NULL,
+            p_assword VARCHAR(255) NOT NULL,
+            user_email VARCHAR(255) NOT NULL,
+            reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+            )";
+
+        if ($conn->query($sql) === TRUE) {
+            return "Table Career created successfully";
+        } else {
+            return "Error creating table: " . $conn->error;
+        }
+
+    }
+
+
 
     function insertIntoTableCareer($conn, $name_tag, $name_title, $para){
 
@@ -233,6 +254,17 @@ class Singleton {
         echo $state;
     }
 
+
+    //check for a value in stat database
+    function checkStat($conn){
+        $sql = "SELECT * FROM stat";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }
 ?>
