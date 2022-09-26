@@ -70,6 +70,20 @@ class Singleton {
 
     /****************data base*********************/
 
+    function createDbt($database){
+        $this->conn = mysqli_connect("localhost", "root", "");
+        if(!$this->conn){
+            die(" Not Connected");
+        }
+        $sql = "CREATE DATABASE {$database}";
+        if ($this->conn->query($sql) === TRUE) {
+            return "Database created successfully";
+        } else {
+            return "Error creating database: " . $this->conn->error;
+        }
+
+    }
+
     function startDB($database){
         $this->conn = mysqli_connect("localhost", "root", "", "{$database}");
         if(!$this->conn){
@@ -90,9 +104,9 @@ class Singleton {
             )";
 
         if ($conn->query($sql) === TRUE) {
-          echo "Table Career created successfully";
+            return "Table Career created successfully";
         } else {
-          echo "Error creating table: " . $conn->error;
+            return "Error creating table: " . $conn->error;
         }
 
     }
@@ -107,9 +121,9 @@ class Singleton {
             )";
 
         if ($conn->query($sql) === TRUE) {
-          echo "Table Career created successfully";
+            return "Table Career created successfully";
         } else {
-          echo "Error creating table: " . $conn->error;
+            return "Error creating table: " . $conn->error;
         }
 
     }
