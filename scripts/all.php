@@ -20,8 +20,8 @@ $object->createTableStat($conn);
 <?php
 
 //add initial dates  from a json file on the python folder
-if ($object->checkStat($conn)){
-  $string = file_get_contents("python/data.json");
+if (!$object->checkStat($conn)){
+  $string = file_get_contents("C:/xampp/htdocs/umlando/python/data.json");
   $json_a = json_decode($string,true);
   
   foreach ($json_a as $key => $value){
