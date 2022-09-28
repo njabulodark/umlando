@@ -16,7 +16,7 @@ echo '<section class="nav">
             <li><a href="img2py.php">Pic to PDF</a></li>
             <li><a href="">G12 Exam Papers</a></li>
             <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="addCareer.php">ADMIN</a></li>
+            <li><a href="login.php">LOGIN</a></li>
         </ul>
     </div>
     <i class="fa fa-bars" onclick="showMenu()"></i>

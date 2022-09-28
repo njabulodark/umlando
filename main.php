@@ -149,6 +149,7 @@ class Singleton {
 
 
 
+
     function insertIntoTableCareer($conn, $name_tag, $name_title, $para){
 
         $sql = "INSERT INTO Career (name_tag, name_title, para)
@@ -170,6 +171,43 @@ class Singleton {
             echo "New record created successfully";
         } else {
           echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+    }
+
+    //insert new user in userregistration table
+    function insertIntoTableUserRegistration($conn, $username, $p_assword, $user_email){
+
+        $sql = "INSERT INTO userregistration (username, p_assword, user_email)
+        VALUES ('{$username}', '{$p_assword}', '{$user_email}')";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "New record created successfully";
+        } else {
+          echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+    }
+    
+    //check if user exist in userregistration table
+    function checkUserExist($conn, $username){
+        $query = "select * from userregistration where username = '{$username}'";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+        if($row){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    //sign in user
+    function signInUser($conn, $username, $p_assword){
+        $query = "select * from userregistration where username = '{$username}' and p_assword = '{$p_assword}'";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+        if($row){
+            return true;
+        }else{
+            return false;
         }
     }
 
@@ -208,8 +246,8 @@ class Singleton {
         }
     }
 
-    function deleteFromTableCareer($conn, $name_tag){
-        $sql = "DELETE FROM Career WHERE name_tag='{$name_tag}'";
+    function deleteFromTableCareer($conn, $name_title){
+        $sql = "DELETE FROM Career WHERE name_title='{$name_title}'";
 
         if ($conn->query($sql) === TRUE) {
           echo "Record deleted successfully";
@@ -254,6 +292,17 @@ class Singleton {
         echo $state;
     }
 
+
+    //check for a value in stat database
+    function checkStat($conn){
+        $sql = "SELECT * FROM stat";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }
 ?>

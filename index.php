@@ -20,7 +20,12 @@ $object->compareTime($conn);
 </head>
 <body>
 <?php
-include_once "template/nav.php"
+include_once "template/nav.php";
+
+//if user has log in show admin nave bar
+if(isset($_SESSION['user'])){
+	include_once "template/adminNav.php";
+}
 ?>
 
     <section class="header">

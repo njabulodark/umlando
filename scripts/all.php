@@ -9,7 +9,7 @@ $object->createDbt("career");
 $conn = $object->startDB("career");
 
 //create a table called Career
-$object->createTableCareer($conn);
+echo $object->createTableCareer($conn);
 
 //create a table called stat it for changing of dates feature
 $object->createTableStat($conn);
