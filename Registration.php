@@ -4,8 +4,6 @@ $object = Singleton::getInstance();
 
 $conn = $object->startDB("userregistration");
 
-//$object->insertIntoTableUserRegistration($conn, "nja", "nja", "nja@gmail.com");
-
 ?>
 
 <?php
@@ -20,12 +18,19 @@ if($state){
     header('location:createagain.php');
 }
 else{
-    echo "User already exist";
-    header('location:createagain.php');
     $object->insertIntoTableUserRegistration($conn, $name, $pass, $email, "nonadmin");
     echo "Created Account Succesfully";
-    header('location:index.php');
-    session_start();
-    $_SESSION['username']=$name;  
+    
+    //assign session variable to a logged in user
+    $_SESSION['username'] = $name;
+    $_SESSION['user_email'] = $email;
+    $_SESSION['type_'] = $object->userType($conn, $name);
+    $_SESSION['logged_in'] = true;
+    
+    //time the session
+    $_SESSION['start'] = time();
+    $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
+    header('location:university.php');
+    
 }
 ?>

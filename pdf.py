@@ -1,8 +1,11 @@
 import img2pdf
 import os
 
-os.mkdir("/temp")
-os.mkdir("/pdf")
+try:
+	os.mkdir("temp/")
+	os.mkdir("pdf/")
+except:
+	pass
 # opening from filename
 path = "temp/"
 for file_name in os.listdir(path):

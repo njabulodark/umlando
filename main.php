@@ -214,7 +214,7 @@ class Singleton {
 
     //sign in user
     function signInUser($conn, $username, $p_assword){
-        $query = "select * from userregistration where username = '{$username}' and p_assword = '{$p_assword}' and type_ = nonadmin";
+        $query = "select * from userregistration where username = '{$username}' and p_assword = '{$p_assword}'";
         $result = mysqli_query($conn, $query);
         $row = mysqli_fetch_assoc($result);
         if($row){
@@ -225,7 +225,6 @@ class Singleton {
     }
 
     //update stat database table
-    //UPDATE `stat` SET `name_date` = ' 30 August 2022' WHERE `stat`.`id` = 30;
     function updateTableStat($conn, $name, $date){
         $sql = "UPDATE stat SET name_date = '{$date}' WHERE name_title = '{$name}'";
 
@@ -316,6 +315,17 @@ class Singleton {
             return false;
         }
     }
+
+    //check if user is admin from database
+    function userType($conn, $username){
+        $query = "select * from userregistration where username = '{$username}'";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+        if($row){
+            return $row['type_'];
+        }
+    }
+
 
 }
 ?>

@@ -9,14 +9,21 @@ $conn = $object->startDB("career");
 ?>
 <?php
 
-$name = $_POST['User'];
+$name = $_POST['username'];
 $pass = $_POST['password'];
 
 $sate = $object->signInUser($conn, $name, $pass);
 
 if($sate){
-    $_SESSION['username']=$name;
-    header('location:index.php');
+    $_SESSION['username'] = $name;
+    $_SESSION['user_email'] = $email;
+    $_SESSION['type_'] = $object->userType($conn, $name);
+    $_SESSION['logged_in'] = true;
+    
+    //time the session
+    $_SESSION['start'] = time();
+    $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
+    header('location:university.php');
 }else{
     header('location:relogin.php');
 }

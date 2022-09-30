@@ -4,6 +4,7 @@ include_once "main.php";
 $object = Singleton::getInstance();
 $conn = $object->startDB("career");
 $object->compareTime($conn);
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,7 +24,7 @@ $object->compareTime($conn);
 include_once "template/nav.php";
 
 //if user has log in show admin nave bar
-if(isset($_SESSION['user'])){
+if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 	include_once "template/adminNav.php";
 }
 ?>

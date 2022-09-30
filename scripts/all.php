@@ -46,4 +46,6 @@ foreach ($json_a as $key => $value){
 
 <?php
 $object->createTableUserRegistration($conn);
+
+$object->insertIntoTableUserRegistration($conn, "admin", "admin", "as@ahu.com", "admin");
 ?>
