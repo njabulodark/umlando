@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
  <html>
  <head>
@@ -23,14 +22,14 @@ if(name.length < 2){
   return false;
 }
 
-if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+if (!name.match(/^[A-Za-z]+[A-Za-z]+$/)) {
 
-  producePrompt('First and last name, please.','name-error', 'red');
+  producePrompt('First name, please.','name-error', 'red');
   return false;
 
 }
 
-producePrompt('green');
+producePrompt('Valid','name-error','green');
 return true;
 
 }
@@ -54,7 +53,7 @@ producePrompt('Only digits, please.' ,'phone-error', 'red');
 return false;
 }
 
-producePrompt( 'green');
+producePrompt( 'Valid','phone-error','green');
 return true;
 
 }
@@ -84,11 +83,11 @@ return true;
 
 function validateMessage() {
 var message = document.getElementById('contact-message').value;
-var required = 10;
+var required = 9;
 var left = required - message.length;
 
 if (left > 0) {
-producePrompt(left + ' more characters required','message-error','red');
+producePrompt(left + ' characters required','message-error','red');
 return false;
 }
 
@@ -104,9 +103,50 @@ producePrompt('Please fix errors to submit.', 'submit-error', 'red');
 setTimeout(function(){jsHide('submit-error');}, 2000);
 return false;
 }
-else {
-
+else if (validateName() && !validatePhone() && !validateEmail() && !validateMessage()) {
+  jsShow('submit-error');
+  producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+  setTimeout(function(){jsHide('submit-error');}, 2000);
+return false;
 }
+
+else if(validateName() && validatePhone() && !validateEmail() && !validateMessage()){
+  jsShow('submit-error');
+  producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+  setTimeout(function(){jsHide('submit-error');}, 2000);
+return false;
+ }
+ else if(validateName() && validatePhone() && validateEmail() && !validateMessage()){
+  jsShow('submit-error');
+  producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+  setTimeout(function(){jsHide('submit-error');}, 2000);
+return false;
+ }
+ else if(validateName() && !validatePhone() && !validateEmail() && validateMessage()){
+  jsShow('submit-error');
+  producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+  setTimeout(function(){jsHide('submit-error');}, 2000);
+return false;
+ }
+ else if(!validateName() && !validatePhone() && validateEmail() && !validateMessage()){
+  jsShow('submit-error');
+  producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+  setTimeout(function(){jsHide('submit-error');}, 2000);
+return false;
+ }
+ else if(validateName() && validatePhone() && !validateEmail() && !validateMessage()){
+  jsShow('submit-error');
+  producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+  setTimeout(function(){jsHide('submit-error');}, 2000);
+return false;
+ }
+ else if(!validateName() && !validatePhone() && !validateEmail() && validateMessage()){
+  jsShow('submit-error');
+  producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+  setTimeout(function(){jsHide('submit-error');}, 2000);
+return false;
+ }
+
 }
 
 function jsShow(id) {
@@ -134,7 +174,7 @@ document.getElementById(promptLocation).style.color = color;
 <body>
 
   <div class="container">
-    <form action="confirm.html" method="POST" id= "formvalidation" class="form">
+    <form action="contact.html" method="POST" id= "formvalidation" class="form">
 
       <div class="form-group">
         <label for="contact-name">Name</label>
