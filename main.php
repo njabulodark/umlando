@@ -316,16 +316,36 @@ class Singleton {
         }
     }
 
-    //check if user is admin from database
-    function userType($conn, $username){
-        $query = "select * from userregistration where username = '{$username}'";
-        $result = mysqli_query($conn, $query);
-        $row = mysqli_fetch_assoc($result);
-        if($row){
-            return $row['type_'];
+    // sql to create table contact
+    function createTableContact($conn){
+        // sql to create table
+        $sql = "CREATE TABLE IF NOT EXISTS contact (
+            id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            username VARCHAR(250) NOT NULL,
+            phone VARCHAR(11) NOT NULL,
+            email VARCHAR(250) NOT NULL,
+            usermessage MEDIUMTEXT NOT NULL
+            )";
+
+        if ($conn->query($sql) === TRUE) {
+            return "Table contact created successfully";
+        } else {
+            return "Error creating table: " . $conn->error;
         }
+
+
+}
+
+function insertIntoTableContact($conn, $name, $phone, $email, $message){
+
+    $sql = "INSERT INTO contact (username, phone, email, usermessage)
+    VALUES ('{$name}', '{$phone}', '{$email}','{$message}')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+      echo "Error: " . $sql . "<br>" . $conn->error;
     }
-
-
+}
 }
 ?>
