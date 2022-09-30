@@ -1,5 +1,5 @@
 <?php
-echo shell_exec("python python/deletefiles.py")
+echo shell_exec("python deletefiles.py")
 ?>
 
 <!DOCTYPE html>
