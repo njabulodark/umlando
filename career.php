@@ -3,7 +3,15 @@
 include "main.php";
 
 $object = Singleton::getInstance();
-$conn = $object->startDB("career");
+$conn = $object->startDB("userregistration");
+
+//check if session has expired
+if(isset($_SESSION['expire'])){
+    if($_SESSION['expire'] < time()){
+        session_destroy();
+        header('location:relogin.php');
+    }
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,7 +35,10 @@ $conn = $object->startDB("career");
 <body>
 
 <?php
-include_once "template/nav.php"
+include_once "template/nav.php";
+if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
+	include_once "template/adminnav.php";
+}
 ?>
 
 

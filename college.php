@@ -1,3 +1,18 @@
+<?php
+
+include "main.php";
+
+$object = Singleton::getInstance();
+$conn = $object->startDB("userregistration");
+
+//check if session has expired
+if(isset($_SESSION['expire'])){
+    if($_SESSION['expire'] < time()){
+        session_destroy();
+        header('location:relogin.php');
+    }
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,9 +27,11 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
 </head>
 <?php
-include_once "template/nav.php"
+include_once "template/nav.php";
+if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
+	include_once "template/adminnav.php";
+}
 ?>
-
     <section class="colleges" id="colleges_page">
     <div class="college">
 

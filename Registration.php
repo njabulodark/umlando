@@ -4,6 +4,7 @@ $object = Singleton::getInstance();
 
 $conn = $object->startDB("userregistration");
 
+
 ?>
 
 <?php

@@ -15,6 +15,7 @@ class Singleton {
     }
      
     public static function getInstance() {
+        session_start();
         if (!isset(self::$instance)) {
             self::$instance = new Singleton();
         }
@@ -76,7 +77,7 @@ class Singleton {
             die(" Not Connected");
         }
         $sql = "CREATE DATABASE IF NOT EXISTS {$database}";
-        if ($this->conn->query($sql) === TRUE) {
+        if ($this->conn->query($sql) == TRUE) {
             return "Database created successfully";
         } else {
             return "Error creating database: " . $this->conn->error;
@@ -132,20 +133,22 @@ class Singleton {
     function createTableUserRegistration($conn){
         // sql to create table
         $sql = "CREATE TABLE IF NOT EXISTS userregistration (
-            id INT(3) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            Id INT(3) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
             username VARCHAR(255) NOT NULL,
-            p_assword VARCHAR(255) NOT NULL,
-            user_email VARCHAR(255) NOT NULL,
+            p_assword VARCHAR(20) NOT NULL,
+            user_email VARCHAR(64) NOT NULL,
+            type_ VARCHAR(64) NOT NULL,
             reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
             )";
 
-        if ($conn->query($sql) === TRUE) {
+        if ($conn->query($sql) == TRUE) {
             return "Table Career created successfully";
         } else {
             return "Error creating table: " . $conn->error;
         }
 
     }
+
 
 
 
@@ -173,8 +176,56 @@ class Singleton {
         }
     }
 
+    //insert new user in userregistration table
+    function insertIntoTableUserRegistration($conn, $username, $p_assword, $user_email,$type_){
+
+        $sql = "INSERT INTO userregistration (username, p_assword, user_email,type_)
+        VALUES ('{$username}', '{$p_assword}', '{$user_email}','{$type_}')";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "New record created successfully";
+        } else {
+          echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+    }
+    
+    //check if user exist in userregistration table
+    function checkUserExist($conn, $username){
+        $query = "select * from userregistration where username = '{$username}'";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+        if($row){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    function checkAdmin($conn, $type){
+        $query = "select * from userregistration where type_ = '{$type}'";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+        if($row){
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+
+    //sign in user
+    function signInUser($conn, $username, $p_assword){
+        $query = "select * from userregistration where username = '{$username}' and p_assword = '{$p_assword}'";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+        if($row){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     //update stat database table
-    //UPDATE `stat` SET `name_date` = ' 30 August 2022' WHERE `stat`.`id` = 30;
     function updateTableStat($conn, $name, $date){
         $sql = "UPDATE stat SET name_date = '{$date}' WHERE name_title = '{$name}'";
 
@@ -208,8 +259,8 @@ class Singleton {
         }
     }
 
-    function deleteFromTableCareer($conn, $name_tag){
-        $sql = "DELETE FROM Career WHERE name_tag='{$name_tag}'";
+    function deleteFromTableCareer($conn, $name_title){
+        $sql = "DELETE FROM Career WHERE name_title='{$name_title}'";
 
         if ($conn->query($sql) === TRUE) {
           echo "Record deleted successfully";
@@ -252,6 +303,28 @@ class Singleton {
         $state = $this->state[0];
         array_shift($this->state);
         echo $state;
+    }
+
+
+    //check for a value in stat database
+    function checkStat($conn){
+        $sql = "SELECT * FROM stat";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    //check if user is admin from database
+    function userType($conn, $username){
+        $query = "select * from userregistration where username = '{$username}'";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+        if($row){
+            return $row['type_'];
+        }
     }
 
 

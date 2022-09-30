@@ -1,4 +1,19 @@
 <?php
+
+include "main.php";
+
+$object = Singleton::getInstance();
+$conn = $object->startDB("career");
+
+//check if session has expired
+if(isset($_SESSION['expire'])){
+    if($_SESSION['expire'] < time()){
+        session_destroy();
+        header('location:relogin.php');
+    }
+}
+?>
+<?php
 echo shell_exec("python deletefiles.py")
 ?>
 
@@ -18,27 +33,33 @@ echo shell_exec("python deletefiles.py")
 </head>
 <body>
 <?php
-include_once "template/nav.php"
+include_once "template/nav.php";
+if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
+	include_once "template/adminnav.php";
+}
+?>
+<?php
+echo '<section class="image2pdf">
+<div class="tool">
+    <div class="tool_header">
+        <h1>Convert Image To PDF</h1>
+        <p>Convert images to PDF in seconds</p>
+
+        <form action="upload.php" method="post" enctype="multipart/form-data" target="votar">
+            <div>Select image to upload:</div>
+            <br/>
+            <input type="file" name="image" />
+            <p>
+            <br/>
+            <input type="submit"/>
+            </p>
+        </form>
+    </div>
+</div>
+</section>';
 ?>
 
-<section class="image2pdf">
-    <div class="tool">
-        <div class="tool_header">
-            <h1>Convert Image To PDF</h1>
-            <p>Convert images to PDF in seconds</p>
 
-            <form action="upload.php" method="post" enctype="multipart/form-data" target="votar">
-                <div>Select image to upload:</div>
-                <br/>
-                <input type="file" name="image" />
-                <p>
-                <br/>
-                <input type="submit"/>
-                </p>
-            </form>
-        </div>
-    </div>
-</section>
 
 <?php
 //footer

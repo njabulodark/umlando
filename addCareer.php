@@ -8,9 +8,18 @@ try {
   //echo "something is wrong with your database";
 }
 
+
 $name_tag = $name_title = $describe = $message = "";
-$conn = $object->startDB("career");
+$conn = $object->startDB("userregistration");
 $error= 0;
+
+//check if session has expired
+if(isset($_SESSION['expire'])){
+    if($_SESSION['expire'] < time()){
+        session_destroy();
+        header('location:relogin.php');
+    }
+}
 
 if(isset($_POST["submit"])) {
     $name_tag = $_POST["name_tag"];

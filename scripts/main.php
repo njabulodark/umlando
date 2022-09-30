@@ -15,6 +15,7 @@ class Singleton {
     }
      
     public static function getInstance() {
+        session_start();
         if (!isset(self::$instance)) {
             self::$instance = new Singleton();
         }
@@ -315,6 +316,17 @@ class Singleton {
             return false;
         }
     }
+
+    //check if user is admin from database
+    function userType($conn, $username){
+        $query = "select * from userregistration where username = '{$username}'";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+        if($row){
+            return $row['type_'];
+        }
+    }
+
 
 }
 ?>

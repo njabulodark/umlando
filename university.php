@@ -25,9 +25,11 @@ $object->compareTime($conn);
 <body>
 	
 <?php
-include_once "template/nav.php"
+include_once "template/nav.php";
+if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
+	include_once "template/adminnav.php";
+}
 ?>
-
 <section class="universities" id="universities_page">
     <div class="university">
 

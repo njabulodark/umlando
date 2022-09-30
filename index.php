@@ -19,11 +19,7 @@ $object->compareTime($conn);
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
-	<?php
-
-//if user has log in show admin nave bar
-
-
+<?php
 include_once "template/nav.php";
 if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 	include_once "template/adminnav.php";

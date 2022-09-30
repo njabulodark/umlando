@@ -4,6 +4,14 @@ if(isset($_SESSION['logged_in'])){
     header('location:index.php');
 }
 
+//check if session has expired
+if(isset($_SESSION['expire'])){
+    if($_SESSION['expire'] < time()){
+        session_destroy();
+        header('location:relogin.php');
+    }
+}
+
 ?>
 <!DOCTYPE html>
 <html>

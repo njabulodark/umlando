@@ -4,6 +4,14 @@ $object = Singleton::getInstance();
 
 $conn = $object->startDB("userregistration");
 
+//check if session has expired
+if(isset($_SESSION['expire'])){
+    if($_SESSION['expire'] < time()){
+        session_destroy();
+        header('location:relogin.php');
+    }
+}
+
 //$object->insertIntoTableUserRegistration($conn, "nja", "nja", "nja@gmail.com");
 
 ?>
