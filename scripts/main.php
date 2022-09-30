@@ -322,10 +322,10 @@ class Singleton {
         // sql to create table
         $sql = "CREATE TABLE IF NOT EXISTS contact (
             id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-            name VARCHAR(250) NOT NULL,
+            username VARCHAR(250) NOT NULL,
             phone VARCHAR(11) NOT NULL,
             email VARCHAR(250) NOT NULL,
-            message MEDIUMTEXT NOT NULL
+            usermessage MEDIUMTEXT NOT NULL
             )";
 
         if ($conn->query($sql) === TRUE) {
@@ -337,7 +337,7 @@ class Singleton {
 
 function insertIntoTableContact($conn, $name, $phone, $email, $message){
 
-    $sql = "INSERT INTO contact (name, phone, email,message)
+    $sql = "INSERT INTO contact (username, phone, email, usermessage)
     VALUES ('{$name}', '{$phone}', '{$email}','{$message}')";
 
     if ($conn->query($sql) === TRUE) {
