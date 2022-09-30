@@ -2,7 +2,7 @@
 include_once "main.php";
 $object = Singleton::getInstance();
 
-$conn = $object->startDB("career");
+$conn = $object->startDB("userregistration");
 
 //$object->insertIntoTableUserRegistration($conn, "nja", "nja", "nja@gmail.com");
 
@@ -10,8 +10,9 @@ $conn = $object->startDB("career");
 
 <?php
 
-$name = $_POST['User'];
+$name = $_POST['username'];
 $pass = $_POST['password'];
+$email = $_POST['user_email'];
 
 $state = $object->checkUserExist($conn, $name);
 if($state){
@@ -21,7 +22,7 @@ if($state){
 else{
     echo "User already exist";
     header('location:createagain.php');
-    $object->insertIntoTableUserRegistration($conn, $name, $pass, $name."aa@gmail.com");
+    $object->insertIntoTableUserRegistration($conn, $name, $pass, $email, "nonadmin");
     echo "Created Account Succesfully";
     header('location:index.php');
     session_start();

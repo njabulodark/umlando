@@ -30,8 +30,13 @@
         <div class="form-group">
             <h6>Username already exists!!</h6>
             <br><label>Username</label><br>
-            <input type="text" name="User" class="form-requirement" required>
+            <input type="text" name="username" class="form-requirement" required>
         </div>
+        <div class="form-group">
+            <br><label>Email</label><br>
+            <input type="email" name="user_email" class="form-requirement" placeholder="type email address" required>
+        </div>
+        
         <div class="form-group">
             <br><label>Password</label><br>
             <input type="password" name="password" class="form-requirement" required>

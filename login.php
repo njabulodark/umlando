@@ -28,7 +28,7 @@
     <form action="Signin.php" method="post">
         <div class="form-group">
             <br><label>Username</label><br>
-            <input type="text" name="User" class="form-requirement" required><br>
+            <input type="text" name="username" class="form-requirement" required><br>
         </div>
         <div class="form-group">
             <br><label>Password</label><br>

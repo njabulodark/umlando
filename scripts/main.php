@@ -76,7 +76,7 @@ class Singleton {
             die(" Not Connected");
         }
         $sql = "CREATE DATABASE IF NOT EXISTS {$database}";
-        if ($this->conn->query($sql) === TRUE) {
+        if ($this->conn->query($sql) == TRUE) {
             return "Database created successfully";
         } else {
             return "Error creating database: " . $this->conn->error;
@@ -132,14 +132,15 @@ class Singleton {
     function createTableUserRegistration($conn){
         // sql to create table
         $sql = "CREATE TABLE IF NOT EXISTS userregistration (
-            id INT(3) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            Id INT(3) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
             username VARCHAR(255) NOT NULL,
-            p_assword VARCHAR(255) NOT NULL,
-            user_email VARCHAR(255) NOT NULL,
+            p_assword VARCHAR(20) NOT NULL,
+            user_email VARCHAR(64) NOT NULL,
+            type_ VARCHAR(64) NOT NULL,
             reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
             )";
 
-        if ($conn->query($sql) === TRUE) {
+        if ($conn->query($sql) == TRUE) {
             return "Table Career created successfully";
         } else {
             return "Error creating table: " . $conn->error;
@@ -175,10 +176,10 @@ class Singleton {
     }
 
     //insert new user in userregistration table
-    function insertIntoTableUserRegistration($conn, $username, $p_assword, $user_email){
+    function insertIntoTableUserRegistration($conn, $username, $p_assword, $user_email,$type_){
 
-        $sql = "INSERT INTO userregistration (username, p_assword, user_email)
-        VALUES ('{$username}', '{$p_assword}', '{$user_email}')";
+        $sql = "INSERT INTO userregistration (username, p_assword, user_email,type_)
+        VALUES ('{$username}', '{$p_assword}', '{$user_email}','{$type_}')";
 
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
@@ -199,9 +200,21 @@ class Singleton {
         }
     }
 
+    function checkAdmin($conn, $type){
+        $query = "select * from userregistration where type_ = '{$type}'";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+        if($row){
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+
     //sign in user
     function signInUser($conn, $username, $p_assword){
-        $query = "select * from userregistration where username = '{$username}' and p_assword = '{$p_assword}'";
+        $query = "select * from userregistration where username = '{$username}' and p_assword = '{$p_assword}' and type_ = nonadmin";
         $result = mysqli_query($conn, $query);
         $row = mysqli_fetch_assoc($result);
         if($row){

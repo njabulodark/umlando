@@ -3,10 +3,10 @@
 include_once "main.php";
 $object = Singleton::getInstance();
 //create a data base called career
-$object->createDbt("career");
+$object->createDbt("userregistration");
 
 //start the database
-$conn = $object->startDB("career");
+$conn = $object->startDB("userregistration");
 
 //create a table called Career
 echo $object->createTableCareer($conn);
