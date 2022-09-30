@@ -9,6 +9,11 @@ $email=$_POST['email'];
 $message=$_POST['message'];
 
 $object->insertIntoTableContact($conn, $name, $phone, $email, $message);
+
+if (isset($_POST['submit'])){
+  header("Location: confirm.html");
+  exit;
+}
 }
 /*
 $conn = mysqli_connect('localhost', 'root', '', 'userregistration') 
