@@ -51,4 +51,6 @@ foreach ($json_a as $key => $value){
 $object->createTableUserRegistration($conn);
 
 $object->insertIntoTableUserRegistration($conn, "admin", "admin", "as@ahu.com", "admin");
+
+$object->createTableContact($conn);
 ?>
