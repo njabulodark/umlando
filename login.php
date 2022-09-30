@@ -1,3 +1,10 @@
+<?php
+//check if logged in
+if(isset($_SESSION['logged_in'])){
+    header('location:index.php');
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>

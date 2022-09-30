@@ -4,12 +4,11 @@ include_once "main.php";
 $object = Singleton::getInstance();
 $conn = $object->startDB("career");
 $object->compareTime($conn);
-session_start();
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
     <title>home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,12 +19,14 @@ session_start();
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
-<?php
-include_once "template/nav.php";
+	<?php
 
 //if user has log in show admin nave bar
+
+
+include_once "template/nav.php";
 if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
-	include_once "template/adminNav.php";
+	include_once "template/adminnav.php";
 }
 ?>
 
