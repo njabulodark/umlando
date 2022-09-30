@@ -1,6 +1,5 @@
 <?php 
 include "main.php";
-
 $object = Singleton::getInstance();
 $conn = $object->startDB("userregistration");
 if (isset($_POST["name"]) && isset($_POST["phone"]) && isset($_POST["email"]) && isset($_POST["message"])){
@@ -8,7 +7,7 @@ $name=$_POST['name'];
 $phone=$_POST['phone'];
 $email=$_POST['email'];
 $message=$_POST['message'];
-$conn = mysqli_connect('localhost', 'root', '', 'career') 
+$conn = mysqli_connect('localhost', 'root', '', 'contact') 
  or die('Error connecting to MySQL server.'); 
  $query = "INSERT  INTO contact(name, phone, email, message) VALUES('$name','$phone','$email','$message')"; 
  $result = mysqli_query($conn, $query) 

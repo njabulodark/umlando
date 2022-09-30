@@ -15,7 +15,7 @@ echo '<section class="nav">
             <li><a href="career.php">Career Guidance</a></li>
             <li><a href="img2py.php">Pic to PDF</a></li>
             <li><a href="">G12 Exam Papers</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="contact.php">CONTACT</a></li>
             <li><a href="login.php">LOGIN</a></li>
         </ul>
     </div>

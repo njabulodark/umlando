@@ -2,7 +2,7 @@
 
 include_once "main.php";
 $object = Singleton::getInstance();
-$conn = $object->startDB("career");
+$conn = $object->startDB("userregistration");
 $object->compareTime($conn);
 session_start();
 ?>
