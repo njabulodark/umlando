@@ -14,7 +14,8 @@ echo $object->createTableCareer($conn);
 //create a table called stat it for changing of dates feature
 $object->createTableStat($conn);
 
-//create a table called contact for insert
+//create a table called contact for insert users contact form input's
+$object->createTableContact($conn);
 
 
 ?>

@@ -316,5 +316,36 @@ class Singleton {
         }
     }
 
+    // sql to create table contact
+    function createTableContact($conn){
+        // sql to create table
+        $sql = "CREATE TABLE IF NOT EXISTS contact (
+            id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            name VARCHAR(250) NOT NULL,
+            phone VARCHAR(11) NOT NULL,
+            email VARCHAR(250) NOT NULL,
+            message MEDIUMTEXT NOT NULL
+            )";
+
+        if ($conn->query($sql) === TRUE) {
+            return "Table contact created successfully";
+        } else {
+            return "Error creating table: " . $conn->error;
+        }
+
+
+}
+
+function insertIntoTableContact($conn, $name, $phone, $email, $message){
+
+    $sql = "INSERT INTO contact (name, phone, email,message)
+    VALUES ('{$name}', '{$phone}', '{$email}','{$message}')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+      echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
 }
 ?>
