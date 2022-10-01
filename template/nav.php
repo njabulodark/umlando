@@ -16,8 +16,8 @@ if(isset($_SESSION['logged_in'])){
             <li><a href="college.php">College</a></li>
             <li><a href="career.php">Career Guidance</a></li>
             <li><a href="img2py.php">Pic to PDF</a></li>
-            <li><a href="">G12 Exam Papers</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="user_qp.php">G12 Exam Papers</a></li>
+            <li><a href="contact.php">CONTACT</a></li>
             <li><a href="login.php">LOGOUT</a></li>
         </ul>
     </div>
@@ -41,8 +41,8 @@ else{
             <li><a href="college.php">College</a></li>
             <li><a href="career.php">Career Guidance</a></li>
             <li><a href="img2py.php">Pic to PDF</a></li>
-            <li><a href="">G12 Exam Papers</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="user_qp.php">G12 Exam Papers</a></li>
+            <li><a href="contact.php">CONTACT</a></li>
             <li><a href="login.php">LOGIN</a></li>
         </ul>
     </div>
