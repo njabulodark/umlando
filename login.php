@@ -4,13 +4,6 @@ if(isset($_SESSION['logged_in'])){
     header('location:index.php');
 }
 
-//check if session has expired
-if(isset($_SESSION['expire'])){
-    if($_SESSION['expire'] < time()){
-        session_destroy();
-        header('location:relogin.php');
-    }
-}
 
 ?>
 <!DOCTYPE html>
@@ -39,6 +32,7 @@ if(isset($_SESSION['expire'])){
         </nav>
 <div class="Sign-in-container">
     <div class="Sign-in-Box">
+    <h1>To be able to access the features this websites provides please sign in</h1>
     <h3>Sign in</h3>
     <form action="Signin.php" method="post">
         <div class="form-group">

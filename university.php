@@ -4,6 +4,19 @@ include_once "main.php";
 $object = Singleton::getInstance();
 $conn = $object->startDB("career");
 
+//check if session has expired
+if(isset($_SESSION['expire'])){
+    if($_SESSION['expire'] < time()){
+        session_destroy();
+        header('location:relogin.php');
+    }
+}
+
+//if user not log in redirect to login page
+if(!isset($_SESSION['logged_in'])){
+	header('location:login.php');
+}
+
 //$object->createTableStat($conn);
 
 //$object->insertIntoTableStat($conn, "hello","30 september 2022");

@@ -317,6 +317,17 @@ class Singleton {
         }
     }
 
+    //check if user is admin from database
+    function userType($conn, $username){
+        $query = "select * from userregistration where username = '{$username}'";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+        if($row){
+            return $row['type_'];
+            
+        }
+    }
+
     // sql to create table contact
     function createTableContact($conn){
         // sql to create table
