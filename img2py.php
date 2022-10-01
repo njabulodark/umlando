@@ -12,6 +12,9 @@ if(isset($_SESSION['expire'])){
         header('location:relogin.php');
     }
 }
+
+
+
 ?>
 <?php
 echo shell_exec("python deletefiles.py")
@@ -37,9 +40,19 @@ include_once "template/nav.php";
 if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 	include_once "template/adminnav.php";
 }
+
+if(isset($_SESSION['logged_in'])){
+    echo '<section class="image2pdf" >';
+}
+else{
+    include_once "template/overlay.php";
+	header('Refresh: 10; URL=login.php');
+    echo '<section class="image2pdf" style="filter: blur(4px)" >';
+
+}
 ?>
-<?php
-echo '<section class="image2pdf">
+
+
 <div class="tool">
     <div class="tool_header">
         <h1>Convert Image To PDF</h1>
@@ -56,8 +69,8 @@ echo '<section class="image2pdf">
         </form>
     </div>
 </div>
-</section>';
-?>
+</section>
+
 
 
 

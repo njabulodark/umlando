@@ -16,7 +16,7 @@
         <nav>
             <div class="logo" id="logo">
                 <h1>
-                    <a>University Guardian</a>
+                    <a href="index.php">University Guardian</a>
                     <h2>Your Second Parent</h2>
 
                 </h1>

@@ -12,6 +12,9 @@ if(isset($_SESSION['expire'])){
         header('location:relogin.php');
     }
 }
+
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,8 +34,18 @@ include_once "template/nav.php";
 if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 	include_once "template/adminnav.php";
 }
+
+if(isset($_SESSION['logged_in'])){
+    echo '<section class="colleges" id="colleges_page" >';
+}
+else{
+    include_once "template/overlay.php";
+	header('Refresh: 10; URL=login.php');
+    echo '<section class="colleges" id="colleges_page" style="filter: blur(4px)" >';
+
+}
 ?>
-    <section class="colleges" id="colleges_page">
+    
     <div class="college">
 
         <h1>College</h1>

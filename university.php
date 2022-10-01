@@ -12,10 +12,6 @@ if(isset($_SESSION['expire'])){
     }
 }
 
-//if user not log in redirect to login page
-if(!isset($_SESSION['logged_in'])){
-	header('location:login.php');
-}
 
 //$object->createTableStat($conn);
 
@@ -42,7 +38,18 @@ include_once "template/nav.php";
 if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 	include_once "template/adminnav.php";
 }
+
+if(isset($_SESSION['logged_in'])){
+    echo '<section class="universities" id="universities_page" >';
+}
+else{
+    include_once "template/overlay.php";
+	header('Refresh: 10; URL=login.php');
+    echo '<section class="universities" id="universities_page" style="filter: blur(4px)" >';
+
+}
 ?>
+
 <section class="universities" id="universities_page">
     <div class="university">
 
