@@ -5,13 +5,6 @@ $object = Singleton::getInstance();
 $conn = $object->startDB("userregistration");
 $object->compareTime($conn);
 
-//check if session has expired
-if(isset($_SESSION['expire'])){
-    if($_SESSION['expire'] < time()){
-        session_destroy();
-        header('location:relogin.php');
-    }
-}
 
 ?>
 <!DOCTYPE html>
