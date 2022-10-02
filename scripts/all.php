@@ -14,6 +14,9 @@ echo $object->createTableCareer($conn);
 //create a table called stat it for changing of dates feature
 $object->createTableStat($conn);
 
+//create a table called contact for insert users contact form input's
+$object->createTableContact($conn);
+
 
 ?>
 
@@ -48,6 +51,6 @@ foreach ($json_a as $key => $value){
 $object->createTableUserRegistration($conn);
 
 $object->insertIntoTableUserRegistration($conn, "admin", "admin", "as@ahu.com", "admin");
-//
+
 $object->createTableContact($conn);
 ?>

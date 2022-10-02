@@ -2,6 +2,14 @@
 include "main.php";
 $object = Singleton::getInstance();
 $conn = $object->startDB("userregistration");
+//check if session has expired
+if(isset($_SESSION['expire'])){
+  if($_SESSION['expire'] < time()){
+      session_destroy();
+      header('location:relogin.php');
+  }
+}
+
 if (isset($_POST["name"]) && isset($_POST["phone"]) && isset($_POST["email"]) && isset($_POST["message"])){
 $name=$_POST['name'];
 $phone=$_POST['phone'];

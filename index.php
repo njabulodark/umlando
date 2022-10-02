@@ -4,6 +4,8 @@ include_once "main.php";
 $object = Singleton::getInstance();
 $conn = $object->startDB("userregistration");
 $object->compareTime($conn);
+
+
 ?>
 <!DOCTYPE html>
 <html>

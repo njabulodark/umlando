@@ -317,6 +317,17 @@ class Singleton {
         }
     }
 
+    //check if user is admin from database
+    function userType($conn, $username){
+        $query = "select * from userregistration where username = '{$username}'";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+        if($row){
+            return $row['type_'];
+            
+        }
+    }
+
     // sql to create table contact
     function createTableContact($conn){
         // sql to create table
@@ -337,16 +348,33 @@ class Singleton {
 
 }
 
-function insertIntoTableContact($conn, $name, $phone, $email, $message){
+    function insertIntoTableContact($conn, $name, $phone, $email, $message){
 
-    $sql = "INSERT INTO contact (username, phone, email, usermessage)
-    VALUES ('{$name}', '{$phone}', '{$email}','{$message}')";
+        $sql = "INSERT INTO contact (username, phone, email, usermessage)
+        VALUES ('{$name}', '{$phone}', '{$email}','{$message}')";
 
-    if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
-    } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
+        if ($conn->query($sql) === TRUE) {
+            echo "New record created successfully";
+        } else {
+          echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+        }
     }
-}
-}
+
+    function logout(){
+        session_start();
+        session_destroy();
+        $_SESSION['username'] = null;
+        $_SESSION['type'] = null;
+        $_SESSION['loggedin'] = null;
+        header("Location:index.php");
+    }
+
+    //set session
+    function setSession($username, $type){
+        session_start();
+        $_SESSION['username'] = $username;
+        $_SESSION['type'] = $type;
+        $_SESSION['loggedin'] = true;
+    } 
 ?>

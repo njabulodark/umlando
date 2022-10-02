@@ -12,6 +12,7 @@ if(isset($_SESSION['expire'])){
         header('location:relogin.php');
     }
 }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -39,10 +40,17 @@ include_once "template/nav.php";
 if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 	include_once "template/adminnav.php";
 }
+
+if(isset($_SESSION['logged_in'])){
+    echo '<section class="career" >';
+}
+else{
+    include_once "template/overlay.php";
+	header('Refresh: 10; URL=login.php');
+    echo '<section class="career" style="filter: blur(4px)" >';
+
+}
 ?>
-
-
-<section class="career">
         <a name="top"></a>
         <h1>Major's Descriptions</h1>
         <div class="text">
