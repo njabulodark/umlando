@@ -64,7 +64,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p><b>Open/Closing Date:</b> 31 August 2022</p>
+				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 021 959 6767</p>
 				<p><b>Email:</b> <a href="mailto:info@cput.ac.za">info@cput.ac.za</a></p>
 				<p><b>Location:</b> Western Cape, Cape Town</p>
@@ -78,7 +78,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p><b>Open/Closing Date:</b> September 2022</p>
+				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 031 373 2000</p>
 				<p><b>Email:</b> <a href="mailto:info@dut.ac.za">info@dut.ac.za</a></p>
 				<p><b>Location:</b> KwaZulu Natal, Durban &amp; Pietermaritzburg</p>
@@ -92,7 +92,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p><b>Open/Closing Date:</b> 30 September 2022</p>
+				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 011 559 3129</p>
 				<p><b>Email:</b> <a href="mailto:mylife@uj.ac.za">mylife@uj.ac.za</a></p>
 				<p><b>Location:</b> Gauteng, Johannesburg</p>
@@ -110,7 +110,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p><b>Open/Closing Date:</b> May/June 2022</p>
+				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 051 507 3986</p>
 				<p><b>Email:</b> <a href="mailto:ssepeng@cut.ac.za">ssepeng@cut.ac.za</a></p>
 				<p><b>Location:</b> Free State, Bloemfontein Central</p>
@@ -124,7 +124,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p><b>Open/Closing Date:</b> September 2022</p>
+				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 031 819 9280</p>
 				<p><b>Email:</b> <a href="mailto:info@mut.ac.za">info@mut.ac.za</a></p>
 				<p><b>Location:</b> KwaZulu Natal, Umlazi</p>
@@ -154,7 +154,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p><b>Open/Closing Date:</b> 31 August 2022</p>
+				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 018 299 1111/2222</p>
 				<p><b>Email:</b> <a href="mailto:nwu-serviceline@nwu.ac.za">serviceline@nwu.ac.za</a></p>
 				<p><b>Location:</b> North West, Potchefstroom</p>
@@ -168,7 +168,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p><b>Open/Closing Date: </b>May/June 2022</p>
+				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact: </b>046 603 8111</p>
 				<p><b>Email: </b><a href="mailto:registrar@ru.ac.za">registrar@ru.ac.za</a></p>
 				<p><b>Location: </b>Eastern Cape, Grahamstown</p>
@@ -182,7 +182,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p><b>Open/Closing Date: </b>29 July 2022</p>
+				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact: </b>012 521 5057/5059</p>
 				<p><b>Email: </b><a href="mailto:apply@smu.ac.za">apply@smu.ac.za</a></p>
 				<p><b>Location: </b>Gauteng, Pretoria</p>
@@ -200,7 +200,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p><b>Open/Closing Date: </b>30 November 2022</p>
+				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact: </b>053 491 0000</p>
 				<p><b>Email: </b><a href="mailto:applications@spu.ac.za">applications@spu.ac.za</a></p>
 				<p><b>Location: </b>Western Cape, Stellenbosch</p>
@@ -214,7 +214,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p><b>Open/Closing Date: </b>31 July 2022</p>
+				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact: </b>021 808 9111</p>
 				<p><b>Email: </b><a href="mailto:info@sun.ac.za">info@sun.ac.za</a></p>
 				<p><b>Location: </b>Western Cape, Stellenbosch</p>
@@ -228,7 +228,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Open/Closing Date: 31 July 2022</p>
+				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 086 110 2421</p>
 				<p>Email: <a href="mailto:general@tut.ac.za">general@tut.ac.za</a></p>
 				<p>Location: Gauteng, Pretoria</p>
@@ -246,7 +246,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Open/Closing Date: 31 July 2022</p>
+				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 021 650 9111</p>
 				<p>Email: <a href="mailto:admission@uct.ac.za">admission@uct.ac.za</a></p>
 				<p>Location: Western Cape, Cape Town</p>
@@ -260,7 +260,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Open/Closing Date: 31 October 2022</p>
+				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 040 602 2011</p>
 				<p>Email: <a href="mailto:admissions@ufh.ac.za">admissions@ufh.ac.za</a></p>
 				<p>Location: Eastern Cape, Fort Hare</p>
@@ -274,7 +274,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Open/Closing Date: 30 September 2022</p>
+				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 051 401 9111</p>
 				<p>Email: <a href="mailto:info@ufs.ac.za">info@ufs.ac.za</a></p>
 				<p>Location: Free State, Bloemfontein</p>
@@ -292,7 +292,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Open/Closing Date: September 2022</p>
+				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 031 260 1111</p>
 				<p>Email: <a href="mailto:enquiries@ukzn.ac.za">enquiries@ukzn.ac.za</a></p>
 				<p>Location: KwaZulu Natal, Durban</p>
@@ -306,7 +306,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Open/Closing Date: September 2022</p>
+				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 012 521 4058</p>
 				<p>Email: <a href="mailto:enrolment@ul.ac.za">enrolment@ul.ac.za</a></p>
 				<p>Location: Limpopo, Sovenga</p>
@@ -322,7 +322,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Open/Closing Date: 30 November 2022</p>
+				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 013 002 0001</p>
 				<p>Email: <a href="mailto:info@ump.ac.za">info@ump.ac.za</a></p>
 				<p>Location: Mpumalanga, Nelspruit</p>
@@ -340,7 +340,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Open/Closing Date: 30 June 2022</p>
+				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 012 420 3111</p>
 				<p>Email: <a href="mailto:ssc@up.ac.za">ssc@up.ac.za</a></p>
 				<p>Location: Gauteng, Pretoria</p>
@@ -354,7 +354,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Closing date: 11 August 2022</p>
+				<p>Closing date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 012 429 3111</p>
 				<p>Email: <a href="mailto:info@unisa.ac.za">info@unisa.ac.za</a></p>
 				<p>Location: Gauteng, Pretoria</p>
@@ -368,7 +368,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Open/Closing Date: 30 November 2022</p>
+				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 015 962 8000</p>
 				<p>Email: <a href="mailto:info@univen.ac.za">info@univen.ac.za</a></p>
 				<p>Location: Limpopo, Venda</p>
@@ -386,7 +386,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Open/Closing Date: 30 September 2022</p>
+				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 021 959 2911</p>
 				<p>Email: <a href="mailto:helpdesk@uwc.ac.za">helpdesk@uwc.ac.za</a></p>
 				<p>Location: Western Cape, Cape Town</p>
@@ -400,7 +400,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Open/Closing Date: 30 September 2022</p>
+				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 011 717 1888</p>
 				<p>Email: <a href="mailto:itstudenthelp@wits.ac.za">itstudenthelp@wits.ac.za</a></p>
 				<p>Location: Gauteng, Johannesburg, Braamfontein</p>
@@ -414,7 +414,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Open/Closing Date: September 2022</p>
+				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 035 902 6950</p>
 				<p>Email: <a href="mailto:admissions@unizulu.ac.za">admissions@unizulu.ac.za</a></p>
 				<p>Location: KwaZulu Natal, North of the Tugela River</p>
@@ -433,7 +433,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Open/Closing Date: 30 September 2022</p>
+				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 016 950 9924/9925</p>
 				<p>Email: <a href="mailto:reception@vut.ac.za">reception@vut.ac.za</a></p>
 				<p>Location: Gauteng, Vanderbijlpark</p>
@@ -447,7 +447,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Open/Closing Date: October 2022</p>
+				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 047 502 2843/3/8</p>
 				<p>Email: <a href="mailto:info@wsu.ac.za">info@wsu.ac.za</a></p>
 				<p>Location: Eastern Cape, Mthatha</p>
@@ -462,7 +462,7 @@ else{
 				<?php
 				$object->getState();
 				?>
-				<p>Open/Closing Date: 30 September 2022</p>
+				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 031 268 4444</p>
 				<p>Email: <a href="mailto:enquiries@cao.ac.za">enquiries@cao.ac.za</a></p>
 				<p>Location: Durban - Central Services Complex</p>

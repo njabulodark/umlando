@@ -9,7 +9,7 @@ try {
 }
 
 $name_tag = $name_title = $describe = $message = "";
-$conn = $object->startDB("career");
+$conn = $object->startDB("userregistration");
 $error= 0;
 
 if(isset($_POST["submit"])) {
@@ -63,7 +63,7 @@ include_once "template/nav.php"
 
 </section>
 
-    
+
 <?php
 //footer
 include_once "template/footer.php";
