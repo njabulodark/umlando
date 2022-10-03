@@ -29,7 +29,7 @@
         <div class="form-group">
             <h5>Incorrect Username or Password!!</h5>
             <br><label>Username</label><br>
-            <input type="text" name="User" class="form-requirement" required>
+            <input type="text" name="username" class="form-requirement" required>
         </div>
         <div class="form-group">
             <br><label>Password</label><br>
