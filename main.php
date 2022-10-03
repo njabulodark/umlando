@@ -385,4 +385,18 @@ class Singleton {
         $_SESSION['type'] = $type;
         $_SESSION['loggedin'] = true;
     } 
+
+    //check if username is admin
+    function checkAdmin($conn, $username){
+        $query = "select * from userregistration where username = '{$username}'";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+        if($row){
+            if($row['type_'] == "admin"){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    }
 ?>
