@@ -12,6 +12,7 @@
 </style>
 <h4>Download Previous question papers </h4> 
 <?php 
+include_once "template/nav.php";
 
 
 $files=scandir("uploads");

@@ -1,5 +1,6 @@
 <?php 
 include "main.php";
+include_once "template/nav.php";
 $object = Singleton::getInstance();
 $conn = $object->startDB("userregistration");
 //check if session has expired

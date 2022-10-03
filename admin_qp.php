@@ -12,11 +12,12 @@
 </style>
 <h4>Upload Previous question papers </h4> 
 <form method="POST" action="insert.php" enctype="multipart/form-data">
-    <input type="file" name="file">
+    <input type="file" name="file" accept=".pdf">
     <input type="submit" name="upload">
 
 </form>
 <?php 
+include_once "template/adminnav.php";
 
 $files=scandir("uploads");
 for($a=2;$a<count($files);$a++){
