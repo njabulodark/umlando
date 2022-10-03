@@ -1,3 +1,10 @@
+<link rel="stylesheet" href="style.css">
+<?php
+include_once "template/nav.php";
+if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
+	include_once "template/adminnav.php";
+}
+?>
 <style>
     h4{
         text-align: center;
@@ -10,9 +17,9 @@
     }
 
 </style>
+<br><br><br><br><br><br>
 <h4>Download Previous question papers </h4> 
 <?php 
-include_once "template/nav.php";
 
 
 $files=scandir("uploads");
@@ -30,4 +37,8 @@ for($a=2;$a<count($files);$a++){
     <?php
 
 }
+?>
+<br><br><br><br><br><br>
+<?php
+include_once "template/footer.php";
 ?>
