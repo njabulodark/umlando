@@ -2,7 +2,7 @@
     --font-color:#555;
     --font-hover-color:rgb(238, 145, 38);
 }
-body{
+div{
     display:flex;
     justify-content:center;
     align-items:center;

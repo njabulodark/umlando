@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="style.css">
 <style>
     h4{
         text-align: center;
@@ -10,14 +11,21 @@
     }
 
 </style>
+<?php
+include_once "template/nav.php";
+include_once "template/adminnav.php";
+?>
+<br><br><br><br><br><br>
 <h4>Upload Previous question papers </h4> 
+<br>
 <form method="POST" action="insert.php" enctype="multipart/form-data">
     <input type="file" name="file" accept=".pdf">
+    <br><br><br><br>
     <input type="submit" name="upload">
+    <br><br><br><br>
 
 </form>
 <?php 
-include_once "template/adminnav.php";
 
 $files=scandir("uploads");
 for($a=2;$a<count($files);$a++){
@@ -36,4 +44,7 @@ for($a=2;$a<count($files);$a++){
     <?php
 
 }
+?>
+<?php
+include_once "template/footer.php";
 ?>
