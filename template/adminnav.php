@@ -73,6 +73,7 @@ body {
   <a href="statusUpdate.php">Update Uni Date</a>
   <a href="addcareer.php">Add career</a>
   <a href="DeleteCareer.php">Delete Career</a>
+  <a href="admin_qp.php">add question</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
