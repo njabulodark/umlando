@@ -1,3 +1,4 @@
+
 <?php 
 include "main.php";
 include_once "template/nav.php";
@@ -169,6 +170,7 @@ document.getElementById(promptLocation).style.color = color;
 </script>
 </head>
 <body>
+  <div class="wrapper">
   <div class="container">
     <form action="contact.php" method="POST" id= "formvalidation" class="form">
 
@@ -180,7 +182,7 @@ document.getElementById(promptLocation).style.color = color;
 
     <div class="form-group">
         <label for="contact-phone">Phone Number</label>
-        <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 1231231234" onkeyup='validatePhone()'>
+        <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 079123456" onkeyup='validatePhone()'>
         <span class='error-message' id='phone-error'></span>
     </div>
     <div class="form-group">
@@ -196,6 +198,7 @@ document.getElementById(promptLocation).style.color = color;
     <button type = "submit" class="btn" name= "submit" onclick='return validateForm()' >Send Message</button>
     <span class='error-message' id='submit-error'></span>
 </form>
+  </div>
   </div>
 
 </body>
