@@ -45,6 +45,11 @@ body {
     float: right;
     display: block;
   }
+
+  .topnav{
+    position: relative;
+    top: 50px;
+  }
 }
 
 @media screen and (max-width: 600px) {

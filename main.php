@@ -270,6 +270,7 @@ class Singleton {
     }
 
     private $state = array();
+    private $dat = array();
     //get time from stat database and compare it with current time
     function compareTime($conn){
         $query = "select * from stat";
@@ -277,6 +278,7 @@ class Singleton {
 
         while($row = mysqli_fetch_assoc($result)){
             $date = $row['name_date'];
+            array_push($this->dat, $date);
             if(is_numeric(substr($date, 1,1)) == 1){
                 //
             }
@@ -303,6 +305,12 @@ class Singleton {
         $state = $this->state[0];
         array_shift($this->state);
         echo $state;
+    }
+
+    function getDat(){
+        $dat = $this->dat[0];
+        array_shift($this->dat);
+        echo $dat;
     }
 
 

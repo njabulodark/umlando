@@ -52,7 +52,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<?php
 				$object->getState();
 				?>
-				<p><b>Open/Closing Date:</b> 31 August 2022</p>
+				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 021 959 6767</p>
 				<p><b>Email:</b> <a href="mailto:info@cput.ac.za">info@cput.ac.za</a></p>
 				<p><b>Location:</b> Western Cape, Cape Town</p>
@@ -66,7 +66,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<?php
 				$object->getState();
 				?>
-				<p><b>Open/Closing Date:</b> September 2022</p>
+				<p><b>Open/Closing Date:</b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 031 373 2000</p>
 				<p><b>Email:</b> <a href="mailto:info@dut.ac.za">info@dut.ac.za</a></p>
 				<p><b>Location:</b> KwaZulu Natal, Durban &amp; Pietermaritzburg</p>
@@ -75,12 +75,12 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
             <h3>University of Johannesburg (UJ)</h3>
                 <p><a href="prospectus/UJ_undergrad_prospectus2023_pages_for_digital_book.pdf" target="_blank">Click here to download 2021/22 Prospectus</a></p>
 				<p><b>Website:</b> <a href="https://www.uj.ac.za" target="_blank">uj.ac.za</a></p>
-				<p><b>Online application:</b> <a href="https://apply.online.uj.ac.za/Start-Now/Apply-Now" target="_blank">click here</a></p>
+				<p><b>Online application: </b> <a href="https://apply.online.uj.ac.za/Start-Now/Apply-Now" target="_blank">click here</a></p>
 				<p><b>Application Fee:</b> R200, <b>Online:</b> Free</p>
 				<?php
 				$object->getState();
 				?>
-				<p><b>Open/Closing Date:</b> 30 September 2022</p>
+				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 011 559 3129</p>
 				<p><b>Email:</b> <a href="mailto:mylife@uj.ac.za">mylife@uj.ac.za</a></p>
 				<p><b>Location:</b> Gauteng, Johannesburg</p>

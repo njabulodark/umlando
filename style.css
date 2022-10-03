@@ -85,6 +85,11 @@ nav .fa{
         display: block;
     }
 
+    .topnav{
+        position: relative;
+        top: 50px;
+      }
+
     nav{
         position: absolute;
         
@@ -188,8 +193,8 @@ i.bi {
 .text-box{  
     width: 90%; 
     color: white;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 250px;
     left: 50%;
     transform: translate( -50%,-50%);
     text-align: center;
