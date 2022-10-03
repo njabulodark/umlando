@@ -1,5 +1,13 @@
 <?php
 
+//create neccesary folders
+$dir = array("C:/xampp/htdocs/umlando/uploads", "C:/xampp/htdocs/umlando/pdf", "C:/xampp/htdocs/umlando/temp", "C:/xampp/htdocs/umlando/prospectus", "C:/xampp/htdocs/umlando/cao", "C:/xampp/htdocs/umlando/docs");
+foreach ($dir as $value) {
+    if (!file_exists($value)) {
+        mkdir($value);
+    }
+}
+
 include_once "main.php";
 $object = Singleton::getInstance();
 //create a data base called career
@@ -34,17 +42,6 @@ if (!$object->checkStat($conn)){
     $object->insertIntoTableStat($conn, "{$key}","{$value}");
   }
 }
-/*
-$string = file_get_contents("C:/xampp/htdocs/umlando/python/data.json");
-$json_a = json_decode($string,true);
-
-foreach ($json_a as $key => $value){
-  //echo  $value. '<br><br>';
-  $date=date_create($value);
-  echo date_format($date,"d M Y"). '<br><br>';
-  $object->insertIntoTableStat($conn, "{$key}","{$value}");
-}
-*/
 ?>
 
 <?php
