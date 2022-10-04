@@ -51,3 +51,9 @@ $object->insertIntoTableUserRegistration($conn, "admin", "admin", "as@ahu.com", 
 
 $object->createTableContact($conn);
 ?>
+
+<?php
+include "addCareerall.php";
+
+all($conn, $object);
+?>
