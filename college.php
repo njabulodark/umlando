@@ -111,14 +111,14 @@ else{
 			</div>
             <div class="course-col">
             <h3>Lovedale TVET College</h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/LOVEDALE TVET.pdf" target="_blank">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="http://www.lovedalecollege.co.za" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> National Certificates, National Diplomas</p>
 				<p><b>Fields of Interest:</b> Business Studies, Art &amp; Design, Farming Management, Human Resource Management, Engineering Studies, Management Studies</p>
 				<p><b>Contact:</b> 043 604 0700</p>
 				<p><b>Location:</b> Eastern Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b>1 Anatolia Row, Qonce, 5601</p>
 			</div>
         </div>
 
@@ -136,14 +136,14 @@ else{
 			</div>
             <div class="course-col">
             <h3>Stenden South Africa </h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/STENDED SA.pdf">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="https://www.stenden.ac.za" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> Degrees</p>
 				<p><b>Fields of Interest:</b> Hotel Management, Disaster Management</p>
 				<p><b>Contact:</b> 046 604 2200</p>
 				<p><b>Location:</b> Eastern Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b>1 Grand St, Port Alfredo, 6170</p>
 			</div>
             <div class="course-col">
             <h3>Academy of Training and Development</h3>
@@ -210,14 +210,14 @@ else{
 			</div>
             <div class="course-col">
             <h3>Motheo TVET College</h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/MOTHEO TTT.pdf" target="_blank">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="http://www.motheotvet.co.za" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> National Certificates</p>
 				<p><b>Fields of Interest:</b> Business Studies, Engineering, Hair Care and Beauty Tech, Artisan and Skills</p>
 				<p><b>Contact:</b> 051 406 9300</p>
 				<p><b>Location:</b> Free State, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b>P.O Box 4717, Randburg, 2125</p>
 			</div>
             <div class="course-col">
             <h3>Qualitas Career Academy</h3>
@@ -247,14 +247,14 @@ else{
 			</div>
             <div class="course-col">
             <h3>Belgium Campus</h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/BELGIUM CAMPUS.pdf" target="_blank">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="http://www.belgiumcampus.co.za" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> Diplomas, Degrees</p>
 				<p><b>Fiels of Interest:</b> IT</p>
 				<p><b>Contact:</b> 010 593 5368</p>
 				<p><b>Location:</b> Gauteng, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b>45A Long St K Park Cbd, Kempton park, 1619, Unit A Sibasa, Limpopo, 0970</p>
 			</div>
             <div class="course-col">
             <h3>BMT College</h3>
@@ -265,7 +265,7 @@ else{
 				<p><b>Fields of Interest:</b> Business Studies, Legal Studies, Financial Management, Health and Safety, Project Management, Human Resource Management, Logistics and Supply Chain Management</p>
 				<p><b>Contact:</b> 010 010 0936</p>
 				<p><b>Location:</b> Gauteng, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b>147 Second Rd, Chart well, 2191</p>
 			</div>
         </div>
 
@@ -321,14 +321,14 @@ else{
 			</div>
             <div class="course-col">
             <h3>Monash South Africa</h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/MONASH UNIVERSITY .pdf" target="_blank">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="https://www.msa.ac.za" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> Foundation Programme, Diplomas, Bachelors Degrees, Advanced Bachelors Degrees, Honours Degrees, Mas</p>
 				<p><b>Fields of Interest:</b> Business, Engineering and Technology, Social and Health Sciences</p>
 				<p><b>Contact:</b> 011 950 4009</p>
 				<p><b>Location:</b> Gauteng, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b>Private Bag X60, Roodepoort, 1725, South Africa</p>
 			</div>
             <div class="course-col">
             <h3>Open Learning Group</h3>
@@ -347,25 +347,25 @@ else{
         <div class="row">
             <div class="course-col">
             <h3>Rosebank College</h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/ROSEBANK COLLEGE .pdf" target="_blank">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="https://www.rosebankcollege.co.za" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> Degrees, Diplomas, Higher Certificates</p>
 				<p><b>Fields of Interest:</b> Commerce, Information Technology, Humanities, Education</p>
 				<p><b>Contact:</b> 011 403 2437</p>
 				<p><b>Location:</b> Gauteng, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b>Corporate Centre, 29 Bell Street, Nelspruit, 1200 and Braamfontein Centre, 23 Jorissen St, Johannesburg, 2017</p>
 			</div>
             <div class="course-col">
             <h3>SANTS Private Higher Education Institution</h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/SANTS COLLAGE.pdf" target="_blank">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="http://www.sants.co.za" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> Diplomas, FET Certificates</p>
 				<p><b>Fields of Interest:</b> Grade R Teaching, ECD</p>
 				<p><b>Contact:</b> 087 353 2504</p>
 				<p><b>Location:</b> Gauteng, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b>13 Umgazi Rd, Menlo Park, Pretoria, 0081</p>
 			</div>
             <div class="course-col">
             <h3>St Augustine Private Tertiary Institution of South Africa</h3>
@@ -384,25 +384,25 @@ else{
         <div class="row">
             <div class="course-col">
             <h3>The Da Vinci Institute</h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/DA VINCI TVET.pdf" target="_blank">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="http://www.davinci.ac.za" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> Higher Certificates, Diplomas, BCom, Masters, PhD Degrees</p>
 				<p><b>Fields of Interest:</b> Business Management, Management of Technology and Innovation</p>
 				<p><b>Contact:</b> 011 608 1331</p>
 				<p><b>Location:</b> Gauteng, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b>16 Park Ave, Modderfontein, Lethabong, 1609</p>
 			</div>
             <div class="course-col">
             <h3>Tshwane South College</h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/TSHWANE TVET.pdf" target="_blank">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="http://www.tsc.edu.za" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> National Certificates</p>
 				<p><b>Fields of Interest:</b> Office Administration, Finance Economics and Accounting, Tourism, Hospitality, Engineering, Information Technology, Financial Management</p>
 				<p><b>Contact:</b> 012 401 5000</p>
 				<p><b>Location:</b> Gauteng, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b>PO Box 151, Pretoria, 0001 </p>
 			</div>
             <div class="course-col">
             <h3>Lephalale TVET College</h3>
@@ -450,7 +450,7 @@ else{
 				<p><b>Fields of Interest:</b> Business Studies, Engineering Studies, Computers</p>
 				<p><b>Contact:</b> 013 269 0278</p>
 				<p><b>Location:</b> Limpopo, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b>18a Beyers Naude Street, Standerton, 3430</p>
 			</div>
         </div>
 
@@ -458,25 +458,25 @@ else{
         <div class="row">
             <div class="course-col">
             <h3>Southern African Wildlife College</h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/ORBIT COLLAGE .pdf" target="_blank">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="http://www.wildlifecollege.co.za" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> Higher Certificates, National Certificates, Skills Programmes, Short Courses</p>
 				<p><b>Fields of Interest:</b> Wildlife Area Management, Community, Youth Development and Access, Protected Are Integrity, Sustainable Use and Field Guiding</p>
 				<p><b>Contact:</b> 015 793 7300</p>
 				<p><b>Location:</b> Limpopo, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b>Springvalley Farm 200KU, Kempis Nature Reserve, Orpen Road, Hoedspruit, 1380</p>
 			</div>
             <div class="course-col">
             <h3>Vhembe TVET College</h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/VHEMBE TVET.pdf" target="_blank">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="https://www.vhembecollege.edu.za" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> National Certificates, Diplomas</p>
 				<p><b>Fields of Interest:</b> Business Studies, Engineering, Hospitality, Tourism, Clothing Production</p>
 				<p><b>Contact:</b> 015 963 3156</p>
 				<p><b>Location:</b> Limpopo, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b>Unit A Sibasa, Limpopo, 0970</p>
 			</div>
             <div class="course-col">
             <h3>Waterberg TVET College</h3>
@@ -496,7 +496,7 @@ else{
 		<div class="row">
             <div class="course-col">
             <h3>Ehlanzeni TVET College</h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/EHLANZENI TVET.pdf" target="_blank">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="http://www.ehlanzenicollege.co.za" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> National Certificates, Diplomas</p>
@@ -507,7 +507,7 @@ else{
 			</div>
             <div class="course-col">
             <h3>Gert Sibande TVET College</h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/GERT SIBANDE.pdf" target="_blank">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="http://www.gscollege.co.za" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> National Certificates, Diplomas</p>
@@ -541,7 +541,7 @@ else{
 				<p><b>Fields of Interest:</b> Engineering Studies, Business Studies, Hospitality and Tourism</p>
 				<p><b>Contact:</b> 014 597 5502</p>
 				<p><b>Location:</b> North West, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b>Fatima Bharat St, Rusternburg, 0300, PO Box 151, Pretoria, 0001</p>
 			</div>
             <div class="course-col">
             <h3>Potchefstroom Academy </h3>
@@ -647,14 +647,14 @@ else{
 		<div class="row">
             <div class="course-col">
             <h3>College SA</h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/COLLAGE SA.pdf" target="_blank">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="https://www.collegesa.edu.za/" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> Short Course Certificates, Proficiency Certificates, Skills Certificates, National Certificates, FET</p>
 				<p><b>Fields of Interest:</b> Accounting and Bookkeeping, Business Management &amp; Office Administration, Beauty Therapy, Computer, Child Day Care, Events Management, Graphic Design, Web Design, Photography, Tourism, Human Resource Management, Marketing, Occupational Health and Safety, Project Management, Secretarial &amp; Personal Assistant, Supply Chain, Engineering, Workplace Skills</p>
 				<p><b>Contact:</b> 0861 663 663</p>
 				<p><b>Location:</b> Western Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>698A Steve Biko St, Pretoria, 0001 and Tygervalley, 1st Floor, Cape Town, 7538</p>
 			</div>
             <div class="course-col">
             <h3>Concept Interactive</h3>
@@ -695,14 +695,14 @@ else{
 			</div>
             <div class="course-col">
             <h3>George Whitefield College </h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/GEORGE COLLAGE.pdf" target="_blank">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="http://www.gwc.ac.za" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> Higher Certificates, Bachelors</p>
 				<p><b>Fields of Interest:</b> Theology</p>
 				<p><b>Contact:</b>  021 788 1652</p>
 				<p><b>Location:</b> Western Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b>34 Beach Rd, Muizenberg, Cape Town, 7950</p>
 			</div>
 
         </div>

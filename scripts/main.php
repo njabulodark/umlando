@@ -15,7 +15,6 @@ class Singleton {
     }
      
     public static function getInstance() {
-        session_start();
         if (!isset(self::$instance)) {
             self::$instance = new Singleton();
         }
