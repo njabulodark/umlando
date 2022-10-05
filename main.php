@@ -273,6 +273,7 @@ class Singleton {
     private $dat = array();
     //get time from stat database and compare it with current time
     function compareTime($conn){
+        $this->date = array();
         $query = "select * from stat";
         $result = mysqli_query($conn, $query);
 
