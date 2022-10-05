@@ -11,7 +11,7 @@ if(isset($_SESSION['logged_in'])){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <link rel="stylesheet" href="formstyle.css" media="all">
+  <link rel="stylesheet" href="Accformstyle.css" media="all">
   <script type="text/javascript">
         function validateName() {
 var name = document.getElementById('username').value;
@@ -40,11 +40,9 @@ if(phone.length < 5 ) {
 producePrompt('Password must be at least 5 digits', 'password-error', 'red');
 return false;
 }
-
-}
 producePrompt( 'Valid','password-error','green');
 return true;
-
+}
 function validateForm() {
 if (!validateName() && !validatePassword()) {
 jsShow('submit-error');
@@ -86,12 +84,12 @@ document.getElementById(promptLocation).style.color = color;
 </head>
 <body>
   <div class="container">
-    <form action="signin.php" method="POST" id= "formvalidation" class="form">
+    <form action="Signin.php" method="POST" id= "formvalidation" class="form">
 
       <div class="form-group">
         <h1>Login</h1>
         <label for="username">Username</label>
-        <input type="text" class="form-control" id="username" name="username"   placeholder="Enter username.." onkeyup='validateName()'required>
+        <input type="text" class="form-control" id="username" name="password"   placeholder="Enter username.." onkeyup='validateName()'required>
         <span class='error-message' id='name-error'></span>
     </div>
     <div class="form-group">
@@ -99,7 +97,7 @@ document.getElementById(promptLocation).style.color = color;
         <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" onkeyup='validatePassword()'required>
         <span class='error-message' id='password-error'></span>
     </div>   
-    <button type = "submit" class="btn" name= "submit" onclick='return validateForm()' >Login</button>
+    <button type = "submit" class="btn" name= "submit">Login</button>
     <span class='error-message' id='submit-error'></span>
     <h2>No account!!<a href="CreateAccount.php">Create one</a></h2>
 </form>
