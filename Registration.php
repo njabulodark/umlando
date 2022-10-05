@@ -25,6 +25,7 @@ else{
     //assign session variable to a logged in user
     $_SESSION['username'] = $name;
     $_SESSION['user_email'] = $email;
+    $_SESSION['p_assword'] = $pass;
     $_SESSION['type_'] = "nonadmin";
     $_SESSION['logged_in'] = true;
     
