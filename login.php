@@ -44,7 +44,7 @@ return false;
 }
 producePrompt( 'Valid','password-error','green');
 return true;
-}
+
 function validateForm() {
 if (!validateName() && !validatePassword()) {
 jsShow('submit-error');
