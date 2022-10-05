@@ -4,51 +4,106 @@ if(isset($_SESSION['logged_in'])){
     header('location:index.php');
 }
 
-
 ?>
 <!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>home</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+ <html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="formstyle.css" media="all">
+  <script type="text/javascript">
+        function validateName() {
+var name = document.getElementById('username').value;
+if(name.length == 0) {
+  producePrompt('Name is required', 'name-error' , 'red')
+  return false;
+}
+if(name.length < 2){
+  producePrompt('Name is atleast two characters', 'name-error','red')
+  return false;
+}
+if (!name.match(/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/)) {
+  producePrompt('First name, please.','name-error', 'red');
+  return false;
+}
+producePrompt('Valid','name-error','green');
+return true;
+}
+function validatePassword() {
+var phone = document.getElementById('password').value;
+if(phone.length == 0) {
+producePrompt('Password cannot be left blank', 'password-error', 'red');
+return false;
+}
+if(phone.length < 5 ) {
+producePrompt('Password must be at least 5 digits', 'password-error', 'red');
+return false;
+}
+
+}
+producePrompt( 'Valid','password-error','green');
+return true;
+
+function validateForm() {
+if (!validateName() && !validatePassword()) {
+jsShow('submit-error');
+producePrompt('Incorr', 'submit-error', 'red');
+setTimeout(function(){jsHide('submit-error');}, 2000);
+return false;
+}
+else if (validateName() && !validatePassword()) {
+  jsShow('submit-error');
+  producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+  setTimeout(function(){jsHide('submit-error');}, 2000);
+return false;
+}
+else if(!validateName() && validatePassword()){
+  jsShow('submit-error');
+  producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+  setTimeout(function(){jsHide('submit-error');}, 2000);
+return false;
+ }
+ else if(validateName() && validatePassword()){
+  jsShow('submit-error');
+  producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+  setTimeout(function(){jsHide('submit-error');}, 2000);
+return false;
+ }
+ 
+}
+function jsShow(id) {
+document.getElementById(id).style.display = 'block';
+}
+function jsHide(id) {
+document.getElementById(id).style.display = 'none';
+}
+function producePrompt(message, promptLocation, color) {
+document.getElementById(promptLocation).innerHTML = message;
+document.getElementById(promptLocation).style.color = color;
+}
+</script>
 </head>
 <body>
-<section class="nav">
-        <nav>
-            <div class="logo" id="logo">
-                <h1>
-                    <a>University Guardian</a>
-                    <h2>Your Second Parent</h2>
+  <div class="container">
+    <form action="signin.php" method="POST" id= "formvalidation" class="form">
 
-                </h1>
-            </div>
-        </nav>
-<div class="Sign-in-container">
-    <div class="Sign-in-Box">
-    <h1>To be able to access the features this websites provides please sign in</h1>
-    <h3>Sign in</h3>
-    <form action="Signin.php" method="post">
-        <div class="form-group">
-            <br><label>Username</label><br>
-            <input type="text" name="username" class="form-requirement" required><br>
-        </div>
-        <div class="form-group">
-            <br><label>Password</label><br>
-            <input type="password" name="password" class="form-requirement" required><br>
-        </div>
-        <button type="submit" class="muss">Sign in </button>
-        No account?<a href="CreateAccount.php">Create one!</a>
-        </form>
-
+      <div class="form-group">
+        <h1>Login</h1>
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" name="username"   placeholder="Enter username.." onkeyup='validateName()'required>
+        <span class='error-message' id='name-error'></span>
     </div>
-    
-</div>   
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" onkeyup='validatePassword()'required>
+        <span class='error-message' id='password-error'></span>
+    </div>   
+    <button type = "submit" class="btn" name= "submit" onclick='return validateForm()' >Login</button>
+    <span class='error-message' id='submit-error'></span>
+    <h2>No account!!<a href="CreateAccount.php">Create one</a></h2>
+</form>
+  </div>
+
 </body>
 </html>
