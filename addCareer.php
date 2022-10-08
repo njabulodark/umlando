@@ -17,8 +17,12 @@ $error= 0;
 if(isset($_SESSION['expire'])){
     if($_SESSION['expire'] < time()){
         session_destroy();
-        header('location:relogin.php');
+        header('location:login.php');
     }
+}
+
+else{
+    $_SESSION['expire'] = $_SESSION['start'] + (10 * 60);
 }
 
 if(isset($_POST["submit"])) {

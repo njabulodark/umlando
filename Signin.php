@@ -23,7 +23,7 @@ if($sate){
     
     //time the session
     $_SESSION['start'] = time();
-    $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
+    $_SESSION['expire'] = $_SESSION['start'] + (10 * 60);
     header('location:index.php');
 }else{
     header('location:relogin.php');
