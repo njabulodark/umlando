@@ -291,12 +291,12 @@ p{
 .row{
     margin-top: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .course-col{
 
-    flex-basis: 31%;
+    flex-basis: 45%;
     background: #d1c2c2;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -313,6 +313,42 @@ h3{
 .courser{
     padding-bottom: 150px;
 }
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    width: 85vmin; /* Add your preferred size here */
+    overflow-wrap: normal;
+    border-radius: 8px;
+}
+
+.wrapper img{
+    width: 100%;
+}
+.wrapper img:nth-child(1) {
+    animation: xfade 10s 5s infinite;
+}
+
+.wrapper img:nth-child(2) {
+    animation: xfade 10s 0s infinite;
+}
+
+@keyframes xfade{
+   0%{
+      opacity: 1;
+   }
+   50% {
+       opacity: 0;
+   }
+
+   60% {
+       opacity:1;
+   }
+   100% {
+      opacity:1;
+   }
+}
+
 
 @media(max-width: 800px){
     .row{
@@ -419,7 +455,6 @@ footer ul{
     #universities_page{
         padding-top: 50px;
     }
-<<<<<<< HEAD
 
     #colleges_page{
         padding-top: 50px;
@@ -430,48 +465,3 @@ footer ul{
     background-image: linear-gradient(rgba(31, 35, 48, 0.3),rgba(31, 35, 48, 0.3)), url(http://www.unizulu.ac.za/wp-content/uploads/2018/01/Campus-ADMIN-AERIAL.jpg);
     background-attachment: fixed;
 }
-=======
-}
-
-/*-------------------image2pdf------------------------*/
-
-.image2pdf{
-    color: black;
-}
-
-.tool{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 90px;
-    padding-bottom: 70px;
-}
-
-.tool p{
-    text-align: center;
-    font-size: large;
-}
-
-.tool h1{
-    font-size: 38px;
-    font-weight: 600;
-}
-
-.tool h2{
-    font-size: 18px;
-    line-height: 22px;
-}
-
-#submit{
-    padding: 15px 20px;
-}
-#submit a{
-    background-color: #04ff6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-  }
->>>>>>> origin/home
