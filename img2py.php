@@ -3,7 +3,7 @@
 include "main.php";
 
 $object = Singleton::getInstance();
-$conn = $object->startDB("career");
+$conn = $object->startDB("userregistration");
 
 //check if session has expired
 if(isset($_SESSION['expire'])){
@@ -41,18 +41,10 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 	include_once "template/adminnav.php";
 }
 
-if(isset($_SESSION['logged_in'])){
-    echo '<section class="image2pdf" >';
-}
-else{
-    include_once "template/overlay.php";
-	header('Refresh: 10; URL=login.php');
-    echo '<section class="image2pdf" style="filter: blur(4px)" >';
 
-}
 ?>
 
-
+<section class="image2pdf" >
 <div class="tool" style="height: 40vh;">
     <div class="tool_header">
         <h1>Convert Image To PDF</h1>

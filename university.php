@@ -2,7 +2,7 @@
 
 include_once "main.php";
 $object = Singleton::getInstance();
-$conn = $object->startDB("career");
+$conn = $object->startDB("userregistration");
 
 //check if session has expired
 if(isset($_SESSION['expire'])){
@@ -12,10 +12,6 @@ if(isset($_SESSION['expire'])){
     }
 }
 
-
-//$object->createTableStat($conn);
-
-//$object->insertIntoTableStat($conn, "hello","30 september 2022");
 $object->compareTime($conn);
 ?>
 <!DOCTYPE html>
@@ -39,15 +35,6 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 	include_once "template/adminnav.php";
 }
 
-if(isset($_SESSION['logged_in'])){
-    echo '<section class="universities" id="universities_page" >';
-}
-else{
-    include_once "template/overlay.php";
-	header('Refresh: 10; URL=login.php');
-    echo '<section class="universities" id="universities_page" style="filter: blur(4px)" >';
-
-}
 ?>
 
 <section class="universities" id="universities_page">
