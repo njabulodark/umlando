@@ -265,12 +265,37 @@ i.bi {
     background-attachment: fixed;
     background-repeat: repeat-y;
 }
+
+.block-list{
+    padding-top: 55px;
+    padding-bottom: 25px;
+}
+
+.block-list h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'League Gothic', sans-serif;
+    text-shadow: 5px 2px 8px black;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.block-list p{
+
+    font-size: 20px;
+}
+.block-list ol{
+    margin: 0 80px 0;
+    list-style-type: circle;
+}
+
+
 .university{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 70px;
+
 }
 
 .university h1{
@@ -289,7 +314,6 @@ p{
 }
 
 .row{
-    margin-top: 5%;
     display: flex;
     justify-content: space-around;
 }
@@ -318,35 +342,12 @@ h3{
     width: 100%;
     display: flex;
     width: 85vmin; /* Add your preferred size here */
-    overflow-wrap: normal;
+    overflow: hidden;
     border-radius: 8px;
 }
 
 .wrapper img{
     width: 100%;
-}
-.wrapper img:nth-child(1) {
-    animation: xfade 10s 5s infinite;
-}
-
-.wrapper img:nth-child(2) {
-    animation: xfade 10s 0s infinite;
-}
-
-@keyframes xfade{
-   0%{
-      opacity: 1;
-   }
-   50% {
-       opacity: 0;
-   }
-
-   60% {
-       opacity:1;
-   }
-   100% {
-      opacity:1;
-   }
 }
 
 
@@ -357,6 +358,15 @@ h3{
 
     .courser{
         background-size: auto;
+    }
+
+    .wrapper{
+        width: 100%;
+    }
+
+    .course-col p{
+        height: 25em;
+        overflow-y: scroll;
     }
 }
 
@@ -465,3 +475,6 @@ footer ul{
     background-image: linear-gradient(rgba(31, 35, 48, 0.3),rgba(31, 35, 48, 0.3)), url(http://www.unizulu.ac.za/wp-content/uploads/2018/01/Campus-ADMIN-AERIAL.jpg);
     background-attachment: fixed;
 }
+
+
+
