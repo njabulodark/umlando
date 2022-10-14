@@ -258,9 +258,9 @@ i.bi {
 }
 
 
-/*------------------------------------------- universities-----------------------------------------------------*/
-.universities{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(background/uni_cover.jpg);
+/*------------------------------------------- careeriers-----------------------------------------------------*/
+.careeriers{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
     background-size: cover;
     background-attachment: fixed;
     background-repeat: repeat-y;
@@ -290,7 +290,7 @@ i.bi {
 }
 
 
-.university{
+.career{
     width: 80%;
     margin: auto;
     text-align: center;
@@ -298,7 +298,7 @@ i.bi {
 
 }
 
-.university h1{
+.career h1{
     font-size: 36px;
     font-weight: 600;
     color: azure;
@@ -318,12 +318,13 @@ p{
     justify-content: space-around;
 }
 
-.course-col{
+.career-col{
 
     flex-basis: 45%;
     background: #d1c2c2;
     border-radius: 10px;
     margin-bottom: 5%;
+    margin-right: 2%;
     padding: 20px 12px;
     box-sizing: border-box;
 }
@@ -334,7 +335,7 @@ h3{
     margin: 10px 0;
 }
 
-.courser{
+.careerr{
     padding-bottom: 150px;
 }
 
@@ -356,7 +357,7 @@ h3{
         flex-direction: column;
     }
 
-    .courser{
+    .careerr{
         background-size: auto;
     }
 
@@ -364,7 +365,7 @@ h3{
         width: 100%;
     }
 
-    .course-col p{
+    .career-col p{
         height: 25em;
         overflow-y: scroll;
     }
@@ -455,14 +456,14 @@ footer ul{
     }
 }
 
-/*-------------------------University page-----------------------------*/
+/*-------------------------career page-----------------------------*/
 
 @media(max-width: 800px){
     .footers p{
         font-size: 30px;
     }
 
-    #universities_page{
+    #careeriers_page{
         padding-top: 50px;
     }
 
