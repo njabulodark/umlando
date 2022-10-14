@@ -42,38 +42,53 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 }
 
 ?>
-<section class="career" >
-        <a name="top"></a>
-        <h1>Major's Descriptions</h1>
+<section class="careeriers" id="careeriers_page">
+    <div class="block-list" style="background-color: orange;">
+        <a name="top"></a><h1 >Major's Descriptions</h1>
         <div class="text">
-          <div id = 'description'>
-          <p>Below is a list of majors and a brief description of what they are. A degree/diploma is conferred to you upon completion of all the requirements for graduation, and your major is the more specific area of study you focused on while completing your degree. Knowing what your major is can help you comprehend the value of your degree and the potential occupations you might pursue after receiving it.  </p></div>
-          <ol>
-          <?php
-        
-            $query = "select * from Career";
-            $result = mysqli_query($conn, $query);
-    
-            while($row = mysqli_fetch_assoc($result)){
-                echo "<li><a href='#{$row['name_title']}'>{$row['name_title']}</a></li>";
-                
-            }
-            
-            ?>
-          </ol>
+            <div id = 'description'>
+                <p>Below is a list of majors and a brief description of what they are. A degree/diploma is conferred to you upon completion of all the requirements for graduation, and your major is the more specific area of study you focused on while completing your degree. Knowing what your major is can help you comprehend the value of your degree and the potential occupations you might pursue after receiving it.  </p></div>
+                <ol>
+                    <li><a href="#1">wdwd     ca    ree   r 1</a></li>
+                    <li><a href="#2">career 2</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
 
-          <?php
-          $result = mysqli_query($conn, $query);
-    
-          while($row = mysqli_fetch_assoc($result)){
-              //echo "<li><a href='#{$row['name_title']}'>{$row['name_title']}</a></li>";
-              echo "<h2>{$row['name_title']}<a name='{$row['name_title']}'></a></h2>";
-              echo "<p>{$row['para']}</p>";
-              echo '<div class="top"  ><a href="#top" id="hero-btn">back to the top</a></div>';
-          }
-          ?>
-          </div>
+    <?php
+    $html = '<div class="career">
 
+    <h1>career %s<a name="%s"></a></h2>
+    <div class="row">
+        <div class="career-col">
+            <h3>Description</h3>
+            <p>This major helps prepare students for careers involving the application of engineering principles to agricultural and biological production systems, processing systems, and conservation of land and water resources. The curriculum may include food engineering, postharvest handling and processing of commodities, power and machinery development and applications, resource management and utilization, soil and water management, and structures and their environmental modifications.
+Careers for graduates include design, development, and research engineering positions involving food processing, machinery development, irrigation and drainage, soil and water conservation, materials handling, and structural systems for animals, plants, and crop storage. Agricultural and biological engineers are employed in industry, consulting firms, and governmental agencies in the United States and abroad. Graduates may deal with the various engineering aspects associated with production and processing of food, fiber, and other biological materials, within the constraints of environmental protection and natural resource conservation. [ENGINEERING]</p>
+        </div>
+        <div class="career-col">
+            <div class="wrapper" >
+                <img src="https://i.pinimg.com/originals/2b/de/de/2bdede0647e3cdf75b44ea33723201d9.jpg">
+            </div>
+            <hr>
+            <div class="secondpart">
+            <h3>High School Subjects</h3>
+            <ul style="list-style: none;">
+                <li>Maths</li>
+                <li>Physical Science</li>
+                <li>Life Science</li>
+                <li>English</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="top"><a href="#top">back to the top</a></div>
+</div>';
+
+        for($i=1; $i<=5; $i++){
+            printf($html, $i, $i);
+        }
+    ?>
 </section>
 
 
