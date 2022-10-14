@@ -10,6 +10,9 @@ if(isset($_SESSION['expire'])){
         session_destroy();
         header('location:login.php');
     }
+	else{
+		$_SESSION['expire'] = time() + 60*60;
+	}
 }
 
 $object->compareTime($conn);

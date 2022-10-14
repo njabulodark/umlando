@@ -6,8 +6,11 @@ $conn = $object->startDB("userregistration");
 if(isset($_SESSION['expire'])){
   if($_SESSION['expire'] < time()){
       session_destroy();
-      header('location:relogin.php');
+      header('location:login.php');
   }
+else{
+  $_SESSION['expire'] = time() + 60*60;
+}
 }
 
 if (isset($_POST["name"]) && isset($_POST["phone"]) && isset($_POST["email"]) && isset($_POST["message"])){

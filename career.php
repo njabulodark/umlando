@@ -11,10 +11,12 @@ $careers = $object->getCareer($conn);
 if(isset($_SESSION['expire'])){
     if($_SESSION['expire'] < time()){
         session_destroy();
-        header('location:relogin.php');
+        header('location:login.php');
     }
+	else{
+		$_SESSION['expire'] = time() + 60*60;
+	}
 }
-
 $str = "maths,english,LO";
 function subj($str){
     $new = '';
@@ -84,7 +86,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
         </div>
         <div class="career-col">
             <div class="wrapper" >
-                <img src="https://i.pinimg.com/originals/2b/de/de/2bdede0647e3cdf75b44ea33723201d9.jpg">
+                <img src="images/career/%s.jpg">
             </div>
             <hr>
             <div class="secondpart">
@@ -101,8 +103,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 
 
         foreach(array_keys($careers) as $title){
-            /*format = career title, tag, career description, list*/
-            printf($html, $title, $title, $careers[$title], subj($str));
+            /*format = career title, tag, career description,picture, list*/
+            printf($html, $title, $title, $careers[$title], $title, subj($str));
         }
     ?>
 </section>
