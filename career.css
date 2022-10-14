@@ -181,67 +181,97 @@ footer ul{
     }
 }
 
-/*******************career**********************/
-.career {
+/*------------------------------------------- careeriers-----------------------------------------------------*/
+.careeriers{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+}
 
-    background-color: aliceblue;
-    background-position: top center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 1%;
-    border: 1cm;
-    
+.block-list{
+    padding-top: 55px;
+    padding-bottom: 25px;
+}
+
+.block-list h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'League Gothic', sans-serif;
+    text-shadow: 5px 2px 8px black;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.block-list p{
+
+    font-size: 20px;
+}
+.block-list ol{
+    margin: 0 80px 0;
+    list-style-type: circle;
+}
+
+
+.career{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+
 }
 
 .career h1{
     font-size: 36px;
     font-weight: 600;
-    margin: 10px;
-    text-align: center;
+    color: azure;
 }
 
-.text {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 70px;
-}
-
-.text ol{
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
     text-align: left;
 }
 
-.text h2{
-    padding-top: 15px;
-    padding-bottom: 15px;
+.row{
+    display: flex;
+    justify-content: space-around;
 }
 
-.text .top{
-    padding: 9px;
-}
-#description p{
-    margin: 12px;
+.career-col{
+
+    flex-basis: 45%;
+    background: #d1c2c2;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-right: 2%;
+    padding: 20px 12px;
+    box-sizing: border-box;
 }
 
-a {
-    border: none;
-    color: #6f21a3;
-    font-weight: bold;
-    text-decoration: none;
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
 }
 
-a:hover {
-  text-decoration: underline;
+.careerr{
+    padding-bottom: 150px;
 }
 
-a:visited {
-  color: #8b7da8;
+.wrapper{
+    width: 100%;
+    display: flex;
+    width: 85vmin; /* Add your preferred size here */
+    overflow: hidden;
+    border-radius: 8px;
 }
 
-@media(max-width: 800px){
-    .career {
-        padding-top: 70px;
-    }
+.wrapper img{
+    width: 100%;
 }
 
 .top a{
@@ -263,20 +293,22 @@ a:visited {
     border: 1px solid red;
 }
 
-.addcareer{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 5%;
-}
 
-.add{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 300px;
-    padding-bottom: 70px;
-}
+@media(max-width: 800px){
+    .row{
+        flex-direction: column;
+    }
 
-.add h1{
-    padding-top: 250px;
+    .careerr{
+        background-size: auto;
+    }
+
+    .wrapper{
+        width: 100%;
+    }
+
+    .career-col p{
+        height: 25em;
+        overflow-y: scroll;
+    }
 }
