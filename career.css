@@ -183,7 +183,7 @@ footer ul{
 
 /*------------------------------------------- careeriers-----------------------------------------------------*/
 .careeriers{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background-image: linear-gradient(rgba(24, 33, 68, 0.7),rgba(41, 48, 78, 0.7));
     background-size: cover;
     background-attachment: fixed;
     background-repeat: repeat-y;
@@ -279,12 +279,12 @@ h3{
     color: #6f21a3;
     display: inline-block;
     border: 1px solid #ffff;
-    font-size: 13px;
+    font-size: 19px;
     cursor: pointer;
     padding: 12px 34px;
     position: relative;
     background: transparent;
-    transition: 0.5s;
+    transition: 0.3s;
 
 }
 

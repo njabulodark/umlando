@@ -252,11 +252,26 @@ class Singleton {
     function selectFromTableStat($conn){
         $query = "select * from stat";
         $result = mysqli_query($conn, $query);
-
+        
         while($row = mysqli_fetch_assoc($result)){
             echo "<h1>{$row['name_title']}</h1>";
             echo "<h1>{$row['name_date']}</h1>";
         }
+    }
+    
+    function getCareer($conn){
+        $arr = array();
+        $query = "select * from Career";
+        $result = mysqli_query($conn, $query);
+
+        while($row = mysqli_fetch_assoc($result)){
+            $arr[$row['name_title']] = $row['para'];
+            /*echo "<h1>{$row['name_tag']}</h1>";
+            echo "<h1>{$row['name_title']}</h1>";
+            echo "<h1>{$row['para']}</h1>";*/
+        }
+
+        return $arr;
     }
 
     function deleteFromTableCareer($conn, $name_title){
@@ -266,6 +281,38 @@ class Singleton {
           echo "Record deleted successfully";
         } else {
           echo "Error deleting record: " . $conn->error;
+        }
+    }
+
+    function getUniversityInfo($conn, $university){
+        $query = "select * from stat WHERE name_title='{$university}'";
+        $result = mysqli_query($conn, $query);
+
+        
+        while($row = mysqli_fetch_assoc($result)){
+            $pr = $row['name_date'];
+            echo "<p><b>Open/Closing Date: </b>.$pr.</p>";
+
+            $date = $row['name_date'];
+            array_push($this->dat, $date);
+            if(is_numeric(substr($date, 1,1)) == 1){
+                //
+            }
+            else{
+                $date = strtotime("2 jan 2020");
+            }
+            //echo is_numeric(substr($date, 1,1));
+            $name = $row['name_title'];
+            $date = strtotime($date);
+            $current = strtotime(date("d-M-Y"));
+            //echo $date.":".$current."<br>";
+            $left = $date - $current;
+            if($left < 0){
+                echo "<p style='color:red'>Applications: CLOSED</p>";
+            }
+            else{
+                echo "<p style='color:green'>Applications: OPEN</p>";
+            }
         }
     }
 
@@ -301,18 +348,7 @@ class Singleton {
         }
     }
 
-    //get state first index and delete it
-    function getState(){
-        $state = $this->state[0];
-        array_shift($this->state);
-        echo $state;
-    }
 
-    function getDat(){
-        $dat = $this->dat[0];
-        array_shift($this->dat);
-        echo $dat;
-    }
 
 
     //check for a value in stat database

@@ -49,9 +49,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
                 <p><b>Online application:</b> <a href="https://enroll.cut.ac.za/pls/prodi41/w99pkg.mi_login" target="_blank">click here</a></p>
 				<p><b>Application Fee:</b> R100</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "Cape Peninsula University of Technology (CPUT)");
 				?>
-				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 021 959 6767</p>
 				<p><b>Email:</b> <a href="mailto:info@cput.ac.za">info@cput.ac.za</a></p>
 				<p><b>Location:</b> Western Cape, Cape Town</p>
@@ -63,9 +62,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Online application:</b> <a href="https://mercury.dut.ac.za/pls/prodi41/w03pkg.call_dyn_val" target="_blank">click here</a></p>
 				<p><b>Application Fee:</b> R220</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "Durban University of Technology (DUT)");
 				?>
-				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 031 373 2000</p>
 				<p><b>Email:</b> <a href="mailto:info@dut.ac.za">info@dut.ac.za</a></p>
 				<p><b>Location:</b> KwaZulu Natal, Durban &amp; Pietermaritzburg</p>
@@ -77,9 +75,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Online application:</b> <a href="https://apply.online.uj.ac.za/Start-Now/Apply-Now" target="_blank">click here</a></p>
 				<p><b>Application Fee:</b> R200, <b>Online:</b> Free</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "University of Johannesburg (UJ)");
 				?>
-				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 011 559 3129</p>
 				<p><b>Email:</b> <a href="mailto:mylife@uj.ac.za">mylife@uj.ac.za</a></p>
 				<p><b>Location:</b> Gauteng, Johannesburg</p>
@@ -95,9 +92,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Check application status:</b> <a href="https://enroll.cut.ac.za/pls/prodi41/w99pkg.mi_login" target="_blank">click here</a></p>
 				<p><b>Application Fee:</b> Free</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "Central University of Technology (CUT)");
 				?>
-				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 051 507 3986</p>
 				<p><b>Email:</b> <a href="mailto:ssepeng@cut.ac.za">ssepeng@cut.ac.za</a></p>
 				<p><b>Location:</b> Free State, Bloemfontein Central</p>
@@ -109,9 +105,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Online application:</b> <a href="https://ierp.mut.ac.za/pls/prodi03/w99pkg.mi_login" target="_blank">click here</a></p>
 				<p><b>Application Fee:</b> R200</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "Mongosuthu University of Technology (MUT)");
 				?>
-				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 031 819 9280</p>
 				<p><b>Email:</b> <a href="mailto:info@mut.ac.za">info@mut.ac.za</a></p>
 				<p><b>Location:</b> KwaZulu Natal, Umlazi</p>
@@ -123,8 +118,9 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Website:</b> <a href="https://www.mandela.ac.za" target="_blank"> mandela.ac.za</a></p>
 				<p><b>Online application:</b> <a href="https://applyonline.mandela.ac.za/Step1New.aspx" target="_blank">click here</a></p>
 				<p><b>Application Fee:</b> Free</p>
-				<p style="color:green"><b>Applications:</b> OPEN</p>
-				<p><b>Open/Closing Date:</b> 4 Aug/30 Sep 2022</p>
+				<?php
+				$object->getUniversityInfo($conn, "Nelson Mandela University (NMU)");
+				?>
 				<p><b>Contact:</b> 041 504 1111</p>
 				<p><b>Email:</b> <a href="mailto:info@mandela.ac.za">info@mandela.ac.za</a></p>
 				<p><b>Location:</b> Eastern Cape, Port Elizabeth</p>
@@ -139,9 +135,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Online application:</b> <a href="https://vssweb.nwu.ac.za/aaa-webclient/AAAUnsecuredNewApplicationMenuWin.do#/top" target="_blank">click here</a></p>
 				<p><b>Application Fee:</b> Free</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "North West University (NWU)");
 				?>
-				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 018 299 1111/2222</p>
 				<p><b>Email:</b> <a href="mailto:nwu-serviceline@nwu.ac.za">serviceline@nwu.ac.za</a></p>
 				<p><b>Location:</b> North West, Potchefstroom</p>
@@ -153,9 +148,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>application: </b><a href="https://ross.ru.ac.za/" target="_blank">click here</a></p>
 				<p><b>Application Fee: </b>R100</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "Rhodes University (RU)");
 				?>
-				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact: </b>046 603 8111</p>
 				<p><b>Email: </b><a href="mailto:registrar@ru.ac.za">registrar@ru.ac.za</a></p>
 				<p><b>Location: </b>Eastern Cape, Grahamstown</p>
@@ -167,9 +161,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Online application: </b><a href="uni/smu/apply/index.php" target="_blank">click here</a></p>
 				<p><b>Application Fee: </b>R200</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "Sefako Makgathos Health Sciences University (SMU)");
 				?>
-				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact: </b>012 521 5057/5059</p>
 				<p><b>Email: </b><a href="mailto:apply@smu.ac.za">apply@smu.ac.za</a></p>
 				<p><b>Location: </b>Gauteng, Pretoria</p>
@@ -185,9 +178,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Online application: </b><a href="uni/spu/apply/index.html" target="_blank">click here</a></p>
 				<p><b>Application Fee: </b>R100</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "Sol Plaantje University (SPU)");
 				?>
-				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact: </b>053 491 0000</p>
 				<p><b>Email: </b><a href="mailto:applications@spu.ac.za">applications@spu.ac.za</a></p>
 				<p><b>Location: </b>Western Cape, Stellenbosch</p>
@@ -199,9 +191,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Online application: </b><a href="https://student.sun.ac.za/signup/" target="_blank">click here</a></p>
 				<p><b>Application Fee: </b>R100</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "Stellenbosch University (SUN)");
 				?>
-				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact: </b>021 808 9111</p>
 				<p><b>Email: </b><a href="mailto:info@sun.ac.za">info@sun.ac.za</a></p>
 				<p><b>Location: </b>Western Cape, Stellenbosch</p>
@@ -213,9 +204,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Online application: <a href="https://ienabler.tut.ac.za/pls/prodi41/gen.gw1pkg.gw1startup?x_processcode=ITS_OAP" target="_blank">click here</a></p>
 				<p>Application Fee: R240</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "Tshwane University of Technology (TUT)");
 				?>
-				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 086 110 2421</p>
 				<p>Email: <a href="mailto:general@tut.ac.za">general@tut.ac.za</a></p>
 				<p>Location: Gauteng, Pretoria</p>
@@ -231,9 +221,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Online application: <a href="https://publicaccess.uct.ac.za/psp/public/EMPLOYEE/SA/c/UCT_PUBLIC_MENU.UCT_SS_APPL.GBL?" target="_blank">click here</a></p>
 				<p>Application Fee: R200</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "University of Cape Town (UCT)");
 				?>
-				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 021 650 9111</p>
 				<p>Email: <a href="mailto:admission@uct.ac.za">admission@uct.ac.za</a></p>
 				<p>Location: Western Cape, Cape Town</p>
@@ -245,9 +234,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Online application: <a href="https://ienabler.ufh.ac.za/pls/prodi41/gen.gw1pkg.gw1view" target="_blank">click here</a></p>
 				<p>Application Fee: R120, Late: R250</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "University of Fort Hare (UFH)");
 				?>
-				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 040 602 2011</p>
 				<p>Email: <a href="mailto:admissions@ufh.ac.za">admissions@ufh.ac.za</a></p>
 				<p>Location: Eastern Cape, Fort Hare</p>
@@ -259,9 +247,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Online application: <a href="https://apply.ufs.ac.za/" target="_blank">click here</a></p>
 				<p>Application Fee: Free</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "University of Free State (UFS)");
 				?>
-				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 051 401 9111</p>
 				<p>Email: <a href="mailto:info@ufs.ac.za">info@ufs.ac.za</a></p>
 				<p>Location: Free State, Bloemfontein</p>
@@ -277,9 +264,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Online application: <a href="forms/UKZN-2022-Applications.pdf" target="_blank">click here</a></p>
 				<p>Application Fee: R200</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "University of KwaZulu Natal (UKZN)");
 				?>
-				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 031 260 1111</p>
 				<p>Email: <a href="mailto:enquiries@ukzn.ac.za">enquiries@ukzn.ac.za</a></p>
 				<p>Location: KwaZulu Natal, Durban</p>
@@ -291,9 +277,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Online application: <a href="https://ultrhe01.ul.ac.za/pls/prodi03/gen.gw1pkg.gw1startup?x_processcode=ITS_OAP">click here</a></p>
 				<p>Application Fee: R200</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "University of Limpopo (UL)");
 				?>
-				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 012 521 4058</p>
 				<p>Email: <a href="mailto:enrolment@ul.ac.za">enrolment@ul.ac.za</a></p>
 				<p>Location: Limpopo, Sovenga</p>
@@ -307,9 +292,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Courses you qualify for: <a href="uni/ump/aps/" target="_blank">click here</a></p>
 				<p>Application Fee: R150</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "University of Mpumalanga (UMP)");
 				?>
-				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 013 002 0001</p>
 				<p>Email: <a href="mailto:info@ump.ac.za">info@ump.ac.za</a></p>
 				<p>Location: Mpumalanga, Nelspruit</p>
@@ -325,9 +309,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Online application: <a href="https://www1.up.ac.za/uplogin/faces/login.jspx?bmctx=021843C5099ED188C20F16CEC40FB9E3&amp;contextType=external&amp;username=string&amp;password=secure_string&amp;challenge_url=https%3A%2F%2Fwww1.up.ac.za%2Fuplogin%2Ffaces%2Flogin.jspx&amp;request_id=-7539796306436797772&amp;authn_try_count=0&amp;locale=en_US&amp;resource_url=https%253A%252F%252Fwww1.up.ac.za%252Fwcportal%252Ffaces%252Fsso%253Fdonotredirect%253Dtrue" target="_blank">click here</a></p>
 				<p>Application Fee: R300</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "University of Pretoria (UP)");
 				?>
-				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 012 420 3111</p>
 				<p>Email: <a href="mailto:ssc@up.ac.za">ssc@up.ac.za</a></p>
 				<p>Location: Gauteng, Pretoria</p>
@@ -339,9 +322,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Online application: <a href="https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/What%27s-new-for-2020" target="_blank">click here</a></p>
 				<p>Application Fee: R115</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "University of South Africa (UNISA)");
 				?>
-				<p>Closing date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 012 429 3111</p>
 				<p>Email: <a href="mailto:info@unisa.ac.za">info@unisa.ac.za</a></p>
 				<p>Location: Gauteng, Pretoria</p>
@@ -353,9 +335,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Online application: <a href="https://univenien.univen.ac.za/pls/prodi04/w99pkg.mi_login" target="_blank">click here</a></p>
 				<p>Application Fee: R100</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "University of Venda (UNIVEN)");
 				?>
-				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 015 962 8000</p>
 				<p>Email: <a href="mailto:info@univen.ac.za">info@univen.ac.za</a></p>
 				<p>Location: Limpopo, Venda</p>
@@ -371,9 +352,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Online application: <a href="https://student.uwc.ac.za/" target="_blank">click here</a></p>
 				<p>Application Fee: Free</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "University of Western Cape (UWC)");
 				?>
-				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 021 959 2911</p>
 				<p>Email: <a href="mailto:helpdesk@uwc.ac.za">helpdesk@uwc.ac.za</a></p>
 				<p>Location: Western Cape, Cape Town</p>
@@ -385,9 +365,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Online application: <a href="https://self-service.wits.ac.za/psc/csprodonl/UW_SELF_SERVICE/SA/c/VC_OA_LOGIN_MENU.VC_OA_LOGIN_FL.GBL?&amp;" target="_blank">click here</a></p>
 				<p>Application Fee: R100</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "University of Witwatersrand (WITS)");
 				?>
-				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 011 717 1888</p>
 				<p>Email: <a href="mailto:itstudenthelp@wits.ac.za">itstudenthelp@wits.ac.za</a></p>
 				<p>Location: Gauteng, Johannesburg, Braamfontein</p>
@@ -399,9 +378,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Online application: <a href="https://jasper.unizulu.ac.za/pls/prodi41/w99pkg.mi_login" target="_blank">click here</a></p>
 				<p>Application Fee: R220</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "University of ZULULAND (UNIZULU)");
 				?>
-				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 035 902 6950</p>
 				<p>Email: <a href="mailto:admissions@unizulu.ac.za">admissions@unizulu.ac.za</a></p>
 				<p>Location: KwaZulu Natal, North of the Tugela River</p>
@@ -418,9 +396,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Online application: <a href="https://ienablerprod.vut.ac.za/pls/prodi41/gen.gw1pkg.gw1startup?x_processcode=ITS_OAP" target="_blank">click here</a></p>
 				<p>Application Fee: R100</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "Vaal University of Technology (VUT)");
 				?>
-				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 016 950 9924/9925</p>
 				<p>Email: <a href="mailto:reception@vut.ac.za">reception@vut.ac.za</a></p>
 				<p>Location: Gauteng, Vanderbijlpark</p>
@@ -432,9 +409,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Online application: <a href="https://ieweb.wsu.ac.za/pls/prodi41/gen.gw1pkg.gw1startup?x_processcode=ITS_OAP" target="_blank">click here</a></p>
 				<p>Application Fee: Free</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "Walter Sisulu University (WSU)");
 				?>
-				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 047 502 2843/3/8</p>
 				<p>Email: <a href="mailto:info@wsu.ac.za">info@wsu.ac.za</a></p>
 				<p>Location: Eastern Cape, Mthatha</p>
@@ -447,9 +423,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p>Online application: <a href="cao/apply/" target="_blank">click here</a></p>
 				<p>Application Fee: <a href="cao/AdminFeeStructure-01APR2021.pdf" target="_blank">click here</a></p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "Central Application Office (CAO)");
 				?>
-				<p>Open/Closing Date: <b><?php $object->getDat()?></b></p>
 				<p>Contact: 031 268 4444</p>
 				<p>Email: <a href="mailto:enquiries@cao.ac.za">enquiries@cao.ac.za</a></p>
 				<p>Location: Durban - Central Services Complex</p>

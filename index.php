@@ -50,9 +50,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
                 <p><b>Online application:</b> <a href="https://enroll.cut.ac.za/pls/prodi41/w99pkg.mi_login" target="_blank">click here</a></p>
 				<p><b>Application Fee:</b> R100</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "Cape Peninsula University of Technology (CPUT)");
 				?>
-				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 021 959 6767</p>
 				<p><b>Email:</b> <a href="mailto:info@cput.ac.za">info@cput.ac.za</a></p>
 				<p><b>Location:</b> Western Cape, Cape Town</p>
@@ -64,9 +63,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Online application:</b> <a href="https://mercury.dut.ac.za/pls/prodi41/w03pkg.call_dyn_val" target="_blank">click here</a></p>
 				<p><b>Application Fee:</b> R220</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "Durban University of Technology (DUT)");
 				?>
-				<p><b>Open/Closing Date:</b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 031 373 2000</p>
 				<p><b>Email:</b> <a href="mailto:info@dut.ac.za">info@dut.ac.za</a></p>
 				<p><b>Location:</b> KwaZulu Natal, Durban &amp; Pietermaritzburg</p>
@@ -75,12 +73,11 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
             <h3>University of Johannesburg (UJ)</h3>
                 <p><a href="prospectus/UJ_undergrad_prospectus2023_pages_for_digital_book.pdf" target="_blank">Click here to download 2021/22 Prospectus</a></p>
 				<p><b>Website:</b> <a href="https://www.uj.ac.za" target="_blank">uj.ac.za</a></p>
-				<p><b>Online application: </b> <a href="https://apply.online.uj.ac.za/Start-Now/Apply-Now" target="_blank">click here</a></p>
+				<p><b>Online application:</b> <a href="https://apply.online.uj.ac.za/Start-Now/Apply-Now" target="_blank">click here</a></p>
 				<p><b>Application Fee:</b> R200, <b>Online:</b> Free</p>
 				<?php
-				$object->getState();
+				$object->getUniversityInfo($conn, "University of Johannesburg (UJ)");
 				?>
-				<p><b>Open/Closing Date: </b><?php $object->getDat()?></p>
 				<p><b>Contact:</b> 011 559 3129</p>
 				<p><b>Email:</b> <a href="mailto:mylife@uj.ac.za">mylife@uj.ac.za</a></p>
 				<p><b>Location:</b> Gauteng, Johannesburg</p>

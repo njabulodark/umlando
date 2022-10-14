@@ -50,7 +50,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Finance, Economics and Accounting, School of Business, IT and Computer Science, Mechatronics, Office Administration, Tourism, Safety &amp; Society, School of Engineering, Electrical Infrastructure Construction, Business Studies, Business Management, Financial Management, Human Resources, Educare, Engineering, Management Assistant, Financial Management, Public Management, National Engineering Certificates</p>
 				<p><b>Contact:</b> 043 704 9262 / 043 704 9201</p>
 				<p><b>Location:</b> Eastern Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>8 Lukin Rd, Selborne, East London, 5213</p>
 			</div>
             <div class="course-col">
             <h3>College of the Transfiguration</h3>
@@ -61,7 +61,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Theology</p>
 				<p><b>Contact:</b> 046 622 3332</p>
 				<p><b>Location:</b> Eastern Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>13 Worcester St, Grahamstown, Makhanda, 6139</p>
 			</div>
             <div class="course-col">
             <h3>Eastcape Midlands TVET College</h3>
@@ -72,7 +72,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Business, Engineering, Occupational</p>
 				<p><b>Contact:</b> 041 995 2000</p>
 				<p><b>Location:</b> Eastern Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>44 Alsatian Rd, Glen Austin AH, Midrand, 1685</p>
 			</div>
         </div>
 
@@ -87,7 +87,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Engineering, Business, Information Technology, Travel &amp; Tourism, Marketing, Finance</p>
 				<p><b>Contact:</b> 047 401 6400</p>
 				<p><b>Location:</b> Eastern Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>Idutywa, 5000</p>
 			</div>
             <div class="course-col">
             <h3>King Sabata Dalindyebo TVET College</h3>
@@ -98,7 +98,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Business Studies, Engineering Studies, Education, Travel &amp; Tourism, Safety &amp; Society, Hospitality</p>
 				<p><b>Contact:</b> 047 505 100</p>
 				<p><b>Location:</b> Eastern Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>Rd, Cicira Village, R61, Mthatha, 5099</p>
 			</div>
             <div class="course-col">
             <h3>Lovedale TVET College</h3>
@@ -123,7 +123,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Business Studies, Engineering Studies, Utility Studies, Occupational Studies</p>
 				<p><b>Contact:</b> 041 509 6000</p>
 				<p><b>Location:</b> Eastern Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>139 Russell Rd, Port Elizabeth Central, Gqeberha, 6001</p>
 			</div>
             <div class="course-col">
             <h3>Stenden South Africa </h3>
@@ -145,7 +145,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Engineering Studies, Business Studies, Computer Studies, Matric Rewrite, Law Enforcement Programmes</p>
 				<p><b>Contact:</b> 043 742 4439</p>
 				<p><b>Location:</b> Eastern Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>2nd Floor 136 2nd Floor, Nedbank Building, 71 Oxford St, East London, 5200</p>
 			</div>
         </div>
 
@@ -160,7 +160,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Business Management, Engineering Studies, Marketing Management, Public Management, Tourism, National Certificate Vocational, ICB Courses, Information Technology, Educare, Public Relations, Financial Management, Human Resources, Matric Rewrite, Corporate &amp; Computer Short Courses</p>
 				<p><b>Contact:</b> 043 722 1241</p>
 				<p><b>Location:</b> Eastern Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>Alexandra Rd, Qonce, 5601</p>
 			</div>
             <div class="course-col">
             <h3>Damelin - East London</h3>
@@ -171,7 +171,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Commerce, Leisure and Information Technology, Creative Arts, Management Science and Communication</p>
 				<p><b>Contact:</b> </p>
 				<p><b>Location:</b> Eastern Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>57-61 Union St, East London Cbd, East London, 5201</p>
 			</div>
             <div class="course-col">
             <h3>Flavius Mareka TVET College</h3>
@@ -182,7 +182,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Basic Computer Training, Hair Dressing, Engineering, Office Administration</p>
 				<p><b>Contact:</b> 016 976 0815 / 016 976 0829</p>
 				<p><b>Location:</b> Free State, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>Hertzog St, Sasolburg, 1947</p>
 			</div>
         </div>
 
@@ -197,7 +197,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Marketing Studies</p>
 				<p><b>Contact:</b> 058 713 0612 / 087 941 3587</p>
 				<p><b>Location:</b> Free State, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>MAMPOI ROAD PHUTHADITJHABA 9866 Private Bag X870 WITSIESHOEK 9870</p>
 			</div>
             <div class="course-col">
             <h3>Motheo TVET College</h3>
@@ -219,7 +219,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Architecture &amp; Construction, Hair &amp; Beauty, Electrical Engineering, Educare, Finance &amp; Accounting, Management, Administration &amp; Secretarial</p>
 				<p><b>Contact:</b> 051 447 5412</p>
 				<p><b>Location:</b> Free State, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>74 W Burger St, Bloemfontein Central, Bloemfontein, 9301</p>
 			</div>
         </div>
 
@@ -234,7 +234,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Computer Studies, Technical Studies, Matric Rewrite, School of Policing</p>
 				<p><b>Contact:</b> 011 339 4016 / 011 339 4679</p>
 				<p><b>Location:</b> Free State, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>DAM Technical College Building, 102 De Korte St, Braamfontein, Johannesburg, 2001</p>
 			</div>
             <div class="course-col">
             <h3>Belgium Campus</h3>
@@ -271,7 +271,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Marketing and Public Relations, Electronic Engineering, Hospitality Management, Graphic Web &amp; Multimedia, Nature Management, Computer Programming, Computer Technology, Somatology, Sport Management, Tourism Management, Engineering Studies, Hairdressing, Early Child Development</p>
 				<p><b>Contact:</b> 012 648 9700</p>
 				<p><b>Location:</b> Gauteng, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>48 Charles De Gaulle Cres, Highveld, Centurion, 0046</p>
 			</div>
             <div class="course-col">
             <h3>College of Production Technology (CPT)</h3>
@@ -282,7 +282,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Manufacturing &amp; Production, Supply Chain &amp; Logistics, Business and Management, Technical Studies, Technical/Engineering Courses</p>
 				<p><b>Contact:</b> 0860 278 278</p>
 				<p><b>Location:</b> Gauteng, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>14 Lakeview Crescent Kleinfontein Office Park, Pioneer Dr, Benoni Central, Benoni, 1501</p>
 			</div>
             <div class="course-col">
             <h3>CTI Education Group</h3>
@@ -293,7 +293,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Commerce, Information Technology</p>
 				<p><b>Contact:</b> 011 789 3178</p>
 				<p><b>Location:</b> Gauteng, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>1D Umhlanga Ridge Blvd, Umhlanga, 4319</p>
 			</div>
         </div>
 
@@ -330,7 +330,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Logistics and Supply Chain, Finance &amp; Commerce, Management &amp; Leadership, Teaching and Education</p>
 				<p><b>Contact:</b> 011 670 4700</p>
 				<p><b>Location:</b> Gauteng, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>Quadrum Office Park, 50 Constantia Blvd, Constantia Kloof, Johannesburg</p>
 			</div>
         </div>
 
@@ -360,14 +360,14 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 			</div>
             <div class="course-col">
             <h3>St Augustine Private Tertiary Institution of South Africa</h3>
-				<p><a href="docs/booklets/Not-Available.pdf" target="_blank">Click here to download booklet</a></p>
+				<p><a href="docs/ST AUGUSTIN COLLAGE .pdf" target="_blank">Click here to download booklet</a></p>
 				<p><b>Website:</b> <a href="http://www.staugustine.ac.za" target="_blank">visit here</a></p>
 				<p><b>DHET Registered:</b> Yes</p>
 				<p><b>Level of Reward:</b> Degrees, Short Courses</p>
 				<p><b>Fields of Interest:</b> Theology, Philosophy &amp; Applied Ethics, Education, Peace Studies, Undergraduate Studies</p>
 				<p><b>Contact:</b> 011 380 9000</p>
 				<p><b>Location:</b> Gauteng, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>53 Ley Rd, Victory Park, Johannesburg, 219</p>
 			</div>
         </div>
 
@@ -419,7 +419,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Office Administration, Finance, Economics and Accounting, Office Administration, Generic Management, Business Management, Human Resource Management, Management Assistant, Tourism, Electrical Engineering</p>
 				<p><b>Contact:</b> 015 307 5440</p>
 				<p><b>Location:</b> Limpopo, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>1 Claude Wheatley St, Arbor Park, Tzaneen, 0850</p>
 			</div>
             <div class="course-col">
             <h3>Mopani South East TVET College</h3>
@@ -430,7 +430,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Finance, Economics and Accounting, Hospitality, Management, Marketing, Office Administration, Tourism, Civil Engineering and Construction, Electrical Infrastructure Construction, Engineering and Related Design, Information Technology, Business Management, Financial Management, Management Assistant, Human Resource Management, Professional Cookery and Assistant Chef</p>
 				<p><b>Contact:</b> 015 781 5721</p>
 				<p><b>Location:</b> Limpopo, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>Haarlem Streets, Private Bag X01024, Phalaborwa, 1390</p>
 			</div>
             <div class="course-col">
             <h3>Sekhukhune TVET College</h3>
@@ -441,7 +441,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Business Studies, Engineering Studies, Computers</p>
 				<p><b>Contact:</b> 013 269 0278</p>
 				<p><b>Location:</b> Limpopo, </p>
-				<p><b>Address:</b>18a Beyers Naude Street, Standerton, 3430</p>
+				<p><b>Address:</b>Stand No. 676, Motetema
+</p>
 			</div>
         </div>
 
@@ -478,7 +479,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Business Studies, Enginering Studies, IT and Computer Sciences</p>
 				<p><b>Contact:</b> 015 491 9000/9007</p>
 				<p><b>Location:</b> Limpopo, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>Private Bag x2449
+Mokopane, 0600</p>
 			</div>
         </div>
 
@@ -516,7 +518,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Engineering Studies, Tourism, Office Administration, Information Technology and Computer Science, Hospitality, Financem Economics and Accounting, Business Management</p>
 				<p><b>Contact:</b> 013 658 4700</p>
 				<p><b>Location:</b> Mpumalanga, Nelspruit</p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>PO Box 2282, Witbank, 1035</p>
 			</div>
         </div>
 
@@ -543,7 +545,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Beauty Therapy, Therapeutic Reflexology, Therapeutic Aromatherapy, Therapeutic Massage, Interior Design &amp; Decorating, Photography, Nail Technology, Massage, Makeup Artistry, Hairdressing, Public Speaking, Trade Test</p>
 				<p><b>Contact:</b> 018 294 9037/ 018 294 5581</p>
 				<p><b>Location:</b> North West, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>59 Dr James Moroka Ave, Potchefstroom, 2535</p>
 			</div>
             <div class="course-col">
             <h3>Taletso TVET College</h3>
@@ -554,7 +556,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Agriculture, Economic Management, Engineering Studies, Hospitality and Tourism, Information Technology, Office Administration, Social Sciences</p>
 				<p><b>Contact:</b> 018 384 2346 / 50</p>
 				<p><b>Location:</b> North West, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>Kgora Building, Dr Albet Luthuli Drive, Mmabatho, 2735</p>
 			</div>
         </div>
 
@@ -570,7 +572,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Finance, Economics &amp; Accounting, Electrical Infrastructure Construction, IT &amp; Computer Science, Engineering &amp; Related Design, Civil Engineering &amp; Building Construction, Hospitality, Office Administration, Primary Agriculture, Business Management, Human Resource Management, Marketing Management, Tourism, Public Management</p>
 				<p><b>Contact:</b> 018 406 7800</p>
 				<p><b>Location:</b> North West, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>John Orr & Oliver Tambo Street, Neserhof, Klerksdorp, 2571</p>
 			</div>
             <div class="course-col">
             <h3>Orbit College</h3>
@@ -608,7 +610,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Acting for Film, Auditioning for Camera, Standard American Accent, Standard English Accent, Professional Programme, Acting for Film Programme, Voice &amp; Speech Training</p>
 				<p><b>Contact:</b> 021 419 7007</p>
 				<p><b>Location:</b> Western Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address:</b> First Floor, Sunrise House, 55 Morningside St, Pinelands, Cape Town, 7405</p>
 			</div>
             <div class="course-col">
             <h3>Boland College</h3>
@@ -619,7 +621,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Civil Engineering &amp; Building Contruction, Economic Management Sciences, Engineering Studies, Engineering &amp; Related Design, Hospitality &amp; Tourism, Information Technology &amp; Agriculture, Office Management Sciences, Safety and Security, Social Sciences</p>
 				<p><b>Contact:</b> 021 886 7111 / 021 886 7112</p>
 				<p><b>Location:</b> Western Cape, </p>
-				<p><b>Address:</b> </p>0
+				<p><b>Address: </b>Bird Street Stellenbosch 7599</p>0
 			</div>
             <div class="course-col">
             <h3>College of Cape Town (TVET)</h3>
@@ -630,7 +632,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Art &amp; Design, Beauty Therapy, Building &amp; Civil Engineering, Business Studies, Education and Training, Electrical Engineering, Haircare, Hospitality, Information Technology &amp; Communication Technology, Mechanical Engineering, Travel &amp; Tourism</p>
 				<p><b>Contact:</b> 021 404 6700 / 086 010 3682</p>
 				<p><b>Location:</b> Western Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>18 Jan Smuts Dr, Pinelands, Cape Town, 7405</p>
 			</div>
         </div>
 
@@ -656,7 +658,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Interactive Graphics, Business Management, Entrepreneurship and New Technologies , Digital Marketing, Social Media and Design, Professional, Executive and Personal Assistants</p>
 				<p><b>Contact:</b> 021 202 7890</p>
 				<p><b>Location:</b> Western Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>Tannery Park, 21-24 Belmont Road, Rosebank, Cape Town, 7700</p>
 			</div>
             <div class="course-col">
             <h3>False Bay TVET College</h3>
@@ -667,7 +669,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 				<p><b>Fields of Interest:</b> Business Studies, Engineering Studies, Hospitality &amp; Tourism, Information Technology, Education Studies, Yacht and Boat Building, 2D Animation, Safety &amp; Security</p>
 				<p><b>Contact:</b> 021 788 8373</p>
 				<p><b>Location:</b> Western Cape, </p>
-				<p><b>Address:</b> </p>
+				<p><b>Address: </b>Westlake Dr, Westlake, Cape Town, 7950</p>
 			</div>
         </div>
 

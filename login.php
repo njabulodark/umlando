@@ -89,7 +89,7 @@ document.getElementById(promptLocation).style.color = color;
       <div class="form-group">
         <h1>Login</h1>
         <label for="username">Username</label>
-        <input type="text" class="form-control" id="username" name="password"   placeholder="Enter username.." onkeyup='validateName()'required>
+        <input type="text" class="form-control" id="username" name="username"   placeholder="Enter username.." onkeyup='validateName()'required>
         <span class='error-message' id='name-error'></span>
     </div>
     <div class="form-group">
