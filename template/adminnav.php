@@ -70,10 +70,10 @@ body {
 <body>
 
 <div class="topnav" id="myTopnav">
-  <a href="statusUpdate.php">Update Uni Date</a>
-  <a href="addcareer.php">Add career</a>
+  <a href="statusUpdate.php">Update University Date</a>
+  <a href="addcareer.php">Add Career</a>
   <a href="DeleteCareer.php">Delete Career</a>
-  <a href="admin_qp.php">add question</a>
+  <a href="admin_qp.php">Add Question</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
