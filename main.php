@@ -100,7 +100,9 @@ class Singleton {
             id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
             name_tag VARCHAR(100) NOT NULL,
             name_title VARCHAR(100) NOT NULL,
-            para TEXT NOT NULL,
+            subjects VARCHAR(255) NOT NULL,
+            pictures VARCHAR(100) NOT NULL,
+            major_descri TEXT NOT NULL,
             reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
             )";
 
@@ -152,10 +154,10 @@ class Singleton {
 
 
 
-    function insertIntoTableCareer($conn, $name_tag, $name_title, $para){
+    function insertIntoTableCareer($conn, $name_tag, $name_title, $major, $pictures="", $subjects=""){
 
-        $sql = "INSERT INTO Career (name_tag, name_title, para)
-        VALUES ('{$name_tag}', '{$name_title}', '{$para}')";
+        $sql = "INSERT INTO Career (name_tag, name_title, major_descri, pictures, subjects)
+        VALUES ('{$name_tag}', '{$name_title}', '{$major}', '{$pictures}', '{$subjects}')";
 
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
@@ -265,7 +267,7 @@ class Singleton {
         $result = mysqli_query($conn, $query);
 
         while($row = mysqli_fetch_assoc($result)){
-            $arr[$row['name_title']] = $row['para'];
+            $arr[$row['name_title']] = array($row['major_descri'], $row['pictures'], $row['subjects']);
             /*echo "<h1>{$row['name_tag']}</h1>";
             echo "<h1>{$row['name_title']}</h1>";
             echo "<h1>{$row['para']}</h1>";*/

@@ -104,7 +104,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 
         foreach(array_keys($careers) as $title){
             /*format = career title, tag, career description,picture, list*/
-            printf($html, $title, $title, $careers[$title], $title, subj($str));
+            printf($html, $title, $title, $careers[$title][0], $title, subj($careers[$title][2]));
         }
     ?>
 </section>

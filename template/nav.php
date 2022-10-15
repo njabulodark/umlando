@@ -1,7 +1,7 @@
 <?php
 //if logged in, display the logout button
 if(isset($_SESSION['logged_in'])){
-    echo '<section class="nav">
+    $html =  '<section class="nav">
 <nav>
     <div class="logo" id="logo">
         <h1>
@@ -24,6 +24,8 @@ if(isset($_SESSION['logged_in'])){
     <i class="fa fa-bars" onclick="showMenu()"></i>
 </nav>
 </section>';
+
+    printf($html);
 }
 else{
     echo '<section class="nav">
@@ -37,10 +39,10 @@ else{
         <i class="fa fa-times" onclick="hideMenu()"></i>
         <ul>
             <li id="active"><a href="index.php">Home</a></li>
-            <li><a href="university.php">University</a></li>
-            <li><a href="college.php">College</a></li>
-            <li><a href="career.php">Career Guidance</a></li>
-            <li><a href="img2py.php">Pic to PDF</a></li>
+            <li><a href="university.php">Universities</a></li>
+            <li><a href="college.php">Collegies</a></li>
+            <li><a href="career.php">Major\'s Descriptions</a></li>
+            <li><a href="img2py.php">Image to PDF</a></li>
             <li><a href="user_qp.php">G12 Exam Papers</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="login.php">Login</a></li>

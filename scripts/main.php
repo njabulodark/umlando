@@ -15,6 +15,7 @@ class Singleton {
     }
      
     public static function getInstance() {
+        session_start();
         if (!isset(self::$instance)) {
             self::$instance = new Singleton();
         }
@@ -99,7 +100,9 @@ class Singleton {
             id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
             name_tag VARCHAR(100) NOT NULL,
             name_title VARCHAR(100) NOT NULL,
-            para TEXT NOT NULL,
+            subjects VARCHAR(255) NOT NULL,
+            pictures VARCHAR(100) NOT NULL,
+            major_descri TEXT NOT NULL,
             reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
             )";
 
@@ -151,10 +154,10 @@ class Singleton {
 
 
 
-    function insertIntoTableCareer($conn, $name_tag, $name_title, $para){
+    function insertIntoTableCareer($conn, $name_tag, $name_title, $major, $pictures="", $subjects=""){
 
-        $sql = "INSERT INTO Career (name_tag, name_title, para)
-        VALUES ('{$name_tag}', '{$name_title}', '{$para}')";
+        $sql = "INSERT INTO Career (name_tag, name_title, major_descri, pictures, subjects)
+        VALUES ('{$name_tag}', '{$name_title}', '{$major}', '{$pictures}', '{$subjects}')";
 
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
@@ -251,11 +254,26 @@ class Singleton {
     function selectFromTableStat($conn){
         $query = "select * from stat";
         $result = mysqli_query($conn, $query);
-
+        
         while($row = mysqli_fetch_assoc($result)){
             echo "<h1>{$row['name_title']}</h1>";
             echo "<h1>{$row['name_date']}</h1>";
         }
+    }
+    
+    function getCareer($conn){
+        $arr = array();
+        $query = "select * from Career";
+        $result = mysqli_query($conn, $query);
+
+        while($row = mysqli_fetch_assoc($result)){
+            $arr[$row['name_title']] = $row['para'];
+            /*echo "<h1>{$row['name_tag']}</h1>";
+            echo "<h1>{$row['name_title']}</h1>";
+            echo "<h1>{$row['para']}</h1>";*/
+        }
+
+        return $arr;
     }
 
     function deleteFromTableCareer($conn, $name_title){
@@ -268,10 +286,43 @@ class Singleton {
         }
     }
 
+    function getUniversityInfo($conn, $university){
+        $query = "select * from stat WHERE name_title='{$university}'";
+        $result = mysqli_query($conn, $query);
+
+        
+        while($row = mysqli_fetch_assoc($result)){
+            $pr = $row['name_date'];
+            echo "<p><b>Open/Closing Date: </b>.$pr.</p>";
+
+            $date = $row['name_date'];
+            array_push($this->dat, $date);
+            if(is_numeric(substr($date, 1,1)) == 1){
+                //
+            }
+            else{
+                $date = strtotime("2 jan 2020");
+            }
+            //echo is_numeric(substr($date, 1,1));
+            $name = $row['name_title'];
+            $date = strtotime($date);
+            $current = strtotime(date("d-M-Y"));
+            //echo $date.":".$current."<br>";
+            $left = $date - $current;
+            if($left < 0){
+                echo "<p style='color:red'>Applications: CLOSED</p>";
+            }
+            else{
+                echo "<p style='color:green'>Applications: OPEN</p>";
+            }
+        }
+    }
+
     private $state = array();
     private $dat = array();
     //get time from stat database and compare it with current time
     function compareTime($conn){
+        $this->date = array();
         $query = "select * from stat";
         $result = mysqli_query($conn, $query);
 
@@ -299,18 +350,7 @@ class Singleton {
         }
     }
 
-    //get state first index and delete it
-    function getState(){
-        $state = $this->state[0];
-        array_shift($this->state);
-        echo $state;
-    }
 
-    function getDat(){
-        $dat = $this->dat[0];
-        array_shift($this->dat);
-        echo $dat;
-    }
 
 
     //check for a value in stat database
@@ -384,4 +424,18 @@ class Singleton {
         $_SESSION['type'] = $type;
         $_SESSION['loggedin'] = true;
     } 
+
+    //check if username is admin
+    function checkAdmin($conn, $username){
+        $query = "select * from userregistration where username = '{$username}'";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+        if($row){
+            if($row['type_'] == "admin"){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    }
 ?>

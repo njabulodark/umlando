@@ -43,6 +43,7 @@ body {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
+    padding-right: 35px;
     display: block;
   }
 
