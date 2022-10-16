@@ -42,8 +42,8 @@ else{
             <li><a href="university.php">Universities</a></li>
             <li><a href="college.php">Collegies</a></li>
             <li><a href="career.php">Major\'s Descriptions</a></li>
-            <li><a href="img2py.php">Image to PDF</a></li>
-            <li><a href="user_qp.php">G12 Exam Papers</a></li>
+            <li><a href="img2py.php">Image To PDF</a></li>
+            <li><a href="papers.php">G12 Exam Papers</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="login.php">Login</a></li>
         </ul>
