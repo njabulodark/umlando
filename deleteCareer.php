@@ -17,17 +17,16 @@ if(isset($_POST["submit"])) {
     $object->deleteFromTableCareer($conn, "{$name_title}");
 }
 
-
-
-
-
-//$object = Singleton::getInstance();
-//$object->insertIntoTableCareer($conn, "accounting", "accounting", "<p>s prepare students for careers in public, industrial, or governmental accounting and also provides an appropriate background for those planning to enter law school or graduate school. Public accounting is carried on by independent practitioners, most of whom are certified public accountants. <strong>[BUSINESS]</strong></p>");
-//$object->insertIntoTableCareer($conn, "accounting", "accounting", "<p>s prepare students for careers in public, industrial, or governmental accounting and also provides an appropriate background for those planning to enter law school or graduate school. Public accounting is carried on by independent practitioners, most of whom are certified public accountants. <strong>[BUSINESS]</strong></p>");
-//$object->insertIntoTableCareer($conn, "accounting", "accounting", "<p>s prepare students for careers in public, industrial, or governmental accounting and also provides an appropriate background for those planning to enter law school or graduate school. Public accounting is carried on by independent practitioners, most of whom are certified public accountants. <strong>[BUSINESS]</strong></p>");
-
-//$object->selectFromTableCareer($conn);
-//$object->deleteFromTableCareer($conn, "accounting");
+//check if session has expired
+if(isset($_SESSION['expire'])){
+    if($_SESSION['expire'] < time()){
+        session_destroy();
+        header('location:relogin.php');
+    }
+}
+else{
+    header('location:login.php');
+}
 
 ?>
 
@@ -64,26 +63,32 @@ include_once "template/nav.php"
     ?>
 </section>
 
-<section class="addcareer">
-    <div class="add">
-        <h1>Delete Career</h1>
-        <p>Type the career name of the career you want to delete</p>
-        <form action="" method="post">
-            <input type="text" name="name_title" placeholder="Name Title" size="50" style='width:20em' required><br>
-            <input type="submit" name="submit" value="delete">
-        </form>
-        <br><br><br>
-    </div>
 
-</section>
-    
+
 <?php
+echo $object->getCareerList($conn);
+
+if(isset($_GET["name"])) {
+    $name_title =  ($_GET["name"]);
+    $object->deleteFromTableCareer($conn, "{$name_title}");
+    $_GET["name"]= null;
+}
+
+
+
+
 //footer
 include_once "template/footer.php";
 ?>
 
 
 <script>
+function myFunction() {
+    setTimeout(function(){
+    window.location.reload(); // you can pass true to reload function to ignore the client cache and reload from the server
+},20);
+}
+
 
 var navLinks = document.getElementById("navLinks");
 

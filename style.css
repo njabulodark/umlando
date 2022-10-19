@@ -154,6 +154,15 @@ nav .fa{
     border-radius: 4px;
     cursor: pointer;
   }
+
+  a.btn{
+    background-color: #04ff6D;
+    color: white;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
@@ -482,7 +491,7 @@ footer ul{
     text-decoration: none;
 }
 
-/*-------------------add career------------------------*/
+/*------------------------------------------add career----------------------------------------------------------------------*/
 .add{
     padding-top: 100px;
     width: 80%;
@@ -492,14 +501,14 @@ footer ul{
 
 @media(max-width: 797px){
     .admindiv{
-        padding-top: 55px;
+        padding-top: -25px;
     }
 }
 
 
 @media(max-width: 800px){
     .admindiv{
-        padding-top: 55px;
+        padding-top: -25px;
     }
 }
 

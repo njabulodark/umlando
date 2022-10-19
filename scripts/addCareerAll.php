@@ -8,7 +8,7 @@ $object->createDbt("userregistration");
 //start the database
 $conn = $object->startDB("userregistration");
 
-$object->insertIntoTableCareer($conn, "#accounting", "Accounting", " Accounting supplies quantitative information essential to management decision-making and control, as well as a wide variety of tax and consulting services and information on management's effective use of an organization's resources. This major helps prepare students for careers in public, industrial, or governmental accounting and also provides an appropriate background for those planning to enter law school or graduate school. Public accounting is carried on by independent practitioners, most of whom are certified public accountants.[BUSINESS]");
+//$object->insertIntoTableCareer($conn, "#accounting", "Accounting", " Accounting supplies quantitative information essential to management decision-making and control, as well as a wide variety of tax and consulting services and information on management's effective use of an organization's resources. This major helps prepare students for careers in public, industrial, or governmental accounting and also provides an appropriate background for those planning to enter law school or graduate school. Public accounting is carried on by independent practitioners, most of whom are certified public accountants.[BUSINESS]");
 
 $object->insertIntoTableCareer($conn, "#actuarial", "Actuarial Science", "An actuary is a business professional who uses mathematical skills to define, analyze, and solve business and social problems. Actuaries generally are employed in life, health, and casualty insurance companies, consulting firms, and government. [MATHEMATICAL SCIENCES]");
 

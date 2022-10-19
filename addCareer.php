@@ -20,12 +20,16 @@ if(isset($_SESSION['expire'])){
         header('location:relogin.php');
     }
 }
+else{
+    header('location:login.php');
+}
+
+
 
 if(isset($_POST["submit"])) {
-    $name_tag = $_POST["name_tag"];
     $name_title =  ($_POST["name_title"]);
     $describe =  ($_POST["Description"]);
-    $object->insertIntoTableCareer($conn, "{$name_tag}", "{$name_title}", "{$describe}");
+    $object->insertIntoTableCareer($conn, "{$name_title}", "{$describe}");
 }
 
 
@@ -76,7 +80,7 @@ include_once "template/nav.php"
     <div class="add">
         <h1>Add Career</h1>
         <form action="" method="post">
-            <input type="text" name="name_tag" placeholder="Name Tag" style='width:20em' required><br>
+            
             <input type="text" name="name_title" placeholder="Name Title" size="50" style='width:20em' required><br>
             <textarea name="Description" placeholder="Description" style='width:20em' required></textarea><br>
             <input type="submit" name="submit" value="Add">
