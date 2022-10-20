@@ -269,7 +269,7 @@ class Singleton {
         while($row = mysqli_fetch_assoc($result)){
             echo '<div style="margin: 2%;">';
             echo "<a style='margin: 2%;'>".$row['name_title']."</a>";
-            echo '<a class="btn" onclick="myFunction()" href="deletecareer.php?name='.$row['name_title'].'" style="color:red;">Delete</a>';
+            echo '<a class="btn" onclick="refresh()" href="deletecareer.php?name='.$row['name_title'].'" style="color:red;">Delete</a>';
             echo '</div>';
         }
         

@@ -15,8 +15,12 @@
 include_once "template/nav.php";
 include_once "template/adminnav.php";
 ?>
-<br><br><br><br><br><br>
-<h4>Upload Previous question papers </h4> 
+
+
+<section class="addcareer">
+    <div class="add">
+        <h3>Upload Previous question papers</h3>
+
 <br>
 <form method="POST" action="insert.php" enctype="multipart/form-data">
     <input type="file" name="file" accept=".pdf">
@@ -25,12 +29,11 @@ include_once "template/adminnav.php";
     <br><br><br><br>
 
 </form>
-<?php 
 
+
+<?php 
 $files=scandir("uploads");
 for($a=2;$a<count($files);$a++){
-
-
     ?>
     <p>
         <?php echo $files[$a]; ?> 
@@ -42,9 +45,13 @@ for($a=2;$a<count($files);$a++){
     </a>
     </p>
     <?php
-
 }
 ?>
+
+</div>
+
+</section>
+
 <?php
 include_once "template/footer.php";
 ?>

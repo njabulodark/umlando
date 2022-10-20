@@ -17,7 +17,7 @@ $error= 0;
 if(isset($_SESSION['expire'])){
     if($_SESSION['expire'] < time()){
         session_destroy();
-        header('location:relogin.php');
+        header('location:login.php');
     }
 }
 else{
@@ -78,11 +78,12 @@ include_once "template/nav.php"
 </section>
 <section class="addcareer">
     <div class="add">
-        <h1>Add Career</h1>
+        <h1>Add Major</h1>
         <form action="" method="post">
             
-            <input type="text" name="name_title" placeholder="Name Title" size="50" style='width:20em' required><br>
-            <textarea name="Description" placeholder="Description" style='width:20em' required></textarea><br>
+            <input type="text" name="name_title" placeholder="Name Title" size="50" style='width:23em' required><br>
+            <input type="text" name="subjects" placeholder="subjects: separate them using comma(,) E.G Phyiscs, Zulu, ......, .... " size="50" style='width:23em' required><br>
+            <textarea name="Description" placeholder="Description" style='width:23em' required></textarea><br>
             <input type="submit" name="submit" value="Add">
         </form>
     </div>

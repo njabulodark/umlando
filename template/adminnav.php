@@ -49,8 +49,7 @@ body {
 
   .topnav{
     position: relative;
-    top: 0px;
-    transform: translate(20%,-0%);
+    
   }
 }
 

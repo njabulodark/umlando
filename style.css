@@ -492,10 +492,17 @@ footer ul{
 }
 
 /*------------------------------------------add career----------------------------------------------------------------------*/
+.addcareer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 115px;
+    padding-bottom: 70px;
+}
+
 .add{
     padding-top: 100px;
     width: 80%;
-    margin: auto;
     
 }
 
@@ -503,12 +510,23 @@ footer ul{
     .admindiv{
         padding-top: -25px;
     }
+
+    .addcareer{
+        margin-bottom: 135px;
+        padding-bottom: 90px;
+    }
 }
 
 
 @media(max-width: 800px){
     .admindiv{
         padding-top: -25px;
+    }
+
+    .addcareer{
+        margin-bottom: 135px;
+        padding-bottom: 90px;
+        padding-top: 90px;
     }
 }
 

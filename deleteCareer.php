@@ -64,8 +64,11 @@ include_once "template/nav.php"
 </section>
 
 
-
+<section class="addcareer">
+    <div class="add">
+    <h1>Delete Major</h1>
 <?php
+
 echo $object->getCareerList($conn);
 
 if(isset($_GET["name"])) {
@@ -73,9 +76,11 @@ if(isset($_GET["name"])) {
     $object->deleteFromTableCareer($conn, "{$name_title}");
     $_GET["name"]= null;
 }
+?>
 
-
-
+    </div>
+</section>
+<?php
 
 //footer
 include_once "template/footer.php";
@@ -83,7 +88,7 @@ include_once "template/footer.php";
 
 
 <script>
-function myFunction() {
+function refresh() {
     setTimeout(function(){
     window.location.reload(); // you can pass true to reload function to ignore the client cache and reload from the server
 },20);

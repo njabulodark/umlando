@@ -1,22 +1,5 @@
 <?php
 
-include "main.php";
-
-try {
-  $object = Singleton::getInstance();
-} finally {
-  //echo "something is wrong with your database";
-}
-
-$name_tag = $name_title = $describe = $message = "";
-$conn = $object->startDB("userregistration");
-$error= 0;
-
-if(isset($_POST["submit"])) {
-    $name_title =  ($_POST["name_title"]);
-    $date = $_POST["name_date"];
-    $object->updateTableStat($conn, "{$name_title}", "{$date}");
-}
 
 
 ?>
