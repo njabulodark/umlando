@@ -429,13 +429,15 @@ class Singleton {
         $result = mysqli_query($conn, $query);
 
         while($row = mysqli_fetch_assoc($result)){
-            echo '<div style="margin: 2%;">';
-            echo "<a style='margin: 2%;'> <b>username:</b> ".$row['username']."</a>"."<br>";
-            echo "<a style='margin: 2%;'> <b>phones:</b> ".$row['phone']."</a>"."<br>";
-            echo "<a style='margin: 2%;'> <b>email:</b> ".$row['email']."</a>"."<br>";
-            echo "<a style='margin: 2%;'> <b>message:</b> ".$row['usermessage']."</a>"."<br><br>";
-            echo '<a class="btn" onclick="refresh()" href="read.php?name='.$row['username'].'" style="color:red;">Delete</a>';
-            echo '</div>';
+            //echo '<div id="messaging" style="margin: 2%;">';
+            //echo "<a style='margin: 2%;'> <b>username:</b> ".$row['username']."</a>"."<br>";
+            //echo "<a style='margin: 2%;'> <b>phones:</b> ".$row['phone']."</a>"."<br>";
+            //echo "<a style='margin: 2%;'> <b>email:</b> ".$row['email']."</a>"."<br>";
+            //echo "<a style='margin: 2%;'> <b>message:</b> ".$row['usermessage']."</a>"."<br><br>";
+            //echo '<a class="btn" onclick="refresh()" href="read.php?name='.$row['username'].'" style="color:red;">Delete</a>';
+            //echo '</div>';
+
+            return array($row['username'], $row['phone'], $row['email'], $row['usermessage']);
         }
     }
 

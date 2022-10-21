@@ -45,7 +45,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
     <h1>Messages from varous users</h1>
     <div class="message-block">
         <?php
-        $object->getMessages($conn);
+        print_r($object->getMessages($conn));
         ?>
         <span id="mess">username: Njabulo</span><br>
         <span id="mess">user email: Njabulo@aqwhd.wd</span><br>

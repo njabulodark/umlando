@@ -571,7 +571,6 @@ footer ul{
 }
 
 .message-block{
-    position: absolute;
     min-height: 20vh;
     margin: auto;
     text-align: left;
@@ -590,4 +589,10 @@ footer ul{
     height: 200px;
     background-color: #45a049;
     margin: 50px;
+}
+
+
+#messaging{
+    position: relative;
+    background-color: #502424;
 }
