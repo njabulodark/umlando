@@ -33,7 +33,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
             <h1>All South African highest institution of learning</h1>
             <p>Download prospectus, do online applications,
                 visit their websites and also find all useful information that
-                 you need about every public highest institution of learning in South Africa.</p>
+                 you need about every public highest institutions of learning in South Africa.</p>
         </div>
         
     </section>

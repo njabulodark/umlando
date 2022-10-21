@@ -405,7 +405,6 @@ class Singleton {
           echo "Error: " . $sql . "<br>" . $conn->error;
         }
         }
-    }
 
     function logout(){
         session_start();
@@ -424,17 +423,33 @@ class Singleton {
         $_SESSION['loggedin'] = true;
     } 
 
-    //check if username is admin
-    function checkAdmin($conn, $username){
-        $query = "select * from userregistration where username = '{$username}'";
+    //get messeges from contact database
+    function getMessages($conn){
+        $query = "select * from contact";
         $result = mysqli_query($conn, $query);
-        $row = mysqli_fetch_assoc($result);
-        if($row){
-            if($row['type_'] == "admin"){
-                return true;
-            }else{
-                return false;
-            }
+
+        while($row = mysqli_fetch_assoc($result)){
+            echo '<div style="margin: 2%;">';
+            echo "<a style='margin: 2%;'> <b>username:</b> ".$row['username']."</a>"."<br>";
+            echo "<a style='margin: 2%;'> <b>phones:</b> ".$row['phone']."</a>"."<br>";
+            echo "<a style='margin: 2%;'> <b>email:</b> ".$row['email']."</a>"."<br>";
+            echo "<a style='margin: 2%;'> <b>message:</b> ".$row['usermessage']."</a>"."<br><br>";
+            echo '<a class="btn" onclick="refresh()" href="read.php?name='.$row['username'].'" style="color:red;">Delete</a>';
+            echo '</div>';
         }
     }
+
+    //delete message from contact database
+    function deleteMessage($conn, $name){
+        $sql = "DELETE FROM contact WHERE username='{$name}'";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "Record deleted successfully";
+        } else {
+            echo "Error deleting record: " . $conn->error;
+        }
+    }
+
+    
+}
 ?>
