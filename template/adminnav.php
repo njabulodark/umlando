@@ -75,6 +75,7 @@ body {
   <a href="addcareer.php">Add Career</a>
   <a href="DeleteCareer.php">Delete Career</a>
   <a href="admin_qp.php">Add Question</a>
+  <a href="read.php">Read Messages</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
