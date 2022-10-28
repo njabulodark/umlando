@@ -1,6 +1,23 @@
 <?php
 
 
+include "main.php";
+
+try {
+  $object = Singleton::getInstance();
+} finally {
+  //echo "something is wrong with your database";
+}
+
+$name_tag = $name_title = $describe = $message = "";
+$conn = $object->startDB("userregistration");
+$error= 0;
+
+if(isset($_POST["submit"])) {
+    $name_title =  ($_POST["name_title"]);
+    $date = $_POST["name_date"];
+    $object->updateTableStat($conn, "{$name_title}", "{$date}");
+}
 
 ?>
 
@@ -38,8 +55,8 @@ include_once "template/nav.php"
     <div class="add">
         <h1>Add New Closing Date</h1>
         <form action="" method="post">
-            <input type="text" name="name_title" placeholder="University Name" size="50" style='width:25em' required><br>
-            <input type="text" name="name_date" placeholder="closing date" style='width:25em' required><br>
+            <input type="text" name="name_title" placeholder="University Name, e.g Cape Peninsula University of Technology (CPUT)" size="50" style='width:25em' required><br>
+            <input type="text" name="name_date" placeholder="closing date e.g 30 september 2022" style='width:25em' required><br>
             <input type="submit" name="submit" value="Add">
         </form>
     </div>
