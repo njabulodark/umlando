@@ -52,19 +52,21 @@ $html = '<span id="mess">username: %s</span><br>
 <span id="mess">user message: <br><a id="desc"> %s</a></span><br>';
 
 $html2 = '<div class="message-block">
-<div class="message-content">
-    <div class="buble" >
-        <span >username: %s  </span><br>
-        <span >user email: %s</span><br>
-        <span >user phone: %s</span><br>
-        <span >user message: <br><a id="desc"> %s</a></span><br>
-    </div>
-</div>
-</div>';
+            <div class="message-content">
+                <div class="buble" >
+                    <span>username: %s  </span><br>
+                    <span>user email: %s</span><br>
+                    <span>user phone: %s</span><br>
+                    <span>user message: <br><a id="desc"> %s</a></span><br><br><br>
+                    <a class="btn" onclick="refresh()" href="read.php?name=%s" style="color:red;">Delete</a>
+                </div>
+            </div>
+        </div>';
+
 $result = $object->getMessages($conn);
 while($row = mysqli_fetch_assoc($result)){
     
-    echo sprintf($html2, $row['username'], $row['email'], $row['phone'], $row['usermessage']);
+    echo sprintf($html2, $row['username'], $row['email'], $row['phone'], $row['usermessage'], $row['username']);
 }
 ?>
 
@@ -72,11 +74,22 @@ while($row = mysqli_fetch_assoc($result)){
 
 
 <?php
+if(isset($_GET["name"])) {
+    $name_title =  ($_GET["name"]);
+    $object->deleteFromTableContact($conn, "{$name_title}");
+    $_GET["name"]= null;
+}
 //footer
 include_once "template/footer.php";
 ?>
 
 <script>
+
+function refresh() {
+    setTimeout(function(){
+    window.location.reload(); // you can pass true to reload function to ignore the client cache and reload from the server
+},20);
+}
 
 var navLinks = document.getElementById("navLinks");
 
