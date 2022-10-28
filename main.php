@@ -427,6 +427,8 @@ class Singleton {
     function getMessages($conn){
         $query = "select * from contact";
         $result = mysqli_query($conn, $query);
+        return $result;
+        $arr = array();
 
         while($row = mysqli_fetch_assoc($result)){
             //echo '<div id="messaging" style="margin: 2%;">';
@@ -437,6 +439,7 @@ class Singleton {
             //echo '<a class="btn" onclick="refresh()" href="read.php?name='.$row['username'].'" style="color:red;">Delete</a>';
             //echo '</div>';
 
+            $arr["<b>username:</b> ".$row['username']] = $row['username']; 
             return array($row['username'], $row['phone'], $row['email'], $row['usermessage']);
         }
     }

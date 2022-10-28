@@ -36,25 +36,39 @@ include_once "template/nav.php";
 if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 	include_once "template/adminnav.php";
 }
-
-
 ?>
+<section class="messages">
+    <div class="message-head">
+        <h3>Messages from varous users</h3>
+    </div>
 
-<section class="messages" >
-<div class="tool" style="height: 40vh;">
-    <h1>Messages from varous users</h1>
-    <div class="message-block">
-        <?php
-        print_r($object->getMessages($conn));
-        ?>
-        <span id="mess">username: Njabulo</span><br>
-        <span id="mess">user email: Njabulo@aqwhd.wd</span><br>
-        <span id="mess">user phone: 08541655</span><br>
-        <span id="mess">user message: <br><a id="desc">ewdqwdq qwduq wdyq qwudhy uygqwydh 8oiugyuyaqw dgy qwiudbyuib6b</a></span><br>
+
+<?php
+
+
+$html = '<span id="mess">username: %s</span><br>
+<span id="mess">user email: %s</span><br>
+<span id="mess">user phone: %s</span><br>
+<span id="mess">user message: <br><a id="desc"> %s</a></span><br>';
+
+$html2 = '<div class="message-block">
+<div class="message-content">
+    <div class="buble" >
+        <span >username: %s  </span><br>
+        <span >user email: %s</span><br>
+        <span >user phone: %s</span><br>
+        <span >user message: <br><a id="desc"> %s</a></span><br>
     </div>
 </div>
-</section>
+</div>';
+$result = $object->getMessages($conn);
+while($row = mysqli_fetch_assoc($result)){
+    
+    echo sprintf($html2, $row['username'], $row['email'], $row['phone'], $row['usermessage']);
+}
+?>
 
+</section>
 
 
 <?php
