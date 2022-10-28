@@ -554,3 +554,12 @@ footer ul{
     z-index: 2;
     cursor: pointer;
   }
+
+/**************************message block**************************************/
+.messages{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}

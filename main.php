@@ -455,6 +455,17 @@ class Singleton {
         }
     }
 
+    //delete from table contact
+    function deleteFromTableContact($conn, $name){
+        $sql = "DELETE FROM contact WHERE username='{$name}'";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "Record deleted successfully";
+        } else {
+            echo "Error deleting record: " . $conn->error;
+        }
+    }
+
     
 }
 ?>
