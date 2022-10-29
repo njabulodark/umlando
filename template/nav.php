@@ -5,7 +5,7 @@ if(isset($_SESSION['logged_in'])){
 <nav>
     <div class="logo" id="logo">
         <h1>
-            <a href="index.php">University Guardian</a>
+            <a href="index.php">Tertiary Guardian</a>
         </h1>
     </div>
     <div class="nave-links" id="navLinks">
@@ -16,7 +16,7 @@ if(isset($_SESSION['logged_in'])){
             <li><a href="college.php">College</a></li>
             <li><a href="career.php">Career Guidance</a></li>
             <li><a href="img2py.php">Pic to PDF</a></li>
-            <li><a href="user_qp.php">G12 Exam Papers</a></li>
+            <li><a href="papers.php">G12 Exam Papers</a></li>
             <li><a href="contact.php">CONTACT</a></li>
             <li><a href="logout.php">LOGOUT</a></li>
         </ul>

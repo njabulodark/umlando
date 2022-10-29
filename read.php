@@ -54,11 +54,11 @@ $html = '<span id="mess">username: %s</span><br>
 $html2 = '<div class="message-block">
             <div class="message-content">
                 <div class="buble" >
-                    <span>username: %s  </span><br>
-                    <span>user email: %s</span><br>
-                    <span>user phone: %s</span><br>
+                    <span>username:   <b>%s</b>  </span><br>
+                    <span>user email: <b>%s</b>  </span><br>
+                    <span>user phone: <b>%s</b>  </span><br>
                     <span>user message: <br><a id="desc"> %s</a></span><br><br><br>
-                    <a class="btn" onclick="refresh()" href="read.php?name=%s" style="color:red;">Delete</a>
+                    <a class="btn" onclick="refresh()" href="read.php?name=%s" style="color:red;">Delete</a><br><br>
                 </div>
             </div>
         </div>';

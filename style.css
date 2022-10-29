@@ -559,7 +559,35 @@ footer ul{
 .messages{
     width: 80%;
     margin: auto;
-    text-align: center;
     padding-top: 30px;
     padding-bottom: 70px;
+}
+
+.messages h1{
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+.message-block{
+    margin-bottom: 1%;
+    border: 5px solid #aca3a3;
+    border-radius: 2ch;
+}
+
+.buble{
+    background-color: #727e8a;
+    margin: 10px;
+}
+
+#mess{
+    padding-left: 25px;
+    font-weight: 700;
+}
+
+#desc{
+    overflow-y: scroll;
+    height: 200px;
+    background-color: #45a049;
+    margin: 50px;
 }
