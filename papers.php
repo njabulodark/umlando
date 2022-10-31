@@ -17,7 +17,12 @@ if(isset($_SESSION['expire'])){
 		$_SESSION['expire'] = time() + 60*60;
 	}
 }
+?>
 
+<!DOCTYPE html>
+<html lang="en">
+    
+<?php
 $arr = array();
 $names = array();
 foreach(glob('./uploads/*.*') as $filename){
