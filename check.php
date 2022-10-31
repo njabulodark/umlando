@@ -91,7 +91,7 @@ if($results){
 <div><h4>Upload Career Information</h4></div> <br>  
 
 <table >  
-<div class="inputs" style="width:450px; margin: auto;">
+<div class="inputs" style="width:50em; margin: auto;">
 <label for="" class="inputs"> Required Subjects</label>
 <select name="subjects[]" id="subjects" multiple="multiple">
     <option value="Physical Sciences">Physical Sciences</option>
