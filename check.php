@@ -54,7 +54,7 @@ if(isset($_POST["sub"])){
 
     $subjects = implode(",", $_POST["subjects"]);
     echo $subjects;
-    $name_tag = $_POST["name_tag"];
+ 
     $major_name = $_POST["major_name"];
     $major_descri = $_POST["comment"];
     $image_upload = $_FILES["pic"]["name"];
@@ -62,8 +62,8 @@ if(isset($_POST["sub"])){
     $upload = "upload/";
     move_uploaded_file($tmp_image,$upload.$image_upload);
 
-    $quiry = "INSERT INTO multiple(checkbox,name_tag,major_name,pictures,major_descri)
-VALUES ('$subjects','$name_tag', '$major_name','$image_upload','$major_descri')";
+    $quiry = "INSERT INTO multiple(checkbox,major_name,pictures,major_descri)
+VALUES ('$subjects', '$major_name','$image_upload','$major_descri')";
 
 $results =mysqli_query($conn,$quiry);
 
@@ -84,13 +84,15 @@ if($results){
 
     </head>
     <body>
+      <div style="width:500px; margin: auto; ">
 <form action="" method="post" enctype="multipart/form-data">  
   <br><br><br>
-<div style="width:450px; margin: auto; ">
-<div><h4>Select Required Subjects:</h4></div>   
+<div class="wrapper" style="width:450px; margin: auto; ">
+<div><h4>Upload Career Information</h4></div> <br>  
 
 <table >  
-<div>
+<div class="inputs" style="width:450px; margin: auto;">
+<label for="" class="inputs"> Required Subjects</label>
 <select name="subjects[]" id="subjects" multiple="multiple">
     <option value="Physical Sciences">Physical Sciences</option>
     <option value="Mathematics">Mathematics</option>
@@ -113,34 +115,33 @@ if($results){
 </select>
 
 </div>
-   
+<br>
+   <div>
+   <label for="" class="inputs"> Major Name</label>
+      <input type="text" name="major_name" >
+      
+   </div>
+   <br>
+   <div>
 
-<tr>
-      <td>Name tag</td>
-      <td><input type="text" name="name_tag" ></td>
-      
-   </tr>
-   <tr>
-      <td>Major name</td>
-      <td><input type="text" name="major_name" ></td>
-      
-   </tr> 
-   <tr>
-    <td><label for="files" class="btn">Displayed Image</label></td>
-    <td><input type="file" value="Display Pic" name="pic"></td>
-   </tr>
-   <tr>
-      <td>Major Description</td>
-      <td><textarea rows="4" cols="50" name="comment"  >
-</textarea></td>
-   </tr>
-   <tr>  
-      <td  ><input type="submit" value="submit" name="sub"></td>  
-   </tr>
+   <label for="files" class="inputs">Displayed Image</label>
+    <input type="file" value="Display Pic" name="pic">
+   </div>
+   <br>
+   <div>
+   <label for="" class="inputs"> Description</label>
+    <textarea rows="4" cols="50" name="comment" ></textarea>
+   </div>
+   <br>
+   <div> 
+    <input type="submit" value="submit" name="sub"> 
+   
+   </div>
 
    </table>  
 </div>  
 </form>  
+      </div>
 
     </body>
 </html>
@@ -372,12 +373,52 @@ window.addEventListener('load',()=>{
 
 
 <style>
+  .container{
+    width:500px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+    padding:2em;
+    background-color:#fff;
+    border-width: 30%;
+  }
+  textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  
+}
 
+body{
+    justify-content:center;
+    align-items:center;
+    font-family:"Raleway", sans-serif;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+  .text-box{  
+    width: 90%; 
+    color: white;
+    position: relative;
+    top: 250px;
+    left: 50%;
+  }
+h4{
+  text-align: center;
+
+}
   
 </style>
 
 
-
+<br><br><br>
 
 
 
