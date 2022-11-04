@@ -17,6 +17,10 @@ if(isset($_SESSION['expire'])){
 		$_SESSION['expire'] = time() + 60*60;
 	}
 }
+
+if(!file_exists("questions")){
+    mkdir("questions");
+}
 ?>
 
 <!DOCTYPE html>
@@ -75,14 +79,34 @@ foreach($names as $name){
     education resources and advice.">
     <link rel="stylesheet" href="css/career.css" type="text/css">
     <script language="JavaScript" type="text/javascript" src="../javascript/googlytics.js"></script>
+    <style>
+
+    .paper-block{
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    @media(max-width: 800px){
+        .admindiv{
+            margin-top: 50px;
+        }
+
+        .paper-block{
+        padding-bottom: 200px;
+        padding-top: 200px;
+        }
+    }
+    </style>
 </head>
 <body>
 <?php
-include_once "template/nav.php";
-if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
-	include_once "template/adminnav.php";
-}
+include "template/nav.php"
 ?>
+<section class="adminnav">
+    <div class="admindiv"></div>
+    <?php
+    include "template/adminnav.php";
+    ?>
+</section>
 
 <section class="papers">
 

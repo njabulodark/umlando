@@ -312,4 +312,7 @@ h3{
         height: 25em;
         overflow-y: scroll;
     }
+    .admindiv{
+        padding-top: -25px;
+    }
 }

@@ -32,13 +32,13 @@ if(isset($_SESSION['expire'])){
 </head>
 <body>
 <?php
-include_once "template/nav.php";
+include "template/nav.php";
 if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 	include_once "template/adminnav.php";
 }
 ?>
 <section class="messages">
-    <div class="message-head">
+    <div class="message-head" style="margin-top: 50px;">
         <h3>Messages from varous users</h3>
     </div>
 

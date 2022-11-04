@@ -46,16 +46,28 @@ function subj($str){
     education resources and advice.">
     <link rel="stylesheet" href="css/career.css" type="text/css">
     <script language="JavaScript" type="text/javascript" src="../javascript/googlytics.js"></script>
+    <style>
+    @media(max-width: 800px){
+        .admindiv{
+            margin-top: 50px;
+        }
+    }
+    </style>
+
 </head>
 <body>
 
 <?php
-include_once "template/nav.php";
-if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
-	include_once "template/adminnav.php";
-}
-
+include_once "template/nav.php"
 ?>
+<section class="adminnav">
+    <div class="admindiv"></div>
+    <?php
+    if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
+    include_once "template/adminnav.php";
+    }
+    ?>
+</section>
 <section class="careeriers" id="careeriers_page">
     <div class="block-list" style="background-color: orange;">
         <a name="top" ></a><h1 >Major's Descriptions</h1>
