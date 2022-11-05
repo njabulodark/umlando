@@ -25,7 +25,7 @@ include_once "template/nav.php"
 ?>
 
 <section class="image2pdf">
-    <div class="tool">
+    <div class="tool" style="height: 40vh;">
         <div class="tool_header">
             
             <p><?php
