@@ -16,8 +16,8 @@ include_once "template/nav.php";
 include_once "template/adminnav.php";
 
 //check if folder exists
-if(!file_exists("questions")){
-    mkdir("questions");
+if(!file_exists("uploads")){
+    mkdir("uploads");
 }
 
 ?>
