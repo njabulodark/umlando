@@ -18,8 +18,8 @@ if(isset($_SESSION['expire'])){
 	}
 }
 
-if(!file_exists("questions")){
-    mkdir("questions");
+if(!file_exists("uploads")){
+    mkdir("uploads");
 }
 ?>
 
