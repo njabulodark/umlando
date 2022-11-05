@@ -19,6 +19,7 @@ nav{
     background: -webkit-linear-gradient(left,red,rgb(157, 29, 73),purple,blue);
     justify-content: space-between;
     text-align: left;
+    background-color: linear-gradient(to right,red,rgb(157, 29, 73),purple,blue);
 }
 
 .logo{
@@ -311,5 +312,8 @@ h3{
     .career-col p{
         height: 25em;
         overflow-y: scroll;
+    }
+    .admindiv{
+        padding-top: -25px;
     }
 }
