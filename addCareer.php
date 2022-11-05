@@ -53,7 +53,7 @@ if(!$conn){
 if(isset($_POST["sub"])){
 
     $subjects = implode(",", $_POST["subjects"]);
-    echo $subjects;
+    //echo $subjects;
  
     $major_name = $_POST["major_name"];
     $major_descri = $_POST["comment"];
@@ -62,16 +62,26 @@ if(isset($_POST["sub"])){
     $upload = "C:/xampp/htdocs/umlando/images/career/";
     move_uploaded_file($tmp_image,$upload.$major_name.".jpg");
 
-    $quiry = "INSERT INTO career (subjects,name_title,pictures='',major_descri)
-VALUES ('$subjects', '$major_name','$major_name','$major_descri')";
+    //check if name_tittle exists
+    $check = "SELECT * FROM career WHERE major_name = '$major_name'";
+    if(mysqli_query($conn,$check)){
+      //alert user that Major already exists
+      //echo "<script>alert('Major already exists')</script>";
+      echo "Major already exists<br>Major not added<br>Try again";
+    }
+    else{
 
-$results =mysqli_query($conn,$quiry);
+      $quiry = "INSERT INTO career (subjects, name_title, pictures, major_descri)
+      VALUES ('{$subjects}', '{$major_name}','{$major_name}','{$major_descri}')";
 
-if($results){
-    echo "success";
-}else{
-    die(mysqli_error($conn));
-}
+      $results =mysqli_query($conn,$quiry);
+
+      if($results){
+        echo "success";
+      }else{
+        die(mysqli_error($conn));
+      }
+      }
 }
 
 
@@ -93,7 +103,7 @@ if($results){
 <table >  
 <div class="inputs" style="width:50em; margin: auto;">
 <label for="" class="inputs"> Required Subjects</label>
-<select name="subjects[]" id="subjects" multiple="multiple">
+<select name="subjects[]" id="subjects" multiple="multiple" required>
     <option value="Physical Sciences">Physical Sciences</option>
     <option value="Mathematics">Mathematics</option>
     <option value="Life Science">Life Science</option>
@@ -118,19 +128,19 @@ if($results){
 <br>
    <div>
    <label for="" class="inputs"> Major Name</label>
-      <input type="text" name="major_name" >
+      <input type="text" name="major_name" required>
       
    </div>
    <br>
    <div>
 
    <label for="files" class="inputs">Displayed Image</label>
-    <input type="file" value="Display Pic" name="pic">
+    <input type="file" value="Display Pic" name="pic" required>
    </div>
    <br>
    <div>
    <label for="" class="inputs"> Description</label>
-    <textarea rows="4" cols="50" name="comment" ></textarea>
+    <textarea rows="4" cols="50" name="comment" required></textarea>
    </div>
    <br>
    <div> 

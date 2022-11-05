@@ -18,7 +18,7 @@ if(isset($_SESSION['logged_in'])){
         <li><a href="img2py.php">Image To PDF</a></li>
         <li><a href="papers.php">G12 Exam Papers</a></li>
         <li><a href="contact.php">Contact Us</a></li>
-            <li><a href="logout.php">LOGOUT</a></li>
+            <li><a href="logout.php">Logout</a></li>
         </ul>
     </div>
     <i class="fa fa-bars" onclick="showMenu()"></i>
