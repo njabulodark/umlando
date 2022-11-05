@@ -491,6 +491,15 @@ footer ul{
     text-decoration: none;
 }
 
+@media screen and (max-width: 800px){
+    .tool{
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+}
+    
+}
+
 /*------------------------------------------add career----------------------------------------------------------------------*/
 .addcareer{
     width: 80%;

@@ -32,7 +32,7 @@ else{
 <nav>
     <div class="logo" id="logo">
         <h1>
-            <a href="index.php">University Guardian</a>
+        <a href="index.php">Tertiary Guardian</a>
         </h1>
     </div>
     <div class="nave-links" id="navLinks">

@@ -153,19 +153,19 @@ document.getElementById(promptLocation).style.color = color;
         <input type="text" class="form-control" id="username" name="username"   placeholder="Enter username.." onkeyup='validateName()'required>
         <span class='error-message' id='name-error'></span>
     </div>
-
-    <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" onkeyup='validatePassword()'required>
-        <span class='error-message' id='password-error'></span>
-    </div>
     <div class="form-group">
         <label for="email">Email address</label>
         <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'required>
         <span class='error-message' id='email-error'></span>
     </div>   
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" onkeyup='validatePassword()'required>
+        <span class='error-message' id='password-error'></span>
+    </div>
     <button type = "submit" class="btn" name= "submit" >Create</button>
     <span class='error-message' id='submit-error'></span>
+    <a class="btn" href="index.php" style="text-decoration: none; margin-left: 50px; padding: 5px">Home</a>
 </form>
   </div>
 
