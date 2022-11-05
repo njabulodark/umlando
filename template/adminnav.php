@@ -72,8 +72,8 @@ body {
 
 <div class="topnav" id="myTopnav">
   <a href="statusUpdate.php">Update University Date</a>
-  <a href="addcareer.php">Add Career</a>
-  <a href="DeleteCareer.php">Delete Career</a>
+  <a href="addcareer.php">Add Major</a>
+  <a href="DeleteCareer.php">Delete Major</a>
   <a href="admin_qp.php">Add Question</a>
   <a href="read.php">Read Messages</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
