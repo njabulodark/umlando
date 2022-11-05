@@ -19,7 +19,6 @@ nav{
     background: -webkit-linear-gradient(left,red,rgb(157, 29, 73),purple,blue);
     justify-content: space-between;
     text-align: left;
-    background-color: linear-gradient(to right,red,rgb(157, 29, 73),purple,blue);
 }
 
 .logo{
