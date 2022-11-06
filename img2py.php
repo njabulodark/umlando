@@ -48,7 +48,7 @@ if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
 ?>
 
 <section class="image2pdf" >
-<div class="tool" style="height: 40vh;">
+<div class="tool" style="height: 50vh;">
     <div class="tool_header">
         <h1>Convert Image To PDF</h1>
         <p>Convert images to PDF in seconds</p>

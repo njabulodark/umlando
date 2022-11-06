@@ -277,6 +277,9 @@ class Singleton {
 
     function deleteFromTableCareer($conn, $name_title){
         $sql = "DELETE FROM Career WHERE name_title='{$name_title}'";
+        if("images/career/".$name_title.".jpg"){
+            unlink("images/career/".$name_title.".jpg");
+        }
 
         if ($conn->query($sql) === TRUE) {
             //echo "Record deleted successfully";

@@ -63,8 +63,11 @@ if(isset($_POST["sub"])){
     move_uploaded_file($tmp_image,$upload.$major_name.".jpg");
 
     //check if name_tittle exists
-    $check = "SELECT * FROM career WHERE major_name = '$major_name'";
-    if(mysqli_query($conn,$check)){
+    $check = "SELECT * FROM career WHERE name_title = '{$major_name}'";
+    $rr =  mysqli_query($conn,$check);
+    $row = mysqli_fetch_assoc($rr);
+
+    if($row){
       //alert user that Major already exists
       //echo "<script>alert('Major already exists')</script>";
       echo "Major already exists<br>Major not added<br>Try again";
