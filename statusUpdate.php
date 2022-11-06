@@ -53,7 +53,7 @@ include_once "template/nav.php"
 </section>
 <section class="addcareer">
     <div class="add">
-        <h1>Add New Closing Date</h1>
+        <h1>Update Closing Date</h1>
         <form action="" method="post">
             <input type="text" name="name_title" placeholder="University Name, e.g Cape Peninsula University of Technology (CPUT)" size="50" style='width:25em' required><br>
             <input type="text" name="name_date" placeholder="closing date e.g 30 september 2022" style='width:25em' required><br>
