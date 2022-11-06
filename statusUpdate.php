@@ -33,7 +33,7 @@ if(isset($_POST["submit"])) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
-    <title>Major's Descriptions</title>
+    <title>Update University Information</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta name="description" content=" The Jackson Vocational Interest Survey 
     combines a highly regarded career interest test with valuable career and
