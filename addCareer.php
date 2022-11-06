@@ -90,18 +90,28 @@ if(isset($_POST["sub"])){
 <html>
     <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="career1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <title>Add Career</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <script language="JavaScript" type="text/javascript" src="../javascript/googlytics.js"></script>
     </head>
     <body>
+<section class="addCareer">
       <div style="width:500px; margin: auto; ">
 <form action="" method="post" enctype="multipart/form-data">  
   <br><br><br>
-<div class="wrapper" style="width:450px; margin: auto; ">
+<div class="wrapper" style="width: 450px; margin: auto; ">
 <div><h4>Upload Career Information</h4></div> <br>  
 
-<table >  
-<div class="inputs" style="width:50em; margin: auto;">
+<table >
+<div class="inputs" style="width:40em; margin: auto;">
 <label for="" class="inputs"> Required Subjects</label>
 <select name="subjects[]" id="subjects" multiple="multiple" required>
     <option value="Physical Sciences">Physical Sciences</option>
@@ -151,8 +161,8 @@ if(isset($_POST["sub"])){
    </table>  
 </div>  
 </form>  
-      </div>
-
+</div>
+</section>
     </body>
 </html>
 
@@ -391,7 +401,7 @@ window.addEventListener('load',()=>{
     border-width: 30%;
   }
   textarea {
-  width: 100%;
+  width: auto;
   height: 100px;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -408,7 +418,7 @@ body{
 }
 
 input[type=text] {
-  width: 100%;
+  width: auto;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;

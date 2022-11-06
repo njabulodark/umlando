@@ -580,12 +580,17 @@ footer ul{
 
 .message-block{
     margin-bottom: 1%;
-    border: 5px solid #aca3a3;
     border-radius: 2ch;
+    background-color: rgba(132, 147, 206, 0.2);
+}
+
+.message-block:hover{
+    border: 1px solid #aca3a3;
+    box-shadow: #f44336;
+
 }
 
 .buble{
-    background-color: #727e8a;
     margin: 10px;
 }
 
@@ -601,3 +606,7 @@ footer ul{
     margin: 50px;
 }
 
+
+.wrapper{
+    background-color: ;
+}

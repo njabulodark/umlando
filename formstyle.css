@@ -99,3 +99,13 @@ h2{
     color: red;
     font-size: 15px;
 }
+
+.feedback{
+    position: fixed;
+
+    background-color: rgb(42, 102, 102);
+}
+
+.feedmessage{
+    background-color: rgb(252, 233, 233);
+}

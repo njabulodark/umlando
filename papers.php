@@ -104,7 +104,9 @@ include "template/nav.php"
 <section class="adminnav">
     <div class="admindiv"></div>
     <?php
-    include "template/adminnav.php";
+    if(isset($_SESSION['logged_in']) && $_SESSION['type_'] == "admin"){
+        include_once "template/adminnav.php";
+    }
     ?>
 </section>
 

@@ -400,7 +400,7 @@ class Singleton {
         VALUES ('{$name}', '{$phone}', '{$email}','{$message}')";
 
         if ($conn->query($sql) === TRUE) {
-            echo "New record created successfully";
+            //echo "New record created successfully";
         } else {
           echo "Error: " . $sql . "<br>" . $conn->error;
         }

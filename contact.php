@@ -18,10 +18,13 @@ $message=$_POST['message'];
 
 $object->insertIntoTableContact($conn, $name, $phone, $email, $message);
 
-if (isset($_POST['submit'])){
-  header("Location: confirm.html");
-  exit;
-}
+$html = '<section class="feedback">
+<div class="feedmessage">
+  <h1>Thank you for sending us an email. We will get back to you shortly.</h1>
+</div>
+</section>';
+
+
 }
 /*
 $conn = mysqli_connect('localhost', 'root', '', 'userregistration') 
@@ -195,8 +198,30 @@ document.getElementById(promptLocation).style.color = color;
     <button type = "submit" class="btn" name= "submit" onclick='return validateForm()' >Send Message</button>
     <span class='error-message' id='submit-error'></span>
     <a class="btn" href="index.php" style="text-decoration: none; margin-left: 50px; padding: 5px">Home</a>
+
+    <?php
+if (isset($_POST['submit'])){
+  echo $html;
+  echo '<meta http-equiv="refresh" content="5; url=http://localhost/umlando/contact.php"/>';
+  //header("Refresh: 4; URL=index.php");
+  exit;
+}
+
+?>
+    
+
+    
 </form>
   </div>
 
+<?php
+if (isset($_POST['submit'])){
+  echo $html;
+  echo '<meta http-equiv="refresh" content="5; url=http://localhost/umlando/index.php"/>';
+  //header("Refresh: 4; URL=index.php");
+  exit;
+}
+
+?>
 </body>
 </html>
