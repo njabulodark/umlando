@@ -106,12 +106,12 @@ if(isset($_POST["sub"])){
     <script language="JavaScript" type="text/javascript" src="../javascript/googlytics.js"></script>
     </head>
     <body>
-<section class="addCareer">
-      <div style="width:500px; margin: auto; ">
+<section class="addCareer" style=" overflow: hidden;">
+      <div style="width:500px; margin: auto; margin-bottom: 150px; ">
 <form action="" method="post" enctype="multipart/form-data">  
   <br><br><br>
 <div class="wrapper" style="width: 450px; margin: auto; ">
-<div><h4>Upload Career Information</h4></div> <br>  
+<div style="margin-top: 90px;"><h4>Upload Career Information</h4></div> <br>  
 
 <table >
 <div class="inputs" style="width:40em; margin: auto;">
@@ -401,11 +401,12 @@ window.addEventListener('load',()=>{
     
   }
   .container{
-    width:500px;
+    width: auto;
     box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
     padding:2em;
     background-color:#fff;
     border-width: 30%;
+    overflow: hidden;
   }
   textarea {
   width: auto;
@@ -441,6 +442,7 @@ h4{
   text-align: center;
 
 }
+
   
 </style>
 
