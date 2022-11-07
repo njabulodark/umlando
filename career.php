@@ -116,7 +116,7 @@ include_once "template/nav.php"
 
         foreach(array_keys($careers) as $title){
             /*format = career title, tag, career description,picture, list*/
-            printf($html, $title, $title, $careers[$title][0], $title, subj($careers[$title][2]));
+            printf($html, $title, $title, $careers[$title][0], $title, subj($careers[$title][1]));
         }
     ?>
 </section>

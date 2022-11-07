@@ -98,10 +98,8 @@ class Singleton {
         // sql to create table
         $sql = "CREATE TABLE IF NOT EXISTS Career (
             id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-            name_tag VARCHAR(100) NOT NULL,
             name_title VARCHAR(100) NOT NULL,
             subjects VARCHAR(255) NOT NULL,
-            pictures VARCHAR(100) NOT NULL,
             major_descri TEXT NOT NULL,
             reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
             )";
@@ -154,10 +152,10 @@ class Singleton {
 
 
 
-    function insertIntoTableCareer($conn, $name_tag, $name_title, $major, $pictures="", $subjects=""){
+    function insertIntoTableCareer($conn, $name_title, $major, $subjects=""){
 
-        $sql = "INSERT INTO Career (name_tag, name_title, major_descri, pictures, subjects)
-        VALUES ('{$name_tag}', '{$name_title}', '{$major}', '{$pictures}', '{$subjects}')";
+        $sql = "INSERT INTO Career (name_title, major_descri, subjects)
+        VALUES ('{$name_title}', '{$major}', '{$subjects}')";
 
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
@@ -239,18 +237,6 @@ class Singleton {
     }
 
 
-
-    function selectFromTableCareer($conn){
-        $query = "select * from Career";
-        $result = mysqli_query($conn, $query);
-
-        while($row = mysqli_fetch_assoc($result)){
-            echo "<h1>{$row['name_tag']}</h1>";
-            echo "<h1>{$row['name_title']}</h1>";
-            echo "<h1>{$row['para']}</h1>";
-        }
-    }
-
     function selectFromTableStat($conn){
         $query = "select * from stat";
         $result = mysqli_query($conn, $query);
@@ -267,7 +253,7 @@ class Singleton {
         $result = mysqli_query($conn, $query);
 
         while($row = mysqli_fetch_assoc($result)){
-            $arr[$row['name_title']] = $row['para'];
+            $arr[$row['name_title']] = array($row['major_descri'], $row['subjects']);
             /*echo "<h1>{$row['name_tag']}</h1>";
             echo "<h1>{$row['name_title']}</h1>";
             echo "<h1>{$row['para']}</h1>";*/
@@ -276,13 +262,29 @@ class Singleton {
         return $arr;
     }
 
+    function getCareerList($conn){
+        $query = "select * from Career";
+        $result = mysqli_query($conn,$query);
+
+        while($row = mysqli_fetch_assoc($result)){
+            echo '<div style="margin: 2%;">';
+            echo "<a style='margin: 2%;'>".$row['name_title']."</a>";
+            echo '<a class="btn" onclick="refresh()" href="deletecareer.php?name='.$row['name_title'].'" style="color:red;">Delete</a>';
+            echo '</div>';
+        }
+        
+    }
+
     function deleteFromTableCareer($conn, $name_title){
         $sql = "DELETE FROM Career WHERE name_title='{$name_title}'";
+        if("images/career/".$name_title.".jpg"){
+            unlink("images/career/".$name_title.".jpg");
+        }
 
         if ($conn->query($sql) === TRUE) {
-          echo "Record deleted successfully";
+            //echo "Record deleted successfully";
         } else {
-          echo "Error deleting record: " . $conn->error;
+            echo "Error deleting record: " . $conn->error;
         }
     }
 
@@ -401,12 +403,11 @@ class Singleton {
         VALUES ('{$name}', '{$phone}', '{$email}','{$message}')";
 
         if ($conn->query($sql) === TRUE) {
-            echo "New record created successfully";
+            //echo "New record created successfully";
         } else {
           echo "Error: " . $sql . "<br>" . $conn->error;
         }
         }
-    }
 
     function logout(){
         session_start();
@@ -425,17 +426,49 @@ class Singleton {
         $_SESSION['loggedin'] = true;
     } 
 
-    //check if username is admin
-    function checkAdmin($conn, $username){
-        $query = "select * from userregistration where username = '{$username}'";
+    //get messeges from contact database
+    function getMessages($conn){
+        $query = "select * from contact";
         $result = mysqli_query($conn, $query);
-        $row = mysqli_fetch_assoc($result);
-        if($row){
-            if($row['type_'] == "admin"){
-                return true;
-            }else{
-                return false;
-            }
+        return $result;
+        $arr = array();
+
+        while($row = mysqli_fetch_assoc($result)){
+            //echo '<div id="messaging" style="margin: 2%;">';
+            //echo "<a style='margin: 2%;'> <b>username:</b> ".$row['username']."</a>"."<br>";
+            //echo "<a style='margin: 2%;'> <b>phones:</b> ".$row['phone']."</a>"."<br>";
+            //echo "<a style='margin: 2%;'> <b>email:</b> ".$row['email']."</a>"."<br>";
+            //echo "<a style='margin: 2%;'> <b>message:</b> ".$row['usermessage']."</a>"."<br><br>";
+            //echo '<a class="btn" onclick="refresh()" href="read.php?name='.$row['username'].'" style="color:red;">Delete</a>';
+            //echo '</div>';
+
+            $arr["<b>username:</b> ".$row['username']] = $row['username']; 
+            return array($row['username'], $row['phone'], $row['email'], $row['usermessage']);
         }
     }
+
+    //delete message from contact database
+    function deleteMessage($conn, $name){
+        $sql = "DELETE FROM contact WHERE username='{$name}'";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "Record deleted successfully";
+        } else {
+            echo "Error deleting record: " . $conn->error;
+        }
+    }
+
+    //delete from table contact
+    function deleteFromTableContact($conn, $name){
+        $sql = "DELETE FROM contact WHERE username='{$name}'";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "Record deleted successfully";
+        } else {
+            echo "Error deleting record: " . $conn->error;
+        }
+    }
+
+    
+}
 ?>

@@ -253,7 +253,7 @@ class Singleton {
         $result = mysqli_query($conn, $query);
 
         while($row = mysqli_fetch_assoc($result)){
-            $arr[$row['name_title']] = array($row['major_descri'], $row['pictures'], $row['subjects']);
+            $arr[$row['name_title']] = array($row['major_descri'], $row['subjects']);
             /*echo "<h1>{$row['name_tag']}</h1>";
             echo "<h1>{$row['name_title']}</h1>";
             echo "<h1>{$row['para']}</h1>";*/

@@ -53,7 +53,6 @@ $object->createTableContact($conn);
 ?>
 
 <?php
-include "addCareerall.php";
+include "addCar.php";
 
-all($conn, $object);
 ?>
