@@ -84,7 +84,7 @@ if($results){
 
     </head>
     <body>
-      <div style="width:500px; margin: auto; ">
+      <div id="sudo">
 <form action="" method="post" enctype="multipart/form-data">  
   <br><br><br>
 <div class="wrapper" style="width:450px; margin: auto; ">
@@ -118,7 +118,7 @@ if($results){
 <br>
    <div>
    <label for="" class="inputs"> Major Name</label>
-      <input type="text" name="major_name" >
+      <input type="text" name="major_nameq" >
       
    </div>
    <br>
@@ -391,10 +391,14 @@ window.addEventListener('load',()=>{
   
 }
 
+*{
+  overflow: hidden;
+}
 body{
     justify-content:center;
     align-items:center;
     font-family:"Raleway", sans-serif;
+    overflow-y: hidden;
 }
 
 input[type=text] {
