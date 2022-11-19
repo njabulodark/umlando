@@ -101,7 +101,7 @@ document.getElementById(promptLocation).style.color = color;
     <button type = "submit" class="btn" name= "submit">Login</button>
     <span class='error-message' id='submit-error'></span>
     <a class="btn" href="index.php" style="text-decoration: none; margin-left: 50px; padding: 5px">Home</a>
-    <h2>No account!!<a href="CreateAccount.php">Create one</a></h2>
+    
 </form>
   </div>
 

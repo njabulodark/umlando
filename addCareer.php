@@ -148,7 +148,7 @@ if(isset($_POST["sub"])){
    <div>
 
    <label for="files" class="inputs">Displayed Image</label>
-    <input type="file" value="Display Pic" name="pic" accept=".pdf" required>
+    <input type="file" value="Display Pic" name="pic" required>
    </div>
    <br>
    <div>
